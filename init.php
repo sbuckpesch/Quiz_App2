@@ -33,11 +33,11 @@ Zend_Db_Table::setDefaultAdapter($db);
 $global=new ArrayObject();
 $global->db=$db;
 
-require_once '/lib/app-arena/Helper.php';
+require_once 'lib/app-arena/Helper.php';
 $helper = new Helper();
 
 // Initialize App-Arena Connection
-require_once '/lib/app-arena/client/soap_client.php';
+require_once 'lib/app-arena/client/soap_client.php';
 $apparena = new Client($aa_api_key);
 $instance_id = 0;
 $page_id=get_page_id();
@@ -62,8 +62,8 @@ $global->content=$global->app['content'];
 $global->instance=$global->app['instance'];
 
 // Load Functions
-require_once ROOT_PATH.'/lib/app-arena/FacebookAuth.php';
-require_once ROOT_PATH.'/lib/app-arena/FacebookUserData.php';
+require_once ROOT_PATH.'lib/app-arena/FacebookAuth.php';
+require_once ROOT_PATH.'lib/app-arena/FacebookUserData.php';
 
 //init_db();
 //init_fluttery();

@@ -33,7 +33,7 @@ Zend_Db_Table::setDefaultAdapter($db);
 $global=new ArrayObject();
 $global->db=$db;
 
-require_once 'app-arena/Helper.php';
+require_once 'lib/app-arena/Helper.php';
 $helper = new Helper();
 
 // Initialize App-Arena Connection

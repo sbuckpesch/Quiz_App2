@@ -62,8 +62,8 @@ $global->content=$global->app['content'];
 $global->instance=$global->app['instance'];
 
 // Load Functions
-require_once ROOT_PATH.'/lib/iCon/FacebookAuth.php';
-require_once ROOT_PATH.'/lib/iCon/FacebookUserData.php';
+require_once ROOT_PATH.'/lib/app-arena/FacebookAuth.php';
+require_once ROOT_PATH.'/lib/app-arena/FacebookUserData.php';
 
 init_db();
 init_fluttery();

@@ -57,4 +57,7 @@ else
 }
 
 $global->instid=$global->app['instance']['instance_id'];
+$global->config=$global->app['config'];
+$global->content=$global->app['content'];
+$global->instance=$global->app['instance'];
 ?>

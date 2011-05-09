@@ -43,7 +43,7 @@ $apparena = new Client($aa_api_key);
 $instance_id = 0;
 $page_id=get_page_id();
 
-print_r ($apparena);
+print_r ($page_id);
 
 $apparena->setInstanceId($aa_app_id, $instance_id,$page_id);
 $result = $apparena->getData();

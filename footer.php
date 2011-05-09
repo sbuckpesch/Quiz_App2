@@ -1,5 +1,19 @@
+<div id="footer">
+  <?php //echo $content['pageFooter']; ?>
+</div>
+
+
+<br />
+<hr />
+<div style="color:grey; float:left; width:60%;">
+<a href="https://www.instantssl.com/">Instant SSL Certificate Secured</a><br>
+</div>
+<div style="color:grey; float:right; width:40%;">
+<a href="https://www.iconsultants.eu/de/facebook-applikationen.html" target=_blank>App powered by iConsultants</a>
+</div>
 <div style="clear:both;"></div>
-<script src="http://connect.facebook.net/de_DE/all.js"></script>
+</div>
+
 <script>
    FB.init({
      appId  : '<?=$global->instance['fb_app_id']?>',

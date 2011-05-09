@@ -60,4 +60,12 @@ $global->instid=$global->app['instance']['instance_id'];
 $global->config=$global->app['config'];
 $global->content=$global->app['content'];
 $global->instance=$global->app['instance'];
+
+// Load Functions
+require_once ROOT_PATH.'/lib/iCon/FacebookAuth.php';
+require_once ROOT_PATH.'/lib/iCon/FacebookUserData.php';
+
+init_db();
+init_fluttery();
+init_global();
 ?>

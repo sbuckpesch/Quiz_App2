@@ -1,8 +1,6 @@
 <?php
 // Load all config values and necessary classes
 require_once ('init.php');
-// Include Header Part
-include 'header.php';
 
 /*
  * Integrate a Content from App-Arena App-Manager
@@ -17,8 +15,28 @@ include 'header.php';
  */
 //echo '<h1>All available App-Arena data</h1><pre>', print_r($global->app), '</pre>';
 
-echo $global->app['content']['home'];
+$global->link->parseRequest();
+//$global->link->display();
 
-// Include Footer Part
-include 'footer.php';
+$page=$global->link->getPage('welcome.php');
+$template=$global->link->getParam('template','y');  //do this page need template?
+
+
+if($template == 'n')
+{
+  include $page;
+}
+else
+{ 
+	// Include Header Part
+	include 'header.php';
+
+  echo '<div id="content">';
+  	// Include Page Part
+ 	include $page;
+  echo '</div>';
+  
+	// Include Footer Part
+	include 'footer.php';
+}
 ?>

@@ -36,6 +36,9 @@ $global->db=$db;
 require_once 'lib/app-arena/Helper.php';
 $helper = new Helper();
 
+
+print_r ($global);
+
 // Initialize App-Arena Connection
 require_once 'lib/app-arena/client/soap_client.php';
 $apparena = new Client($aa_api_key);

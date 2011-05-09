@@ -39,7 +39,7 @@ $helper = new Helper();
 // Initialize App-Arena Connection
 require_once 'lib/app-arena/client/soap_client.php';
 $apparena = new Client($aa_api_key);
-$instance_id = 0;
+$instance_id = $global->app['instance']['instance_id'];
 $page_id=get_page_id();
 
 $apparena->setInstanceId($aa_app_id, $instance_id,$page_id);

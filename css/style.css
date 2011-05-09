@@ -1,0 +1,186 @@
+/*
+  style.css - styles for the Photopuzzle Application
+*/
+
+body {
+	font-family:"lucida grande",tahoma,verdana,arial,sans-serif;
+	font-size: 13px;
+	overflow:hidden;	
+	margin: 0px;
+}
+
+img {
+	border:none 0px;
+}
+
+a {
+	border:none 0px;
+}
+a:link { color: grey; text-decoration:none;border:none; }
+a:visited {color: grey; text-decoration:none;border:none; }
+a:hover {color: grey; text-decoration:none;border:none; }
+a:active {color: grey; text-decoration:none;border:none; }
+a:focus {color: grey; text-decoration:none;border:none; }
+
+hr {
+	color: grey;
+}
+#full_image{
+	outline:solid white; 
+	outline-width: thin; 
+	margin:0px; 
+}
+
+#images {
+ border:none;	
+}
+	
+#red_images {
+	outline:solid red; 
+	outline-width: thin; 
+	margin:0px; 
+	
+}
+	
+/* ***********************
+*  LANDING PAGE
+*********************** */
+#lp-container img {
+	border: 0px none;
+}
+
+.participate-button {
+	background-color: <?php echo $baseColor1?>;
+	text-align: center;
+}
+.participate-button a {
+	color: <?php echo $textColor1?>;
+	font-weight: bold;
+	font-size: 20px;
+	margin: 10px;
+}
+
+.participateLogo {
+	left: 330px;
+    position: absolute;
+    top: 50px;
+    width: 150px;
+}
+
+.reflink {
+	font-size:13px;
+	font-weight:bold;
+	left:190px;
+	position:relative;
+	top:-162px;
+}
+
+.likebutton {	
+    left: 30px;
+    position: absolute;
+    top: 150px;
+}
+
+.fb-share-button {
+    cursor: pointer;
+    left: 120px;
+    position: absolute;
+    top: 193px;
+}
+
+.teilnehmen {
+	position:relative;
+	top:-157px;
+	left: 200px;
+	float: left;
+	font-size: 16px;
+	font-weight:bold; 	
+}
+
+.backFanpage {
+	text-align:center;
+}
+
+
+/*
+  facebook.css - styles for facebook-like popups
+*/
+
+div.popup {
+  padding: 10px
+}
+div.popup_title {
+  background-color: #6d84b4;
+  border: 1px solid #3b5998;
+  border-bottom: none;
+  color: white;
+  font-weight: bold;
+  font-size: 110%;
+  margin: -10px -10px 0 -10px;
+  padding: 5px 9px;
+  cursor: move;
+}
+div.popup_content {
+  font-size: 90%;
+  border: 1px solid #555;
+  border-top: none;
+  margin: 0 -10px -10px -10px;
+  padding: 1px 9px;
+}
+div.popup_buttons {
+  background: #f2f2f2;
+  border-top: 1px solid #ccc;
+  padding: 9px;
+  margin: 10px -9px 0;
+  text-align: right;
+}
+div.popup_buttons button {
+  border: 1px solid #999;
+  background: #eeeeed;
+  font-weight: bold;
+  font-size: 110%;
+  color: #333;
+  padding: 4px 8px 5px;
+  box-shadow: #fff 0 1px 0 inset;
+  -webkit-box-shadow: #fff 0 1px 0 inset;
+  -moz-box-shadow: #fff 0 1px 0 inset;
+}
+div.popup_buttons button.default {
+  border: 1px solid #29447e;
+  background: #627aac;
+  color: white;
+  box-shadow: #8a9cc2 0 1px 0 inset;
+  -webkit-box-shadow: #8a9cc2 0 1px 0 inset;
+  -moz-box-shadow: #8a9cc2 0 1px 0 inset;
+}
+div.popup_buttons button:active {
+  background: #ddd;
+  box-shadow: none;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+}
+div.popup_buttons button.default:active {
+  background: #4f6aa3;
+  box-shadow: none;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+}
+
+.pageLandingNonFans {
+    background: url("http://dev.iconsultants.eu/facebook/gruenderpokern/background-nonfans.png") repeat scroll 0 0 transparent;
+    height: 1058px;
+    left: 0;
+    margin: 0;
+    padding-top: 50px;
+    position: absolute;
+    text-align: center;
+    top: 13px;
+    width: 520px;
+    z-index: 10;
+}
+
+#lp-container{
+	font-family:"lucida grande",tahoma,verdana,arial,sans-serif;
+	font-size: 12px;
+}
+

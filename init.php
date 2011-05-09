@@ -37,7 +37,7 @@ require_once 'lib/app-arena/Helper.php';
 $helper = new Helper();
 
 // Initialize App-Arena Connection
-require_once 'app-arena/client/soap_client.php';
+require_once 'lib/app-arena/client/soap_client.php';
 $apparena = new Client($aa_api_key);
 $instance_id = 0;
 $page_id=get_page_id();

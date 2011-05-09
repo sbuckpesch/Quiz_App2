@@ -65,7 +65,7 @@ $global->instance=$global->app['instance'];
 require_once ROOT_PATH.'/lib/app-arena/FacebookAuth.php';
 require_once ROOT_PATH.'/lib/app-arena/FacebookUserData.php';
 
-init_db();
-init_fluttery();
-init_global();
+//init_db();
+//init_fluttery();
+//init_global();
 ?>

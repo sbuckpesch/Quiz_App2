@@ -14,8 +14,8 @@ $data = json_decode(base64_decode(strtr($payload, '-_', '+/')), true);
 
 // Get Cookie which is set if you have used this App before
 $values = $_COOKIE;
-if(isset($_COOKIE['instance_id']))
-print_r ($values['instance_id']);
+if(isset($_COOKIE['img_participant']))
+print_r ($values['img_participant']);
 
 // Get content from App-Arena
 $columns = $config['number_column'];
@@ -123,7 +123,7 @@ if ($image_solved) {
 
 // Check in the Cookies if the User used the App. If he used the App before show Content.
 $alreadyParticipated = false;
-if(in_array($instid, $values)) {
+if(isset($_COOKIE['img_participant'])) {
 	$alreadyParticipated = true;	
 	?> <div id=solve_content>
 		<?=$content['solve_content']?>

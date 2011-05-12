@@ -2,10 +2,10 @@
 <?php
 
 // Fluttery Init (needed to use config,content and instance variables)
-$config=$global->config;
-$content=$global->content;
-$instance=$global->instance;
-$instid= $global->instance['instance_id'];
+$config=$session->config;
+$content=$session->content;
+$instance=$session->instance;
+$instid= $session->instance['instance_id'];
 
 //Facebook Data Init (needed to use the Facebook User Data.
 $signed_request = $_REQUEST["signed_request"];

@@ -16,8 +16,8 @@
 
 // Page URL
 $facebook = "https://www.facebook.com/";
-$fb_appid = $aa_app['instance']['fb_app_id'];
-$fb_pageurl = $aa_app['instance']['fb_page_url'];
+$fb_appid = $session->instance['fb_app_id'];
+$fb_pageurl = $session->instance['fb_page_url'];
 $fb_appurl = $facebook . $fb_pageurl . '?sk=app_' . $fb_appid;
 
 ?>

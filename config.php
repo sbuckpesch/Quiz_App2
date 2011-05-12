@@ -12,5 +12,7 @@ $aa_api_key = "sbuckpesch";
 // Step 3: App-Arena App-Id
 $aa_app_id = 42;
 
+// Advanced Settings
+$debugMode = true;
 
 ?>

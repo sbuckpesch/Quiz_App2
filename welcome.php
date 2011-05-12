@@ -12,11 +12,6 @@ $signed_request = $_REQUEST["signed_request"];
 list($encoded_sig, $payload) = explode('.', $signed_request, 2); 
 $data = json_decode(base64_decode(strtr($payload, '-_', '+/')), true);
 
-// Get Cookie which is set if you have used this App before
-$values = $_COOKIE;
-if(isset($_COOKIE['instance_id']['69']))
-print_r ("Ja");
-
 // Get content from App-Arena
 $columns = $config['number_column'];
 $rows = $config['number_row'];

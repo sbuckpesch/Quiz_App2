@@ -16,7 +16,7 @@
 
 <script>
    FB.init({
-     appId  : '<?=$global->instance['fb_app_id']?>',
+     appId  : '<?$session->instance['fb_app_id']?>',
      status : true, // check login status
      cookie : true, // enable cookies to allow the server to access the session
      xfbml  : true  // parse XFBML

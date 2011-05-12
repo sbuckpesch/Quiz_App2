@@ -7,18 +7,6 @@ $content=$session->content;
 $instance=$session->instance;
 $instid= $session->instance['instance_id'];
 
-echo ("<hr>");
-
-print_r ($config);
-echo ("<br>");
-print_r ($content);
-echo ("<br>");
-print_r ($instance);
-echo ("<br>");
-print_r ($instid);
-
-echo ("<hr>");
-
 //Facebook Data Init (needed to use the Facebook User Data.
 $signed_request = $_REQUEST["signed_request"];
 list($encoded_sig, $payload) = explode('.', $signed_request, 2); 

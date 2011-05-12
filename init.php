@@ -40,18 +40,18 @@ $global->db = $db;
 // Initialize App-Arena Connection and get all data if not available in session
 require_once 'app-arena/client/soap_client.php';
 if ($debugMode || !isset($session->instance) || !isset($session->design) || !isset($session->content) || !isset($session->config)) {
-$soap = new Client($aa_api_key);
-$global->soap = $soap;
-$aa_app = $soap->getData($aa_app_id, $aa_api_key);
-// Save App-Arena Data to Session
-if ($aa_app){
-$session->instance = $aa_app['instance'];
+ $soap = new Client($aa_api_key);
+ $global->soap = $soap;
+ $aa_app = $soap->getData($aa_app_id, $aa_api_key);
+ // Save App-Arena Data to Session
+ try {
+  $session->instance = $aa_app['instance'];
         $session->config = $aa_app['config'];
         $session->content = $aa_app['content'];
-        $session->design = $aa_app['design'];
-        //Zend_Debug::dump($aa_app);
-} else
-throw Exception("SOAP connection to App-Arena service could not be established.");
+        $session->design = $aa_app['design']; 
+ } catch (Exception $e) {
+  throw new Exception("SOAP connection to App-Arena service could not be established.");
+ }  
 }
 
 // Get Facebook User data, signed_request from session or from $_REQUEST

@@ -1,8 +1,8 @@
 <?php
 include('init.php');
 // Set The Instance ID to Cookie
-$instid= $global->instance['instance_id'];
-setcookie("img_participant", $instid);
+$instid= $session->instance['instance_id'];
+//setcookie("img_participant", $instid);
 
 include 'header.php';
 
@@ -12,9 +12,9 @@ include 'header.php';
 $fb_user_data = new FacebookUserData($_REQUEST['signed_request']);
 $fb_user_data->saveUser();
  
-$config=$global->config;
-$content=$global->content;
-$instance=$global->instance;
+$config=$session->config;
+$content=$session->content;
+$instance=$session->instance;
 
 addJs('thankyou');
   
@@ -25,8 +25,8 @@ $col = $_POST['Column'];
 
 // Page URL
 $facebook = "https://www.facebook.com/";
-$fb_appid = $global->instance['fb_app_id'];
-$fb_pageurl = $global->instance['fb_page_url'];
+$fb_appid = $session->instance['fb_app_id'];
+$fb_pageurl = $session->instance['fb_page_url'];
 $fb_appurl = $facebook . $fb_pageurl . '?sk=app_' . $fb_appid;
 
 // Save the Image in Database

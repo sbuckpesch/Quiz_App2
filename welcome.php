@@ -16,9 +16,9 @@ $data = json_decode(base64_decode(strtr($payload, '-_', '+/')), true);
 $values = $_COOKIE;
 
 // Get content from App-Arena
-$columns = $global->config['number_column'];
-$rows = $global->config['number_row'];
-$image_folder = $global->config['folder_image'];  
+$columns = $config['number_column'];
+$rows = $config['number_row'];
+$image_folder = $config['folder_image'];  
 
 /* The images have to have the following filenames:
  * Full clear Image			img_clear.jpg
@@ -88,7 +88,7 @@ function isSetProperSubset(subset, superset) {
 <?
 
 // SELECT Database and get uncovered photo parts from database
-$sql = "SELECT * FROM `image_parts` WHERE `clear`='1' AND `instance_id`=" . $global->instance['instance_id'];
+$sql = "SELECT * FROM `image_parts` WHERE `clear`='1' AND `instance_id`=" . $instance['instance_id'];
 $table = $global->db->fetchAll($sql);
 $fields = array();
 foreach ($table as $row) {
@@ -147,7 +147,7 @@ while ($part && !$image_solved) {
 			<?$part = false;
 			
 		// Form with send the data of the right image if the user click on the right image ?>
-		<form id='formX' method='POST' action='thank_you.php?instid=<?=$global->instid?>'>
+		<form id='formX' method='POST' action='thank_you.php?instid=<?=$instid?>'>
 			<input type='hidden' name='Row' value='<?=$row_rand?>' >
 			<input type='hidden' name='Column' value='<?=$col_rand?>'>
 			<input type='hidden' name='signed_request' value='<?=$_REQUEST['signed_request']?>'>
@@ -168,7 +168,7 @@ for ($i = 1; $i <= $rows; $i++) {
 					echo "<span><img src='" . $image_folder . "img_blur_" . getNrAsStr($img_nr2) .  ".jpg'/>";
 				else
 				 if ($i == $row_rand && $j == $col_rand)	 	
-						echo "<a href='#' onclick='fbAuthAndSubmit(\"" . $global->instance['fb_app_id'] . "\",\"email,publish_stream\")'><img src='" . $image_folder . "img_blur_" . getNrAsStr($img_nr2) .  ".jpg' /></a>";
+						echo "<a href='#' onclick='fbAuthAndSubmit(\"" . $instance['fb_app_id'] . "\",\"email,publish_stream\")'><img src='" . $image_folder . "img_blur_" . getNrAsStr($img_nr2) .  ".jpg' /></a>";
 				 	else
 						echo "<a id='alert' href='javascript:void(0)'><img src='" . $image_folder . "img_blur_" . getNrAsStr($img_nr2) .  ".jpg' /></a>";
 	}

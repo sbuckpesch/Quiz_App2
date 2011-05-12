@@ -44,7 +44,7 @@ $soap = new Client($aa_api_key);
 $global->soap = $soap;
 $aa_app = $soap->getData($aa_app_id, $aa_api_key);
 // Save App-Arena Data to Session
-if ($aa_app){
+if (!$aa_app){
 $session->instance = $aa_app['instance'];
         $session->config = $aa_app['config'];
         $session->content = $aa_app['content'];

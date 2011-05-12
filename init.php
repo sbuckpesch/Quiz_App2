@@ -49,7 +49,7 @@ $session->instance = $aa_app['instance'];
         $session->config = $aa_app['config'];
         $session->content = $aa_app['content'];
         $session->design = $aa_app['design'];
-        Zend_Debug::dump($aa_app);
+        //Zend_Debug::dump($aa_app);
 } else
 throw Exception("SOAP connection to App-Arena service could not be established.");
 }

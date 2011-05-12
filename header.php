@@ -3,14 +3,14 @@
 <head>
 <link rel="stylesheet" type="text/css" href="css/style.css" ></link>
 <script src="https://connect.facebook.net/de_DE/all.js"></script>    
-<script src="lib/app-arena/js/facebook_popup/prototype.js" type="text/javascript"></script>
-<script src="lib/app-arena/js/facebook_popup/effects.js" type="text/javascript"></script>
+<script src="lib/facebook_popup/prototype.js" type="text/javascript"></script>
+<script src="lib/facebook_popup/effects.js" type="text/javascript"></script>
 <!-- dragdrop.js is required if you want draggable windows -->
-<script src="lib/app-arena/js/facebook_popup/dragdrop.js" type="text/javascript"></script>
-<script src="lib/app-arena/js/facebook_popup/lowpro.js" type="text/javascript"></script>
-<script src="lib/app-arena/js/facebook_popup/popup.js" type="text/javascript"></script>
+<script src="lib/facebook_popup/dragdrop.js" type="text/javascript"></script>
+<script src="lib/facebook_popup/lowpro.js" type="text/javascript"></script>
+<script src="lib/facebook_popup/popup.js" type="text/javascript"></script>
 <script src="lib/app-arena/js/aa_fb_framework.js" type="text/javascript"></script>
-<script src="lib/app-arena/js/facebook_popup/jquery-1.6.js" type="text/javascript"></script>
+<script src="lib/facebook_popup/jquery-1.6.js" type="text/javascript"></script>
 
 <?php 
 
@@ -26,11 +26,11 @@ $fb_appurl = $facebook . $fb_pageurl . '?sk=app_' . $fb_appid;
         
         // We need to tell Popup.js where our images are. Normally this isn't
         // needed. Just store the images in your "images" folder.
-        Popup.BorderImage = 'lib/app-arena/js/facebook_popup/images/popup_border_background.png';
-        Popup.BorderTopLeftImage = 'lib/app-arena/js/facebook_popup/images/popup_border_top_left.png';
-        Popup.BorderTopRightImage = 'lib/app-arena/js/facebook_popup/images/popup_border_top_right.png';
-        Popup.BorderBottomLeftImage = 'lib/app-arena/js/facebook_popup/images/popup_border_bottom_left.png';
-        Popup.BorderBottomRightImage = 'lib/app-arena/js/facebook_popup/images/popup_border_bottom_right.png';
+        Popup.BorderImage = 'lib/facebook_popup/images/popup_border_background.png';
+        Popup.BorderTopLeftImage = 'lib/facebook_popup/images/popup_border_top_left.png';
+        Popup.BorderTopRightImage = 'lib/facebook_popup/images/popup_border_top_right.png';
+        Popup.BorderBottomLeftImage = 'lib/facebook_popup/images/popup_border_bottom_left.png';
+        Popup.BorderBottomRightImage = 'lib/facebook_popup/images/popup_border_bottom_right.png';
         
         // Every popup should be draggable by the tilebar
         Popup.Draggable = true;

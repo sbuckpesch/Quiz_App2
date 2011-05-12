@@ -17,6 +17,8 @@ $columns = $config['number_column'];
 $rows = $config['number_row'];
 $image_folder = $config['folder_image'];  
 
+print_r($signed_request);
+
 /* The images have to have the following filenames:
  * Full clear Image			img_clear.jpg
  * Image Parts (blur)		 	img_blur_001.jpg ... img_blur_100.jpg

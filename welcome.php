@@ -15,7 +15,7 @@ $data = json_decode(base64_decode(strtr($payload, '-_', '+/')), true);
 // Get Cookie which is set if you have used this App before
 $values = $_COOKIE;
 
-print_r ($values);
+print_r ($values['img_participant']);
 
 // Get content from App-Arena
 $columns = $config['number_column'];

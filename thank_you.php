@@ -2,7 +2,7 @@
 include('init.php');
 // Set The Instance ID to Cookie
 $instid= $session->instance['instance_id'];
-//setcookie("img_participant", $instid);
+setcookie("img_participant", $instid);
 
 include 'header.php';
 

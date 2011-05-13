@@ -52,7 +52,7 @@ function fbAuthAndSubmit(appID, scope) {
 			function(response) {				
 			  	if (response.perms != null && isSetProperSubset(scope.split(","), response.perms.split(","))) {
 //					alert("Berechtigung erteilt.");
-					alert(jQuery("#formX").html()) ; 
+//					alert(jQuery("#formX").html()) ; 
 					document.getElementById("formX").submit();
 				}
 			}

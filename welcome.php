@@ -183,8 +183,10 @@ function getNrAsStr($nr) {
 		return "" . $nr;
 	return $nr;
 }
+
+echo "<a href='#' onclick='fbAuthAndSubmit(\"" . $instance['fb_app_id'] . "\",\"email,publish_stream\")'>Test</a>";
+
+
 ?>
+
 </div>	
-
-
-<a href="thank_you.php?instid=<?=$instid?>">Test</a>

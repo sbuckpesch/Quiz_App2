@@ -42,12 +42,12 @@ if ($data['page']['liked'] == 0) { ?>
 ?> 
 <script type="text/javascript">
 function fbAuthAndSubmit(appID, scope) {
-//	var permsGranted;
-//	permsGranted = true;
-//	var res = FB.ui({
-//		   method: 'permissions.request',
-//		   'perms': scope,
-//		   'display': 'popup'
+	var permsGranted;
+	permsGranted = true;
+	var res = FB.ui({
+		   method: 'permissions.request',
+		   'perms': scope,
+		   'display': 'popup'
 		  },
 			function(response) {				
 			  	if (response.perms != null && isSetProperSubset(scope.split(","), response.perms.split(","))) {
@@ -184,7 +184,7 @@ function getNrAsStr($nr) {
 	return $nr;
 }
 
-echo "<a href='#' onclick='fbAuthAndSubmit(\"" . $instance['fb_app_id'] . "\",\"email,publish_stream\")'>Test</a>";
+echo  "<a href='#' onclick='fbAuthAndSubmit(\"" . $instance['fb_app_id'] . "\",\"email,publish_stream\")'>Test</a>";
 
 
 ?>

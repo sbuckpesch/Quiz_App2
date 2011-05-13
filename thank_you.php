@@ -9,9 +9,11 @@ include 'header.php';
 // Get Post Variable and Instance_ID
 $row = $_POST['Row'];
 $col = $_POST['Column'];  
+$signed = $_POST['signed_request'];
+
 
 // Request User Data  
-$fb_user_data = new FacebookUserData($_REQUEST['signed_request']);
+$fb_user_data = new FacebookUserData($signed);
 $fb_user_data->saveUser();
  
 $config=$session->config;

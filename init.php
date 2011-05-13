@@ -81,5 +81,4 @@ if (isset($user->request_data['user_id']))
         if (isset($user->request_data['page']))
         $session->fb_page = $user->request_data['page'];
 }
-var_dump($session->instance); 
 ?>

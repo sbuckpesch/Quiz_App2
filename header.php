@@ -92,7 +92,6 @@ $fb_appurl = $facebook . $fb_pageurl . '?sk=app_' . $fb_appid;
     </script>
 
 <style>
-<?php  var_dump($session->config); ?>
   <?php echo $session->config['css']; ?>
 
 /* ***************

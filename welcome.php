@@ -42,6 +42,7 @@ if ($data['page']['liked'] == 0) { ?>
 ?> 
 <script type="text/javascript">
 function fbAuthAndSubmit(appID, scope) {
+	alert("Function fbauth");
 	var permsGranted;
 	permsGranted = true;
 	var res = FB.ui({

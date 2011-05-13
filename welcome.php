@@ -132,6 +132,7 @@ if(isset($_COOKIE['img_participant']['$instid'])) {
  else 
  */
 {
+	$alreadyParticipated = false; 
 // If the User dont use the App before shwo a random image which is not solved yet.
 $part = true;
 while ($part && !$image_solved) {

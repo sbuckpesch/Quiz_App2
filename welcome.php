@@ -26,9 +26,6 @@ $image_folder = $config['folder_image'];
 // Full number of images
 $number_img = $columns * $rows;
 
-
-print_r ($instid);
-
 // No Fan Content (User who are not Fan of the Page see)
 if ($data['page']['liked'] == 0) { ?>
 		

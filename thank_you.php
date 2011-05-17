@@ -15,12 +15,14 @@ $signed_request = $_POST['signed_request'];
 // Request User Data  
 $fb_user_data = new FacebookUserData($signed_request, $session->instance['fb_app_secret'], $session->instance['fb_app_id']);
 $fb_user_data->saveUser();
+
+// Save UserID and InstID
+$lottery = new Lottery();
+$lottery->registerParticipant($fb_user_data->user_id, $session->instance['instance_id']);
  
 $config=$session->config;
 $content=$session->content;
 $instance=$session->instance;
-
-//addJs('thankyou');
 
 
 // Page URL

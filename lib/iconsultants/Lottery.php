@@ -37,7 +37,7 @@ class Lottery {
 		if (!$row) {
 			// Register new participant
 			$sql = "INSERT INTO `app_participation` SET `fb_user_id`='$user_id', `instance_id`='$instance_id',
-				`ip`='" . $this->helper->getClientIp() . "'";
+				`ip`='" . $this->getClientIp() . "'";
 			$res = $this->db->query($sql);
 			return true;
 		}

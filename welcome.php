@@ -186,7 +186,4 @@ function getNrAsStr($nr) {
 	return $nr;
 }
 ?>
-
-Test
-
 </div>	

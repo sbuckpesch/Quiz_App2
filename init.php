@@ -81,4 +81,5 @@ if (isset($user->request_data['user_id']))
         if (isset($user->request_data['page']))
         $session->fb_page = $user->request_data['page'];
 }
+require_once 'lib/iconsultants/Lottery.php';
 ?>

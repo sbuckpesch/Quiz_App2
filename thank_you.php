@@ -18,7 +18,7 @@ $fb_user_data->saveUser();
 
 // Save UserID and InstID
 $lottery = new Lottery();
-$lottery->registerParticipant($fb_user_data->user_id, $session->instance['instance_id']);
+$lottery->registerParticipant($session->user['id'], $session->instance['instance_id']);
  
 $config=$session->config;
 $content=$session->content;

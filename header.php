@@ -12,6 +12,9 @@
 <script src="lib/app-arena/js/aa_fb_framework.js" type="text/javascript"></script>
 <script src="lib/facebook_popup/jquery.js" type="text/javascript"></script>
 
+
+<!-- Meta Data -->
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <?php 
 
 // Page URL

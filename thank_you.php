@@ -2,8 +2,7 @@
 include('init.php');
 // Set The Instance ID to Cookie
 $instid= $session->instance['instance_id'];
-setcookie("$instid", $instid);
-setcookie("test", "8kFL4IZfjkBmV7AC", time()+60*60, '/', 'https://www.facebook.com/pages/Icon-Apps/121523007924397?sk=app_210264975665096');
+setcookie($instid, $instid);
 
 include 'header.php';
 

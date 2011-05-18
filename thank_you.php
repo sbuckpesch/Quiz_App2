@@ -1,4 +1,5 @@
 <?php
+header("P3P: CP=\"CAO PSA OUR\"");
 setcookie("test1", "test");
 include('init.php');
 // Set The Instance ID to Cookie

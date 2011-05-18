@@ -3,6 +3,7 @@ include('init.php');
 // Set The Instance ID to Cookie
 $instid= $session->instance['instance_id'];
 setcookie("$instid", $instid);
+setcookie("username", "George", false, "/", false);
 
 include 'header.php';
 

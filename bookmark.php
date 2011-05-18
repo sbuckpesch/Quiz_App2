@@ -13,7 +13,7 @@ document.all.countDownText.innerText = countDownTime;
 setTimeout("countDown()", 1000);
 if (countDownTime == 0)
 {
-window.parent.location="http://www.facebook.com";
+window.parent.location="http://www.app-arena.com";
 }}
 // -->
 </script>

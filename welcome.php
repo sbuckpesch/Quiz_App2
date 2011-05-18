@@ -23,8 +23,6 @@ $image_folder = $config['folder_image'];
  * Image Parts (clear)			img_clear_001.jpg ... img_clear_100.jpg
 */
 
-print_r ($session->user);
-
 // Full number of images
 $number_img = $columns * $rows;
 

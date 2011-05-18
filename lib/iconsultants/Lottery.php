@@ -29,8 +29,7 @@ class Lottery {
 	public function registerParticipant($user_id, $instance_id, $date=0){
 		global $global;
 		// Check if user has already participated
-		$sql = "SELECT * FROM `app_participation` WHERE `fb_user_id`='$user_id' AND `instance_id`='$instance_id'";		
-			
+		$sql = "SELECT * FROM `app_participation` WHERE `fb_user_id`='$user_id' AND `instance_id`='$instance_id'";				
 		$row = $this->db->fetchOne($sql);
 		if (!$row) {
 			// Register new participant

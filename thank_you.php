@@ -1,6 +1,5 @@
 <?php
 header("P3P: CP=\"CAO PSA OUR\"");
-setcookie("test1", "test");
 include('init.php');
 // Set The Instance ID to Cookie
 $instid= $session->instance['instance_id'];
@@ -65,7 +64,5 @@ $image = $config['share_image'];
     
 </body>
 <?
-setcookie("test2", "test");
   include 'footer.php';  
-setcookie("test3", "test");
 ?>

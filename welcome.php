@@ -119,7 +119,7 @@ if ($image_solved) {
 
 // Check in the Cookies if the User used the App. If he used the App before show Content.
 $alreadyParticipated = false; 
-if(isset($_COOKIE['$instid']) && $_COOKIE['$instid'] == $instid) {
+if(isset($_COOKIE[$instid]) && $_COOKIE[$instid] == $instid) {
 	$alreadyParticipated = true;	
 	?> <div id=solve_content>
 		<?=$content['solve_content']?>

@@ -5,7 +5,7 @@
 $config=$session->config;
 $content=$session->content;
 $instance=$session->instance;
-$instid= $session->instance['instance_id'];
+$instid=$session->instance['instance_id'];
 
 //Facebook Data Init (needed to use the Facebook User Data.
 $signed_request = $_REQUEST["signed_request"];
@@ -23,10 +23,11 @@ $image_folder = $config['folder_image'];
  * Image Parts (clear)			img_clear_001.jpg ... img_clear_100.jpg
 */
 
+print_r ($session);
+
 // Full number of images
 $number_img = $columns * $rows;
 
-print_r ($session);
 
 // No Fan Content (User who are not Fan of the Page see)
 if ($data['page']['liked'] == 0) { ?>

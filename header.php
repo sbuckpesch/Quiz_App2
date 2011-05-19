@@ -24,6 +24,8 @@ $fb_pageurl = $session->instance['fb_page_url'];
 $fb_appurl = $facebook . $fb_pageurl . '?sk=app_' . $fb_appid;
 
 ?>
+<script type="text/javascript">Event.addBehavior({'a.popup': Popup.TriggerBehavior()});</script>
+
     <script type="text/javascript">
       //<![CDATA[
         

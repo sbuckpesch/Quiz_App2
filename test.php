@@ -14,7 +14,7 @@
       }
     /* ]]> */
     </style>
-    <link href="../src/stylesheets/facebook.css" rel="stylesheet" type="text/css" />
+	<link rel="stylesheet" type="text/css" href="css/style.css" ></link>
 	<script src="lib/facebook_popup/prototype.js" type="text/javascript"></script>
 	<script src="lib/facebook_popup/effects.js" type="text/javascript"></script>
 	<!-- dragdrop.js is required if you want draggable windows -->

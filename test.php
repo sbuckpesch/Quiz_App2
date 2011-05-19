@@ -9,19 +9,17 @@
  <div id="btn">Load Popup</div>
  <div id="backgroundPopup"></div>
  <div id="popupContact">
-  <a id="popupContactClose">Close</a>
-  <div id="popup_head"><h1>WebSpeaks.in</h1></div>
+  <a id="popupContactClose">x</a>
+  <div id="popup_head"><h1>Leider Falsch</h1></div>
   <div id="personal">Post to Profile<br><br><br></div>
   <div id="contactArea">
    <textarea id="text"></textarea>
   </div>
   <div id="buttonArea">
-   <div class="SharingOptions_Text">
-    <a href="#" style="color:#3B5998;">Send as a Message instead</a>
-   </div>
+    </div>
    <div id="Sharer_btns">
-    <input type="button" value="Share" class="s_btn"/>
-    <input type="button" value="Cancel" class="c_btn"/>
+<!--   <input type="button" value="Share" class="s_btn"/>-->
+    <input type="button" value="Done" class="c_btn"/>
    </div>
   </div>
  </div>

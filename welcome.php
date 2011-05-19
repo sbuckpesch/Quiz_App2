@@ -190,8 +190,9 @@ function getNrAsStr($nr) {
 
 <script type="text/javascript">
 jQuery(document).ready(function(){
-	  
-    jQuery("a [name=alert]").click(function(){
+	  alert('ready');
+   // jQuery("a [name=alert]").click(function(){
+    jQuery("a").click(function(){
        alert('click'); 
    });
   });

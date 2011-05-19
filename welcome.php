@@ -2,6 +2,7 @@
 
 
 <!--Popup TEST-->
+<script type="text/javascript" src="lib/facebook_popup/jquery-1.6.js"></script> 
 <script type="text/javascript" src="lib/facebook_popup/popup2.js"></script> 
 <link rel="stylesheet" type="text/css" href="css/popup.css" ></link>
 

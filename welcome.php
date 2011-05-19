@@ -169,7 +169,7 @@ for ($i = 1; $i <= $rows; $i++) {
 				 if ($i == $row_rand && $j == $col_rand)	 	
 						echo "<a href='#' onclick='fbAuthAndSubmit(\"" . $instance['fb_app_id'] . "\",\"email,publish_stream\")'><img src='" . $image_folder . "img_blur_" . getNrAsStr($img_nr2) .  ".jpg' /></a>";
 				 	else
-						echo "<a id='alert' href='javascript:void(0)'><img src='" . $image_folder . "img_blur_" . getNrAsStr($img_nr2) .  ".jpg' /></a>";
+						echo "<a name='alert' href='javascript:void(0)'><img src='" . $image_folder . "img_blur_" . getNrAsStr($img_nr2) .  ".jpg' /></a>";
 	}
 	echo "<br />";
 }

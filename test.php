@@ -25,16 +25,16 @@
 	<script src="lib/facebook_popup/jquery-1.6.js" type="text/javascript"></script>
 	
 	<script type="text/javascript">Event.addBehavior({'a.popup': Popup.TriggerBehavior()});</script> 	
-    <script type="text/javascript">
+     <script type="text/javascript">
       //<![CDATA[
         
         // We need to tell Popup.js where our images are. Normally this isn't
         // needed. Just store the images in your "images" folder.
-        Popup.BorderImage = '../src/images/popup_border_background.png';
-        Popup.BorderTopLeftImage = '../src/images/popup_border_top_left.png';
-        Popup.BorderTopRightImage = '../src/images/popup_border_top_right.png';
-        Popup.BorderBottomLeftImage = '../src/images/popup_border_bottom_left.png';
-        Popup.BorderBottomRightImage = '../src/images/popup_border_bottom_right.png';
+        Popup.BorderImage = 'lib/facebook_popup/images/popup_border_background.png';
+        Popup.BorderTopLeftImage = 'lib/facebook_popup/images/popup_border_top_left.png';
+        Popup.BorderTopRightImage = 'lib/facebook_popup/images/popup_border_top_right.png';
+        Popup.BorderBottomLeftImage = 'lib/facebook_popup/images/popup_border_bottom_left.png';
+        Popup.BorderBottomRightImage = 'lib/facebook_popup/images/popup_border_bottom_right.png';
         
         // Every popup should be draggable by the tilebar
         Popup.Draggable = true;

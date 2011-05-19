@@ -27,3 +27,8 @@
  </div>
 </div>
 </body>
+
+
+<a id='loadPopup' href='javascript:void(0)'>Test</a>
+<a id='centerPopup' href='javascript:void(0)'>Test2</a>
+<a id='disablePopup' href='javascript:void(0)'>Test3</a>

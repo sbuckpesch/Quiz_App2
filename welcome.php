@@ -186,15 +186,4 @@ function getNrAsStr($nr) {
 	return $nr;
 }
 ?>
-
-
-<script type="text/javascript">
-jQuery(document).ready(function(){
-	  alert('ready');
-   // jQuery("a [name=alert]").click(function(){
-    jQuery("a").click(function(){
-        Popup.alert('Danke f&uuml;r die Teilnahme. <br> Jetzt deinen Freunden per Skype bescheid sagen um das Bild komplett zu l&ouml;sen.<br>Einfach den Link kopieren. <br> <?echo $fb_appurl?>');
-           });
-  });
-  </script>
 </div>	

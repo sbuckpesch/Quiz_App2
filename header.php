@@ -58,7 +58,7 @@ $fb_appurl = $facebook . $fb_pageurl . '?sk=app_' . $fb_appid;
 //          )
 //        });
         
-        // Wire in alert, confirm, and dialog links. Standard LowPro stuff.
+        // Wire in alert, confirm, and dialog links. Standard LowPro stuff.        
         Event.addBehavior({
           
           'a#alert:click': function() {
@@ -69,6 +69,17 @@ $fb_appurl = $facebook . $fb_pageurl . '?sk=app_' . $fb_appid;
               Popup.alert('Danke f&uuml;r die Teilnahme. <br> Jetzt deinen Freunden per Skype bescheid sagen um das Bild komplett zu l&ouml;sen.<br>Einfach den Link kopieren. <br> <?echo $fb_appurl?>');
             },          
         })
+        
+     jQuery(document).ready(function(){
+
+	  jQuery("a[name=alert]").click(function(){
+	     Popup.alert('Danke f&uuml;r die Teilnahme. <br> Jetzt deinen Freunden per Skype bescheid sagen um das Bild komplett zu l&ouml;sen.<br>Einfach den Link kopieren. <br> https://www.facebook.com/pages/Icon-Apps/121523007924397?sk=app_210264975665096');
+	  	});
+
+	  jQuery("a[name=alert1]").click(function(){
+         	 Popup.alert('Danke f&uuml;r die Teilnahme. <br> Jetzt deinen Freunden per Skype bescheid sagen um das Bild komplett zu l&ouml;sen.<br>Einfach den Link kopieren. <br> <?echo $fb_appurl?>');
+		  	});
+	  });
         
       //]]>
     </script>

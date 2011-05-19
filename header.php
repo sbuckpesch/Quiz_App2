@@ -66,13 +66,18 @@ $fb_appurl = $facebook . $fb_pageurl . '?sk=app_' . $fb_appid;
             popup.show();
           },
           
-          'a#alert:click': function() {
+          'a#alert2:click': function() {
             Popup.alert('Leider war das nicht der nicht der richtige Ausschnitt.<br> Versuchen Sie es doch noch einmal.<br> Viel Gl&uuml;ck!');
           },
+
+          'a [name=alert]").click(function(){
+              Popup.alert('Leider war das nicht der nicht der richtige Ausschnitt.<br> Versuchen Sie es doch noch einmal.<br> Viel Gl&uuml;ck!');
+            },
 
           'a#alert1:click': function() {
               Popup.alert('Danke f&uuml;r die Teilnahme. <br> Jetzt deinen Freunden per Skype bescheid sagen um das Bild komplett zu l&ouml;sen.<br>Einfach den Link kopieren. <br> <?echo $fb_appurl?>');
             },
+            
           
           'a#confirm:click': function() {
             Popup.confirm('Are you sure?', {

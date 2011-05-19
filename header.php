@@ -44,11 +44,11 @@ $fb_appurl = $facebook . $fb_pageurl . '?sk=app_' . $fb_appid;
         Popup.AutoFocus = true; // here to document feature; true by default
         
         // Add trigger behavior for links with a class of "popup".
-        Event.addBehavior({
-          'a.popup': Popup.TriggerBehavior({
-            reload: true // reload Ajax popups on second click
-          })
-        });
+//        Event.addBehavior({
+//          'a.popup': Popup.TriggerBehavior({
+//            reload: true // reload Ajax popups on second click
+//          })
+//        });
         
         // This is how you instantiate and show a window without a trigger link.
 //        Event.observe(window, 'dom:loaded', function() {

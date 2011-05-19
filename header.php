@@ -10,7 +10,7 @@
 <script src="lib/facebook_popup/lowpro.js" type="text/javascript"></script>
 <script src="lib/facebook_popup/popup.js" type="text/javascript"></script>
 <script src="lib/app-arena/js/aa_fb_framework.js" type="text/javascript"></script>
-<script src="lib/facebook_popup/jquery-1.6.js" type="text/javascript"></script>
+<script src="lib/facebook_popup/jquery.js" type="text/javascript"></script>
 
 
 <!--Popup TEST-->

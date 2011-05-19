@@ -54,7 +54,7 @@ $image = $config['share_image'];
 			<!--  Share Buttons-->
 <!--			<span class="fb-share-button" onclick="postToFacebook(body: 'test', message: 'Ich habe gerade ein Teil des Bildes geöffnet. Hilf mir jetzt das ganze Bild zu öffnen.', link: 'https://www.facebook.com/pages/ICon-Apps-Beta/150427118343402?sk=app_159924464068645', picture: 'https://dev.iconsultants.eu/facebook/bibi/img_clear_020.jpg');"><?=$content['btn_facebook']?></span>-->
 			<div class="twitter-share-button"><a href="https://twitter.com/home?status=Jetzt%20Teilnehmen%20<?echo $fb_appurl?>" target="_blank"><?=$content['btn_twitter']?></a></div>
-			<span class="skype-share-button"><a id="alert1" href="javascript:void(0)"><?=$content['btn_skype']?></a></span>
+			<span class="skype-share-button"><a name="alert1" href="javascript:void(0)"><?=$content['btn_skype']?></a></span>
 			<div class="email-share-button"><a href="mailto:?subject=Bilderraetsel&body=Ich%20habe%20gerade%20erfolgreich%20ein%20Teil%20des%20großen%20Bilder%20Raetsels%20gelüftet!%0ASei%20auch%20du%20dabei!%0AEinfach%20auf%20den%20Link%20klicken%20und%20teilnehmen:%0A<?echo $fb_appurl?>"><?=$content['btn_email']?></a></div>
 		</div>
 		<div class="backFanpage"><a href="<?echo $fb_appurl?>" target="_top"><img src="images/btn_backtofanpage-german.jpg" alt="Zur&uuml;ck zur Fanpage" /></a></div>

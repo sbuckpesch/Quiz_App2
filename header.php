@@ -57,23 +57,15 @@ $fb_appurl = $facebook . $fb_pageurl . '?sk=app_' . $fb_appid;
 //            {title: 'Popup Window', width: '28em'}
 //          )
 //        });
-        
-        // Wire in alert, confirm, and dialog links. Standard LowPro stuff.        
-        Event.addBehavior({
-          
-          'a#alert:click': function() {
-            Popup.alert('Leider war das nicht der nicht der richtige Ausschnitt.<br> Versuchen Sie es doch noch einmal.<br> Viel Gl&uuml;ck!');
-          },
-
-          'a#alert1:click': function() {
-              Popup.alert('Danke f&uuml;r die Teilnahme. <br> Jetzt deinen Freunden per Skype bescheid sagen um das Bild komplett zu l&ouml;sen.<br>Einfach den Link kopieren. <br> <?echo $fb_appurl?>');
-            },          
-        })
-        
+                
      jQuery(document).ready(function(){
 
 	  jQuery("a[name=alert]").click(function(){
-          Popup.alert('Leider war das nicht der nicht der richtige Ausschnitt.<br> Versuchen Sie es doch noch einmal.<br> Viel Gl&uuml;ck!');
+//          Popup.alert('Leider war das nicht der nicht der richtige Ausschnitt.<br> Versuchen Sie es doch noch einmal.<br> Viel Gl&uuml;ck!');
+          Popup.alert(
+                'Leider war das nicht der nicht der richtige Ausschnitt.<br> Versuchen Sie es doch noch einmal.<br> Viel Gl&uuml;ck!',
+                {title: 'Leider Falsch', width: '28em'}
+              )
 	  	});
 
 	  jQuery("a[name=alert1]").click(function(){

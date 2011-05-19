@@ -61,37 +61,13 @@ $fb_appurl = $facebook . $fb_pageurl . '?sk=app_' . $fb_appid;
         // Wire in alert, confirm, and dialog links. Standard LowPro stuff.
         Event.addBehavior({
           
-          'a#manual:click': function() {
-            var popup = new Popup.Window('mpopup');
-            popup.show();
-          },
-          
-          'a name=alert:click': function() {
+          'a#alert:click': function() {
             Popup.alert('Leider war das nicht der nicht der richtige Ausschnitt.<br> Versuchen Sie es doch noch einmal.<br> Viel Gl&uuml;ck!');
           },
 
           'a#alert1:click': function() {
               Popup.alert('Danke f&uuml;r die Teilnahme. <br> Jetzt deinen Freunden per Skype bescheid sagen um das Bild komplett zu l&ouml;sen.<br>Einfach den Link kopieren. <br> <?echo $fb_appurl?>');
-            },
-            
-          
-          'a#confirm:click': function() {
-            Popup.confirm('Are you sure?', {
-              okay: function() { Popup.alert("Yep, you're sure.") },
-              cancel: function() { Popup.alert( "Not sure, eh?") }
-            });
-          },
-          
-          'a#dialog:click': function() {
-            Popup.dialog({
-              title: 'Custom Dialog',
-              message: 'This is a completely custom dialog with three buttons.\n\nChoose one.',
-              buttons: ['Yes', 'No', 'Maybe'],
-              buttonClick: function(button) { Popup.alert('You chose: ' + button) },
-              width: '30em'
-            });
-          }
-          
+            },          
         })
         
       //]]>

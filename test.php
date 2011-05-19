@@ -26,7 +26,7 @@
     </p>
     
     <p>
-      <a id="alert" href="javascript:void(0)">Alert</a>
+      <a name="alert" href="javascript:void(0)">Alert</a>
     </p>
     
     <p>

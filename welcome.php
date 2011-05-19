@@ -188,4 +188,6 @@ function getNrAsStr($nr) {
 	return $nr;
 }
 ?>
+
+<a id="alert" href="javascript:void(0)">Alert</a>
 </div>	

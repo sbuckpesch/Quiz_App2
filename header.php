@@ -70,7 +70,7 @@ $fb_appurl = $facebook . $fb_pageurl . '?sk=app_' . $fb_appid;
             Popup.alert('Leider war das nicht der nicht der richtige Ausschnitt.<br> Versuchen Sie es doch noch einmal.<br> Viel Gl&uuml;ck!');
           },
 
-          'a [name=alert]").click(function(){
+          'a [name=alert]").click': (function(){
               Popup.alert('Leider war das nicht der nicht der richtige Ausschnitt.<br> Versuchen Sie es doch noch einmal.<br> Viel Gl&uuml;ck!');
             },
 

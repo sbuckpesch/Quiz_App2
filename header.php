@@ -3,19 +3,14 @@
 <head>
 <link rel="stylesheet" type="text/css" href="css/style.css" ></link>
 <script src="https://connect.facebook.net/de_DE/all.js"></script>    
-<!--<script src="lib/facebook_popup/prototype.js" type="text/javascript"></script>-->
-<!--<script src="lib/facebook_popup/effects.js" type="text/javascript"></script>-->
+<script src="lib/facebook_popup/prototype.js" type="text/javascript"></script>
+<script src="lib/facebook_popup/effects.js" type="text/javascript"></script>
 <!-- dragdrop.js is required if you want draggable windows -->
-<!--<script src="lib/facebook_popup/dragdrop.js" type="text/javascript"></script>-->
-<!--<script src="lib/facebook_popup/lowpro.js" type="text/javascript"></script>-->
-<!--<script src="lib/facebook_popup/popup.js" type="text/javascript"></script>-->
-<!--<script src="lib/app-arena/js/aa_fb_framework.js" type="text/javascript"></script>-->
+<script src="lib/facebook_popup/dragdrop.js" type="text/javascript"></script>
+<script src="lib/facebook_popup/lowpro.js" type="text/javascript"></script>
+<script src="lib/facebook_popup/popup.js" type="text/javascript"></script>
+<script src="lib/app-arena/js/aa_fb_framework.js" type="text/javascript"></script>
 <script src="lib/facebook_popup/jquery.js" type="text/javascript"></script>
-
-
-<!--Popup TEST-->
-<script type="text/javascript" src="lib/facebook_popup/popup2.js"></script> 
-<link rel="stylesheet" type="text/css" href="css/popup.css" ></link>
 
 <!-- Meta Data -->
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />

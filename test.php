@@ -23,6 +23,8 @@
 	<script src="lib/facebook_popup/popup.js" type="text/javascript"></script>
 	<script src="lib/app-arena/js/aa_fb_framework.js" type="text/javascript"></script>
 	<script src="lib/facebook_popup/jquery-1.6.js" type="text/javascript"></script>
+	
+	<script type="text/javascript">Event.addBehavior({'a.popup': Popup.TriggerBehavior()});</script> 	
     <script type="text/javascript">
       //<![CDATA[
         

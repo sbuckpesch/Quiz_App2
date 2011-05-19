@@ -44,7 +44,7 @@ $(document).ready(function()
 });
 </script>
 
-<<style>
+<style>
 <!--
 #main{
 width:500px;

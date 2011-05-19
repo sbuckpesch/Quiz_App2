@@ -8,7 +8,7 @@
 <!-- dragdrop.js is required if you want draggable windows -->
 <script src="lib/facebook_popup/dragdrop.js" type="text/javascript"></script>
 <script src="lib/facebook_popup/lowpro.js" type="text/javascript"></script>
-<script src="lib/facebook_popup/popup.js" type="text/javascript"></script>
+<script src="lib/facebook_popup/popup.min.js" type="text/javascript"></script>
 <script src="lib/app-arena/js/aa_fb_framework.js" type="text/javascript"></script>
 <script src="lib/facebook_popup/jquery.js" type="text/javascript"></script>
 

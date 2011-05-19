@@ -8,7 +8,7 @@
       body {
         font-family: "Lucida Grande", Helvetica, Arial, sans-serif;
         font-size: 80%;
-        background: url(checkered.png);
+        background: url(lib/facebook_popup/images/checkered.png);
         margin: 0;
         padding: 10px 20px;
       }

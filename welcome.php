@@ -186,4 +186,14 @@ function getNrAsStr($nr) {
 	return $nr;
 }
 ?>
+
+
+<script type="text/javascript">
+jQuery(document).ready(function(){
+	  
+    jQuery("a [name=alert]").click(function(){
+       alert('click'); 
+   });
+  });
+  </script>
 </div>	

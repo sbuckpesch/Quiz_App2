@@ -13,6 +13,10 @@
 <script src="lib/facebook_popup/jquery.js" type="text/javascript"></script>
 
 
+<!--Popup TEST-->
+<script type="text/javascript" src="lib/facebook_popup/popup2.js"></script> 
+<link rel="stylesheet" type="text/css" href="css/popup.css" ></link>
+
 <!-- Meta Data -->
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <?php 

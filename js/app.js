@@ -23,11 +23,13 @@ function show_part(index,max)
   {
     jQuery("#part"+i).hide();
     jQuery("#quiz_part_nav_"+i).removeClass("step"+i+"_active");
+    jQuery("#quiz_part_nav_"+i).addClass("step"+i);
   }
 
 
   jQuery("#part"+index).show();
   jQuery("#quiz_part_nav_"+index).addClass("step"+index+"_active");
+  jQuery("#quiz_part_nav_"+index).removeClass("step"+index);
 }
 
 function submit_quiz_form()

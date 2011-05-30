@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/svn/FB_Simpleform/!svn/ver/1/lib/Zend/OpenId
+END
+Provider.php
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/FB_Simpleform/!svn/ver/1/lib/Zend/OpenId/Provider.php
+END
+Consumer.php
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/FB_Simpleform/!svn/ver/1/lib/Zend/OpenId/Consumer.php
+END
+Extension.php
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/FB_Simpleform/!svn/ver/1/lib/Zend/OpenId/Extension.php
+END
+Exception.php
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/FB_Simpleform/!svn/ver/1/lib/Zend/OpenId/Exception.php
+END

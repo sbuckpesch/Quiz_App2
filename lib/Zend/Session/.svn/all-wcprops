@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/FB_Simpleform/!svn/ver/1/lib/Zend/Session
+END
+Namespace.php
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/FB_Simpleform/!svn/ver/1/lib/Zend/Session/Namespace.php
+END
+Exception.php
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/FB_Simpleform/!svn/ver/1/lib/Zend/Session/Exception.php
+END
+Abstract.php
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/FB_Simpleform/!svn/ver/1/lib/Zend/Session/Abstract.php
+END

@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/FB_Simpleform/!svn/ver/1/lib/Zend/Gdata/Gbase
+END
+ItemEntry.php
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/FB_Simpleform/!svn/ver/1/lib/Zend/Gdata/Gbase/ItemEntry.php
+END
+Entry.php
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/FB_Simpleform/!svn/ver/1/lib/Zend/Gdata/Gbase/Entry.php
+END
+ItemFeed.php
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/FB_Simpleform/!svn/ver/1/lib/Zend/Gdata/Gbase/ItemFeed.php
+END
+Feed.php
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/FB_Simpleform/!svn/ver/1/lib/Zend/Gdata/Gbase/Feed.php
+END
+ItemQuery.php
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/FB_Simpleform/!svn/ver/1/lib/Zend/Gdata/Gbase/ItemQuery.php
+END
+SnippetEntry.php
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/FB_Simpleform/!svn/ver/1/lib/Zend/Gdata/Gbase/SnippetEntry.php
+END
+Query.php
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/FB_Simpleform/!svn/ver/1/lib/Zend/Gdata/Gbase/Query.php
+END
+SnippetFeed.php
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/FB_Simpleform/!svn/ver/1/lib/Zend/Gdata/Gbase/SnippetFeed.php
+END
+SnippetQuery.php
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/FB_Simpleform/!svn/ver/1/lib/Zend/Gdata/Gbase/SnippetQuery.php
+END

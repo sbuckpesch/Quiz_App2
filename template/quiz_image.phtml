@@ -1,0 +1,238 @@
+<style>
+.uiButton .uiButtonText, .uiButton input {
+    background: none repeat scroll 0 0 transparent;
+    border: 0 none;
+    color: #333333;
+    cursor: pointer;
+    display: inline-block;
+    font-family: 'Lucida Grande',Tahoma,Verdana,Arial,sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+    margin: 0;
+    outline: medium none;
+    padding: 1px 0 2px;
+    white-space: nowrap;
+}
+
+label input {
+    font-weight: normal;
+}
+.uiButtonLarge, .uiButtonLarge .uiButtonText, .uiButtonLarge input {
+    font-size: 14px;
+}
+.uiButton, .uiButtonSuppressed:active, .uiButtonSuppressed:focus, .uiButtonSuppressed:hover {
+    -moz-box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
+    background: url("http://static.ak.fbcdn.net/rsrc.php/v1/zD/r/B4K_BWwP7P5.png") repeat scroll 0 0 #EEEEEE;
+    border-color: #999999 #999999 #888888;
+    border-style: solid;
+    border-width: 1px;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 12px;
+    font-weight: bold;
+    line-height: normal !important;
+    padding: 2px 6px;
+    text-align: center;
+    text-decoration: none;
+    vertical-align: top;
+    white-space: nowrap;
+}
+label {
+    color: #666666;
+    cursor: pointer;
+    font-weight: bold;
+    vertical-align: middle;
+}
+.uiButtonLarge, .uiButtonLarge .uiButtonText, .uiButtonLarge input {
+    font-size: 14px;
+}
+.uiButtonSpecial .uiButtonText, .uiButtonSpecial input, .uiButtonSpecial.uiButtonDisabled .uiButtonText, .uiButtonSpecial.uiButtonDisabled input, .uiButtonConfirm .uiButtonText, .uiButtonConfirm input, .uiButtonConfirm.uiButtonDisabled .uiButtonText, .uiButtonConfirm.uiButtonDisabled input {
+    color: #FFFFFF;
+}
+
+/*********************/
+
+.uiButtonConfirm {
+    background-color: #5B74A8;
+    background-position: 0 -48px;
+    border-color: #29447E #29447E #1A356E;
+}
+
+
+
+  .generic_dialog {
+    height: 0;
+    left: 0;
+    outline: medium none;
+    overflow: visible;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 250;
+  }
+
+.generic_dialog_popup {
+    height: 0;
+    margin: auto;
+    overflow: visible;
+    position: relative;
+    width: 465px;
+  }
+
+  .generic_dialog div.dialog_loading {
+    background-color: #F2F2F2;
+    border: 1px solid #606060;
+    font-size: 25px;
+    padding: 10px;
+  }
+  #generic_dialog_overlay {
+    background-color: #FFFFFF;
+    height: 100%;
+    opacity: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 200;
+  }
+  #generic_dialog_overlay.dark {
+    background-color: #747474;
+    opacity: 0.5;
+  }
+  #generic_dialog_overlay.white {
+    background-color: #FFFFFF;
+    opacity: 0.5;
+  }
+
+  .pop_content {
+    direction: ltr;
+  }
+  .pop_dialog_rtl .pop_content {
+    direction: rtl;
+  }
+  .pop_content h2.dialog_title {
+    background: none repeat scroll 0 0 #6D84B4;
+    border-color: #3B5998 #3B5998 -moz-use-text-color;
+    border-style: solid solid none;
+    border-width: 1px 1px medium;
+    color: #FFFFFF;
+    font-size: 15px;
+    font-weight: bold;
+    margin: 0;
+  }
+  /*
+  .pop_content h2.secure {
+    background: url("http://static.ak.fbcdn.net/rsrc.php/v1/zu/r/jp8TzrZb6J1.png") no-repeat scroll 98% 50% #6D84B4;
+  }
+  .pop_content h2.loading {
+    background: url("http://static.ak.fbcdn.net/rsrc.php/v1/z-/r/AGUNXgX_Wx3.gif") no-repeat scroll 98% 50% #6D84B4;
+  }
+  .pop_content h2.dialog_loading {
+    background: url("http://static.ak.fbcdn.net/rsrc.php/v1/z-/r/AGUNXgX_Wx3.gif") no-repeat scroll 400px 10px #6D84B4;
+    padding-right: 40px;
+  }
+  */
+  .pop_content h2 span {
+    display: block;
+    padding: 5px 10px;
+  }
+  .pop_content .dialog_content {
+    background: none repeat scroll 0 0 #FFFFFF;
+    border-color: #555555;
+    border-right: 1px solid #555555;
+    border-style: solid;
+    border-width: 0 1px 1px;
+  }
+  .pop_content .dialog_body {
+    border-bottom: 1px solid #CCCCCC;
+    padding: 10px;
+  }
+  .omitDialogFooter .pop_content .dialog_body {
+    border-bottom: 0 none;
+  }
+  .pop_content .dialog_summary {
+    background: none repeat scroll 0 0 #F2F2F2;
+    border-bottom: 1px solid #CCCCCC;
+    padding: 8px 10px;
+  }
+  .pop_content .dialog_buttons {
+    background: none repeat scroll 0 0 #F2F2F2;
+    padding: 8px 10px;
+    position: relative;
+    text-align: right;
+  }
+  .pop_content .dialog_buttons_msg {
+    float: left;
+    line-height: 17px;
+    padding-top: 4px;
+  }
+  .pop_content .dialog_footer {
+    background: none repeat scroll 0 50% #F2F2F2;
+  }
+  .pop_container_advanced {
+    -moz-border-radius: 8px 8px 8px 8px;
+    background: none repeat scroll 0 0 rgba(82, 82, 82, 0.7);
+    padding: 10px;
+  }
+
+  .uiButtonLarge, .uiButtonLarge .uiButtonText, .uiButtonLarge input {
+    font-size: 14px;
+  }
+</style>
+
+<div id="{id}" class="generic_dialog pop_dialog " tabindex="0"  >
+  <div class="generic_dialog_popup">
+    <div class="pop_container_advanced">
+      <div  class="pop_content">
+        <h2 class="dialog_title" >
+          <span>Upload Quiz Image</span>
+        </h2>
+        <div class="dialog_content">
+          <div class="dialog_body">
+            <div class="fb_protected_wrapper" >
+              <div>
+                  <form id="quiz_image_form" enctype="multipart/form-data">
+                  <div id="add_image" class="add_image">
+                    <div class="title">
+                      <span class="normal">Image:</span><span class="special">REQUIRED</span>
+                      <span id="quiz_image_form_note" style="color:red"></span>
+                    </div>
+
+                    <div class="result" id="quiz_result" style="display:none">
+                        <div class="line"> <span class="name">Result:</span> <span class="value">Image has been uploaded successfully.</span> </div>
+                            <div class="line"> 
+                                <span class="name">Image:</span> 
+                                <div class="img">
+                                  <img id="quiz_success_image">
+                                </div>
+                            </div>
+                      </div>
+
+                    <div class="file">
+                      <input type="file" size="15" name="image">
+                    </div>
+
+                    <div class="button">
+                      <a onclick="quiz_upload_image();return false;">
+                        <img src="http://d1bye8fl443jlj.cloudfront.net/prod/images/ctp_upload.png">
+                      </a>
+                    </div>
+
+                  </div>
+
+                  </form>
+              </div>
+            </div>
+          </div>
+          <div class="dialog_buttons clearfix">
+            <label class="uiButton uiButtonLarge uiButtonConfirm">
+              <input type="button" onclick="part1_save_image();"  value="Save" >
+            </label>
+            <label class="uiButton uiButtonLarge uiButtonConfirm">
+              <input type="button" onclick="FrdPopup.close();"  value="Cancel" >
+            </label>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

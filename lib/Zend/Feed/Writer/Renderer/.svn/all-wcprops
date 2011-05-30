@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/FB_Simpleform/!svn/ver/1/lib/Zend/Feed/Writer/Renderer
+END
+RendererAbstract.php
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/FB_Simpleform/!svn/ver/1/lib/Zend/Feed/Writer/Renderer/RendererAbstract.php
+END
+RendererInterface.php
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/FB_Simpleform/!svn/ver/1/lib/Zend/Feed/Writer/Renderer/RendererInterface.php
+END

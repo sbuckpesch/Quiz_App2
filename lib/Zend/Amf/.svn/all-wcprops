@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 42
+/svn/FB_Simpleform/!svn/ver/1/lib/Zend/Amf
+END
+Constants.php
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/FB_Simpleform/!svn/ver/1/lib/Zend/Amf/Constants.php
+END
+Exception.php
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/FB_Simpleform/!svn/ver/1/lib/Zend/Amf/Exception.php
+END
+Response.php
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/FB_Simpleform/!svn/ver/1/lib/Zend/Amf/Response.php
+END
+Server.php
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/FB_Simpleform/!svn/ver/1/lib/Zend/Amf/Server.php
+END
+Request.php
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/FB_Simpleform/!svn/ver/1/lib/Zend/Amf/Request.php
+END

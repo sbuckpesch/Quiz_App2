@@ -1,0 +1,101 @@
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/FB_Simpleform/!svn/ver/1/lib/Zend/Service
+END
+StrikeIron.php
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/FB_Simpleform/!svn/ver/1/lib/Zend/Service/StrikeIron.php
+END
+ReCaptcha.php
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/FB_Simpleform/!svn/ver/1/lib/Zend/Service/ReCaptcha.php
+END
+Akismet.php
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/FB_Simpleform/!svn/ver/1/lib/Zend/Service/Akismet.php
+END
+Nirvanix.php
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/FB_Simpleform/!svn/ver/1/lib/Zend/Service/Nirvanix.php
+END
+Exception.php
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/FB_Simpleform/!svn/ver/1/lib/Zend/Service/Exception.php
+END
+Audioscrobbler.php
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/FB_Simpleform/!svn/ver/1/lib/Zend/Service/Audioscrobbler.php
+END
+Technorati.php
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/FB_Simpleform/!svn/ver/1/lib/Zend/Service/Technorati.php
+END
+Simpy.php
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/FB_Simpleform/!svn/ver/1/lib/Zend/Service/Simpy.php
+END
+Twitter.php
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/FB_Simpleform/!svn/ver/1/lib/Zend/Service/Twitter.php
+END
+Abstract.php
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/FB_Simpleform/!svn/ver/1/lib/Zend/Service/Abstract.php
+END
+Flickr.php
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/FB_Simpleform/!svn/ver/1/lib/Zend/Service/Flickr.php
+END
+LiveDocx.php
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/FB_Simpleform/!svn/ver/1/lib/Zend/Service/LiveDocx.php
+END
+Yahoo.php
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/FB_Simpleform/!svn/ver/1/lib/Zend/Service/Yahoo.php
+END
+Delicious.php
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/FB_Simpleform/!svn/ver/1/lib/Zend/Service/Delicious.php
+END
+SlideShare.php
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/FB_Simpleform/!svn/ver/1/lib/Zend/Service/SlideShare.php
+END
+Amazon.php
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/FB_Simpleform/!svn/ver/1/lib/Zend/Service/Amazon.php
+END

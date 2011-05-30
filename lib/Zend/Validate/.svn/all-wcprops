@@ -1,0 +1,173 @@
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/FB_Simpleform/!svn/ver/1/lib/Zend/Validate
+END
+Between.php
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/FB_Simpleform/!svn/ver/1/lib/Zend/Validate/Between.php
+END
+Int.php
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/FB_Simpleform/!svn/ver/1/lib/Zend/Validate/Int.php
+END
+Isbn.php
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/FB_Simpleform/!svn/ver/1/lib/Zend/Validate/Isbn.php
+END
+Callback.php
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/FB_Simpleform/!svn/ver/1/lib/Zend/Validate/Callback.php
+END
+Identical.php
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/FB_Simpleform/!svn/ver/1/lib/Zend/Validate/Identical.php
+END
+EmailAddress.php
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/FB_Simpleform/!svn/ver/1/lib/Zend/Validate/EmailAddress.php
+END
+Exception.php
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/FB_Simpleform/!svn/ver/1/lib/Zend/Validate/Exception.php
+END
+Barcode.php
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/FB_Simpleform/!svn/ver/1/lib/Zend/Validate/Barcode.php
+END
+Interface.php
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/FB_Simpleform/!svn/ver/1/lib/Zend/Validate/Interface.php
+END
+Abstract.php
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/FB_Simpleform/!svn/ver/1/lib/Zend/Validate/Abstract.php
+END
+CreditCard.php
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/FB_Simpleform/!svn/ver/1/lib/Zend/Validate/CreditCard.php
+END
+GreaterThan.php
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/FB_Simpleform/!svn/ver/1/lib/Zend/Validate/GreaterThan.php
+END
+Float.php
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/FB_Simpleform/!svn/ver/1/lib/Zend/Validate/Float.php
+END
+InArray.php
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/FB_Simpleform/!svn/ver/1/lib/Zend/Validate/InArray.php
+END
+Ccnum.php
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/FB_Simpleform/!svn/ver/1/lib/Zend/Validate/Ccnum.php
+END
+Ip.php
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/FB_Simpleform/!svn/ver/1/lib/Zend/Validate/Ip.php
+END
+StringLength.php
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/FB_Simpleform/!svn/ver/1/lib/Zend/Validate/StringLength.php
+END
+Iban.php
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/FB_Simpleform/!svn/ver/1/lib/Zend/Validate/Iban.php
+END
+Regex.php
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/FB_Simpleform/!svn/ver/1/lib/Zend/Validate/Regex.php
+END
+Alnum.php
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/FB_Simpleform/!svn/ver/1/lib/Zend/Validate/Alnum.php
+END
+Date.php
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/FB_Simpleform/!svn/ver/1/lib/Zend/Validate/Date.php
+END
+Hostname.php
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/FB_Simpleform/!svn/ver/1/lib/Zend/Validate/Hostname.php
+END
+NotEmpty.php
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/FB_Simpleform/!svn/ver/1/lib/Zend/Validate/NotEmpty.php
+END
+PostCode.php
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/FB_Simpleform/!svn/ver/1/lib/Zend/Validate/PostCode.php
+END
+LessThan.php
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/FB_Simpleform/!svn/ver/1/lib/Zend/Validate/LessThan.php
+END
+Digits.php
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/FB_Simpleform/!svn/ver/1/lib/Zend/Validate/Digits.php
+END
+Hex.php
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/FB_Simpleform/!svn/ver/1/lib/Zend/Validate/Hex.php
+END
+Alpha.php
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/FB_Simpleform/!svn/ver/1/lib/Zend/Validate/Alpha.php
+END

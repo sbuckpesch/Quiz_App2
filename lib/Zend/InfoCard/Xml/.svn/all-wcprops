@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/FB_Simpleform/!svn/ver/1/lib/Zend/InfoCard/Xml
+END
+Element.php
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/FB_Simpleform/!svn/ver/1/lib/Zend/InfoCard/Xml/Element.php
+END
+Exception.php
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/FB_Simpleform/!svn/ver/1/lib/Zend/InfoCard/Xml/Exception.php
+END
+KeyInfo.php
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/FB_Simpleform/!svn/ver/1/lib/Zend/InfoCard/Xml/KeyInfo.php
+END
+EncryptedKey.php
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/FB_Simpleform/!svn/ver/1/lib/Zend/InfoCard/Xml/EncryptedKey.php
+END
+Assertion.php
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/FB_Simpleform/!svn/ver/1/lib/Zend/InfoCard/Xml/Assertion.php
+END
+EncryptedData.php
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/FB_Simpleform/!svn/ver/1/lib/Zend/InfoCard/Xml/EncryptedData.php
+END
+Security.php
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/FB_Simpleform/!svn/ver/1/lib/Zend/InfoCard/Xml/Security.php
+END
+SecurityTokenReference.php
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/FB_Simpleform/!svn/ver/1/lib/Zend/InfoCard/Xml/SecurityTokenReference.php
+END

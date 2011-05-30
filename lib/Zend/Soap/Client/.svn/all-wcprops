@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/FB_Simpleform/!svn/ver/1/lib/Zend/Soap/Client
+END
+Local.php
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/FB_Simpleform/!svn/ver/1/lib/Zend/Soap/Client/Local.php
+END
+DotNet.php
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/FB_Simpleform/!svn/ver/1/lib/Zend/Soap/Client/DotNet.php
+END
+Exception.php
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/FB_Simpleform/!svn/ver/1/lib/Zend/Soap/Client/Exception.php
+END
+Common.php
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/FB_Simpleform/!svn/ver/1/lib/Zend/Soap/Client/Common.php
+END

@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/FB_Simpleform/!svn/ver/1/lib/Zend/Service/DeveloperGarden/Request/SendSms
+END
+SendFlashSMS.php
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/FB_Simpleform/!svn/ver/1/lib/Zend/Service/DeveloperGarden/Request/SendSms/SendFlashSMS.php
+END
+SendSMS.php
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/FB_Simpleform/!svn/ver/1/lib/Zend/Service/DeveloperGarden/Request/SendSms/SendSMS.php
+END
+SendSmsAbstract.php
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/FB_Simpleform/!svn/ver/1/lib/Zend/Service/DeveloperGarden/Request/SendSms/SendSmsAbstract.php
+END

@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/FB_Simpleform/!svn/ver/1/lib/Zend/Queue/Message
+END
+Iterator.php
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/FB_Simpleform/!svn/ver/1/lib/Zend/Queue/Message/Iterator.php
+END
+PlatformJob.php
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/FB_Simpleform/!svn/ver/1/lib/Zend/Queue/Message/PlatformJob.php
+END

@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/FB_Simpleform/!svn/ver/1/lib/Zend/Test/PHPUnit/Db/Operation
+END
+DeleteAll.php
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/FB_Simpleform/!svn/ver/1/lib/Zend/Test/PHPUnit/Db/Operation/DeleteAll.php
+END
+Insert.php
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/FB_Simpleform/!svn/ver/1/lib/Zend/Test/PHPUnit/Db/Operation/Insert.php
+END
+Truncate.php
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/FB_Simpleform/!svn/ver/1/lib/Zend/Test/PHPUnit/Db/Operation/Truncate.php
+END

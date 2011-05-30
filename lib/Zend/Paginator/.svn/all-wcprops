@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/FB_Simpleform/!svn/ver/1/lib/Zend/Paginator
+END
+Exception.php
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/FB_Simpleform/!svn/ver/1/lib/Zend/Paginator/Exception.php
+END
+SerializableLimitIterator.php
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/FB_Simpleform/!svn/ver/1/lib/Zend/Paginator/SerializableLimitIterator.php
+END
+AdapterAggregate.php
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/FB_Simpleform/!svn/ver/1/lib/Zend/Paginator/AdapterAggregate.php
+END

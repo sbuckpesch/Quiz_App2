@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/FB_Simpleform/!svn/ver/1/lib/Zend/Mail/Storage/Folder
+END
+Interface.php
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/FB_Simpleform/!svn/ver/1/lib/Zend/Mail/Storage/Folder/Interface.php
+END
+Maildir.php
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/FB_Simpleform/!svn/ver/1/lib/Zend/Mail/Storage/Folder/Maildir.php
+END
+Mbox.php
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/FB_Simpleform/!svn/ver/1/lib/Zend/Mail/Storage/Folder/Mbox.php
+END

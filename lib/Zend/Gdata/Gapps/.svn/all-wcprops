@@ -1,0 +1,95 @@
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/FB_Simpleform/!svn/ver/1/lib/Zend/Gdata/Gapps
+END
+Error.php
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/FB_Simpleform/!svn/ver/1/lib/Zend/Gdata/Gapps/Error.php
+END
+UserEntry.php
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/FB_Simpleform/!svn/ver/1/lib/Zend/Gdata/Gapps/UserEntry.php
+END
+UserFeed.php
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/FB_Simpleform/!svn/ver/1/lib/Zend/Gdata/Gapps/UserFeed.php
+END
+UserQuery.php
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/FB_Simpleform/!svn/ver/1/lib/Zend/Gdata/Gapps/UserQuery.php
+END
+Query.php
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/FB_Simpleform/!svn/ver/1/lib/Zend/Gdata/Gapps/Query.php
+END
+EmailListEntry.php
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/FB_Simpleform/!svn/ver/1/lib/Zend/Gdata/Gapps/EmailListEntry.php
+END
+NicknameEntry.php
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/FB_Simpleform/!svn/ver/1/lib/Zend/Gdata/Gapps/NicknameEntry.php
+END
+EmailListFeed.php
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/FB_Simpleform/!svn/ver/1/lib/Zend/Gdata/Gapps/EmailListFeed.php
+END
+EmailListRecipientEntry.php
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/FB_Simpleform/!svn/ver/1/lib/Zend/Gdata/Gapps/EmailListRecipientEntry.php
+END
+NicknameFeed.php
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/FB_Simpleform/!svn/ver/1/lib/Zend/Gdata/Gapps/NicknameFeed.php
+END
+EmailListQuery.php
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/FB_Simpleform/!svn/ver/1/lib/Zend/Gdata/Gapps/EmailListQuery.php
+END
+EmailListRecipientFeed.php
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/FB_Simpleform/!svn/ver/1/lib/Zend/Gdata/Gapps/EmailListRecipientFeed.php
+END
+NicknameQuery.php
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/FB_Simpleform/!svn/ver/1/lib/Zend/Gdata/Gapps/NicknameQuery.php
+END
+EmailListRecipientQuery.php
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/FB_Simpleform/!svn/ver/1/lib/Zend/Gdata/Gapps/EmailListRecipientQuery.php
+END
+ServiceException.php
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/FB_Simpleform/!svn/ver/1/lib/Zend/Gdata/Gapps/ServiceException.php
+END

@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/FB_Simpleform/!svn/ver/1/lib/Zend/Validate/Db
+END
+NoRecordExists.php
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/FB_Simpleform/!svn/ver/1/lib/Zend/Validate/Db/NoRecordExists.php
+END
+RecordExists.php
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/FB_Simpleform/!svn/ver/1/lib/Zend/Validate/Db/RecordExists.php
+END
+Abstract.php
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/FB_Simpleform/!svn/ver/1/lib/Zend/Validate/Db/Abstract.php
+END

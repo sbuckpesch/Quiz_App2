@@ -1,0 +1,113 @@
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/FB_Simpleform/!svn/ver/1/lib/Zend/Barcode/Object
+END
+Royalmail.php
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/FB_Simpleform/!svn/ver/1/lib/Zend/Barcode/Object/Royalmail.php
+END
+Error.php
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/FB_Simpleform/!svn/ver/1/lib/Zend/Barcode/Object/Error.php
+END
+ObjectAbstract.php
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/FB_Simpleform/!svn/ver/1/lib/Zend/Barcode/Object/ObjectAbstract.php
+END
+Ean8.php
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/FB_Simpleform/!svn/ver/1/lib/Zend/Barcode/Object/Ean8.php
+END
+Postnet.php
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/FB_Simpleform/!svn/ver/1/lib/Zend/Barcode/Object/Postnet.php
+END
+Upce.php
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/FB_Simpleform/!svn/ver/1/lib/Zend/Barcode/Object/Upce.php
+END
+Identcode.php
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/FB_Simpleform/!svn/ver/1/lib/Zend/Barcode/Object/Identcode.php
+END
+Exception.php
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/FB_Simpleform/!svn/ver/1/lib/Zend/Barcode/Object/Exception.php
+END
+Code25interleaved.php
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/FB_Simpleform/!svn/ver/1/lib/Zend/Barcode/Object/Code25interleaved.php
+END
+Ean13.php
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/FB_Simpleform/!svn/ver/1/lib/Zend/Barcode/Object/Ean13.php
+END
+Code25.php
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/FB_Simpleform/!svn/ver/1/lib/Zend/Barcode/Object/Code25.php
+END
+Planet.php
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/FB_Simpleform/!svn/ver/1/lib/Zend/Barcode/Object/Planet.php
+END
+Ean2.php
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/FB_Simpleform/!svn/ver/1/lib/Zend/Barcode/Object/Ean2.php
+END
+Code39.php
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/FB_Simpleform/!svn/ver/1/lib/Zend/Barcode/Object/Code39.php
+END
+Itf14.php
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/FB_Simpleform/!svn/ver/1/lib/Zend/Barcode/Object/Itf14.php
+END
+Leitcode.php
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/FB_Simpleform/!svn/ver/1/lib/Zend/Barcode/Object/Leitcode.php
+END
+Ean5.php
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/FB_Simpleform/!svn/ver/1/lib/Zend/Barcode/Object/Ean5.php
+END
+Upca.php
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/FB_Simpleform/!svn/ver/1/lib/Zend/Barcode/Object/Upca.php
+END

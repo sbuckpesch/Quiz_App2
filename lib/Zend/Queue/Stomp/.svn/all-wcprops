@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/FB_Simpleform/!svn/ver/1/lib/Zend/Queue/Stomp
+END
+Frame.php
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/FB_Simpleform/!svn/ver/1/lib/Zend/Queue/Stomp/Frame.php
+END
+FrameInterface.php
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/FB_Simpleform/!svn/ver/1/lib/Zend/Queue/Stomp/FrameInterface.php
+END
+Client.php
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/FB_Simpleform/!svn/ver/1/lib/Zend/Queue/Stomp/Client.php
+END

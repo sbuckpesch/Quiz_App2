@@ -1,0 +1,83 @@
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/FB_Simpleform/!svn/ver/1/lib/Zend/XmlRpc/Value
+END
+Double.php
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/FB_Simpleform/!svn/ver/1/lib/Zend/XmlRpc/Value/Double.php
+END
+Collection.php
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/FB_Simpleform/!svn/ver/1/lib/Zend/XmlRpc/Value/Collection.php
+END
+DateTime.php
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/FB_Simpleform/!svn/ver/1/lib/Zend/XmlRpc/Value/DateTime.php
+END
+Integer.php
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/FB_Simpleform/!svn/ver/1/lib/Zend/XmlRpc/Value/Integer.php
+END
+Array.php
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/FB_Simpleform/!svn/ver/1/lib/Zend/XmlRpc/Value/Array.php
+END
+Exception.php
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/FB_Simpleform/!svn/ver/1/lib/Zend/XmlRpc/Value/Exception.php
+END
+BigInteger.php
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/FB_Simpleform/!svn/ver/1/lib/Zend/XmlRpc/Value/BigInteger.php
+END
+Boolean.php
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/FB_Simpleform/!svn/ver/1/lib/Zend/XmlRpc/Value/Boolean.php
+END
+Nil.php
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/FB_Simpleform/!svn/ver/1/lib/Zend/XmlRpc/Value/Nil.php
+END
+Base64.php
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/FB_Simpleform/!svn/ver/1/lib/Zend/XmlRpc/Value/Base64.php
+END
+Struct.php
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/FB_Simpleform/!svn/ver/1/lib/Zend/XmlRpc/Value/Struct.php
+END
+Scalar.php
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/FB_Simpleform/!svn/ver/1/lib/Zend/XmlRpc/Value/Scalar.php
+END
+String.php
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/FB_Simpleform/!svn/ver/1/lib/Zend/XmlRpc/Value/String.php
+END

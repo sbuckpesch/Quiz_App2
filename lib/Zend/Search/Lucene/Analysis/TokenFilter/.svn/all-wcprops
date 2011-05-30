@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/FB_Simpleform/!svn/ver/1/lib/Zend/Search/Lucene/Analysis/TokenFilter
+END
+LowerCaseUtf8.php
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/FB_Simpleform/!svn/ver/1/lib/Zend/Search/Lucene/Analysis/TokenFilter/LowerCaseUtf8.php
+END
+ShortWords.php
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/FB_Simpleform/!svn/ver/1/lib/Zend/Search/Lucene/Analysis/TokenFilter/ShortWords.php
+END
+LowerCase.php
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/FB_Simpleform/!svn/ver/1/lib/Zend/Search/Lucene/Analysis/TokenFilter/LowerCase.php
+END
+StopWords.php
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/FB_Simpleform/!svn/ver/1/lib/Zend/Search/Lucene/Analysis/TokenFilter/StopWords.php
+END

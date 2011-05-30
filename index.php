@@ -1,12 +1,41 @@
 <?php
-// Load all config values and necessary classes
-require_once ('init.php');
-// Include Header Part
-include 'header.php';
+include('init.php');
+include('header.php'); 
 
-include 'welcome.php';
+//include('take.php');
+
+$page=$_GET['page'];
+
+//if($page == false)
+  $page="take.php";
+/*
+$global->link->parseRequest();
+//$global->link->display();
+
+$page=$global->link->getPage('welcome.php');
+$template=$global->link->getParam('template','y');  //does this page need template
 
 
-// Include Footer Part
-include 'footer.php';
+if($template == 'n')
+{
+  include $page;
+}
+else
+{
+  include 'header.php';
+
+  echo '<div id="content">';
+  echo '</div>';
+  include 'footer.php';
+}
+ */
+  include $page;
 ?>
+
+<!--
+<a href="index.php?page=create_type.php">create quiz</a>
+-->
+<?php 
+include('footer.php'); 
+?>
+

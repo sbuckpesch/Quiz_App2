@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/FB_Simpleform/!svn/ver/1/lib/Zend/Paginator/Adapter
+END
+Iterator.php
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/FB_Simpleform/!svn/ver/1/lib/Zend/Paginator/Adapter/Iterator.php
+END
+Null.php
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/FB_Simpleform/!svn/ver/1/lib/Zend/Paginator/Adapter/Null.php
+END
+DbTableSelect.php
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/FB_Simpleform/!svn/ver/1/lib/Zend/Paginator/Adapter/DbTableSelect.php
+END
+Array.php
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/FB_Simpleform/!svn/ver/1/lib/Zend/Paginator/Adapter/Array.php
+END
+Interface.php
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/FB_Simpleform/!svn/ver/1/lib/Zend/Paginator/Adapter/Interface.php
+END
+DbSelect.php
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/FB_Simpleform/!svn/ver/1/lib/Zend/Paginator/Adapter/DbSelect.php
+END

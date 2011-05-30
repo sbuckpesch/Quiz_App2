@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/svn/FB_Simpleform/!svn/ver/1/lib/Zend/Ldap
+END
+Collection.php
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/FB_Simpleform/!svn/ver/1/lib/Zend/Ldap/Collection.php
+END
+Exception.php
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/FB_Simpleform/!svn/ver/1/lib/Zend/Ldap/Exception.php
+END
+Dn.php
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/FB_Simpleform/!svn/ver/1/lib/Zend/Ldap/Dn.php
+END
+Attribute.php
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/FB_Simpleform/!svn/ver/1/lib/Zend/Ldap/Attribute.php
+END
+Filter.php
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/FB_Simpleform/!svn/ver/1/lib/Zend/Ldap/Filter.php
+END
+Node.php
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/FB_Simpleform/!svn/ver/1/lib/Zend/Ldap/Node.php
+END
+Converter.php
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/FB_Simpleform/!svn/ver/1/lib/Zend/Ldap/Converter.php
+END

@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/FB_Simpleform/!svn/ver/1/lib/Zend/Service/DeveloperGarden/Request/SmsValidation
+END
+GetValidatedNumbers.php
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/FB_Simpleform/!svn/ver/1/lib/Zend/Service/DeveloperGarden/Request/SmsValidation/GetValidatedNumbers.php
+END
+SendValidationKeyword.php
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/FB_Simpleform/!svn/ver/1/lib/Zend/Service/DeveloperGarden/Request/SmsValidation/SendValidationKeyword.php
+END
+Validate.php
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/FB_Simpleform/!svn/ver/1/lib/Zend/Service/DeveloperGarden/Request/SmsValidation/Validate.php
+END
+Invalidate.php
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/FB_Simpleform/!svn/ver/1/lib/Zend/Service/DeveloperGarden/Request/SmsValidation/Invalidate.php
+END

@@ -1,0 +1,119 @@
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/FB_Simpleform/!svn/ver/1/lib/Zend/Service/Technorati
+END
+ResultSet.php
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/FB_Simpleform/!svn/ver/1/lib/Zend/Service/Technorati/ResultSet.php
+END
+GetInfoResult.php
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/FB_Simpleform/!svn/ver/1/lib/Zend/Service/Technorati/GetInfoResult.php
+END
+TagsResult.php
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/FB_Simpleform/!svn/ver/1/lib/Zend/Service/Technorati/TagsResult.php
+END
+DailyCountsResult.php
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/FB_Simpleform/!svn/ver/1/lib/Zend/Service/Technorati/DailyCountsResult.php
+END
+Exception.php
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/FB_Simpleform/!svn/ver/1/lib/Zend/Service/Technorati/Exception.php
+END
+BlogInfoResult.php
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/FB_Simpleform/!svn/ver/1/lib/Zend/Service/Technorati/BlogInfoResult.php
+END
+Utils.php
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/FB_Simpleform/!svn/ver/1/lib/Zend/Service/Technorati/Utils.php
+END
+CosmosResult.php
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/FB_Simpleform/!svn/ver/1/lib/Zend/Service/Technorati/CosmosResult.php
+END
+Author.php
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/FB_Simpleform/!svn/ver/1/lib/Zend/Service/Technorati/Author.php
+END
+KeyInfoResult.php
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/FB_Simpleform/!svn/ver/1/lib/Zend/Service/Technorati/KeyInfoResult.php
+END
+SearchResult.php
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/FB_Simpleform/!svn/ver/1/lib/Zend/Service/Technorati/SearchResult.php
+END
+DailyCountsResultSet.php
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/FB_Simpleform/!svn/ver/1/lib/Zend/Service/Technorati/DailyCountsResultSet.php
+END
+TagsResultSet.php
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/FB_Simpleform/!svn/ver/1/lib/Zend/Service/Technorati/TagsResultSet.php
+END
+TagResult.php
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/FB_Simpleform/!svn/ver/1/lib/Zend/Service/Technorati/TagResult.php
+END
+Result.php
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/FB_Simpleform/!svn/ver/1/lib/Zend/Service/Technorati/Result.php
+END
+CosmosResultSet.php
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/FB_Simpleform/!svn/ver/1/lib/Zend/Service/Technorati/CosmosResultSet.php
+END
+Weblog.php
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/FB_Simpleform/!svn/ver/1/lib/Zend/Service/Technorati/Weblog.php
+END
+SearchResultSet.php
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/FB_Simpleform/!svn/ver/1/lib/Zend/Service/Technorati/SearchResultSet.php
+END
+TagResultSet.php
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/FB_Simpleform/!svn/ver/1/lib/Zend/Service/Technorati/TagResultSet.php
+END

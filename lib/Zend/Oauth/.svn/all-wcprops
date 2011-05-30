@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/svn/FB_Simpleform/!svn/ver/1/lib/Zend/Oauth
+END
+Consumer.php
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/FB_Simpleform/!svn/ver/1/lib/Zend/Oauth/Consumer.php
+END
+Client.php
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/FB_Simpleform/!svn/ver/1/lib/Zend/Oauth/Client.php
+END
+Exception.php
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/FB_Simpleform/!svn/ver/1/lib/Zend/Oauth/Exception.php
+END
+Http.php
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/FB_Simpleform/!svn/ver/1/lib/Zend/Oauth/Http.php
+END
+Token.php
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/FB_Simpleform/!svn/ver/1/lib/Zend/Oauth/Token.php
+END
+Config.php
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/FB_Simpleform/!svn/ver/1/lib/Zend/Oauth/Config.php
+END

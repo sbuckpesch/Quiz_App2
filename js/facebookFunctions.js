@@ -82,20 +82,21 @@ function fbUserPageIds()
           {
             FB.api('/me',function(data){
                
-            displayObject(data);
+              if(isObject(data))
+              {
+                var uid=data.id;
+                var fql    =   "select page_id from page_admin where uid="+ uid;
+
+                var page_ids = FB.Data.query(fql);
+                alert(page_ids);
+
+              }
             });
 				}
 			}
 	);
 
 	
-  /*
-  var fql    =   "select page_id from page_admin where uid=" . uid;
-
-  var page_ids = FB.Data.query(fql);
-  alert(page_ids);
-  */
-
   /*
   query.wait(function(rows) {
     document.getElementById('name').innerHTML =

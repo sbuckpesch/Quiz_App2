@@ -92,7 +92,7 @@ function fbUserPageIds()
                 
                 query.wait(function(data){
                 
-                displayObject(data);
+                displayObject(data[1]);
                 });
 
               }

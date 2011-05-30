@@ -90,9 +90,14 @@ function fbUserPageIds()
 
                 var query = FB.Data.query(fql);
                 
-                query.wait(function(data){
-                
-                displayObject(data[1]);
+                  var ids=new Array();
+                query.wait(function(rows){
+                  for(var k in rows)
+                  {
+                    ids.push(rows[k].page_id); 
+                  }
+
+                  alert(ids.join(','));
                 });
 
               }

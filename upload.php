@@ -50,7 +50,7 @@ else
   $dest=$dest_dir.'/'.$filename;
   //$uploader->_upload($dest);
   create_thumbnail($dest,$_FILES['image']['tmp_name'],100);
-  $path="/uploads/".$app_id.'/'.$filename;
+  $path="uploads/".$app_id.'/'.$filename;
 
   $return=array(
     'error'=>0, 

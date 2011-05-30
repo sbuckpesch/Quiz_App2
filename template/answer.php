@@ -5,7 +5,7 @@
 
     <div class="p_body">
       <div id="questions_container">
-        <?php render("block/question.php",array('q'=>1)); ?>
+        <?php //render("block/question.php",array('q'=>1)); ?>
       </div>
       <?php render("block/add_question.php"); ?>
     </div>

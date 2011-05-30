@@ -245,6 +245,8 @@ function part2_answer_check()
 //show image popup upload form
 function part1_show_image_upload()
 {
+  FrdDialog.close();
+
   FrdDialog.create();
   FrdDialog.setOption('type','ajax');
   FrdDialog.setOption('template','template/quiz_image.phtml');
@@ -292,7 +294,7 @@ function add_question()
 //alert(curlength);
   var url="render.php";
   var params={
-    template:'question', 
+    page:'block/question.php', 
     q:curlength,
   };
 
@@ -319,7 +321,7 @@ function add_answer(q)
 
   var url="render.php";
   var params={
-    template:'answer', 
+    page:'block/answer.php', 
     q:q,
     answer:curlength,
   };
@@ -361,7 +363,7 @@ function quiz_upload_image()
       else
       {
         jQuery("#quiz_result").show();
-        jQuery("#quiz_success_image").attr('src','/Quiz'+data.path);
+        jQuery("#quiz_success_image").attr('src',data.path);
       }
         
     },
@@ -386,7 +388,7 @@ function part1_save_image()
   var src=jQuery("#quiz_success_image").attr('src');
 
   jQuery(selector).html(image);
-  part1_hide_image_upload();
+  //outcome_hide_image_upload();
 
   //save value in  hidden input 
   //jQuery("input[name=quiz_image]").val(src);
@@ -407,6 +409,23 @@ function part1_remove_image()
 function part2_toggle_answers(obj)
 {
    jQuery(obj).parent().find(".q_content").toggle();
+  var id='outcome_'+index+'_nav';
+
+  if(jQuery("#"+id).hasClass('enable'))
+  {
+    jQuery("#"+id).removeClass('enable');
+    jQuery("#"+id).addClass('disable');
+
+    jQuery("#outcome_"+index+"_content").hide();
+  }
+  else
+  {
+    jQuery("#"+id).removeClass('disable');
+    jQuery("#"+id).addClass('enable');
+
+
+    jQuery("#outcome_"+index+"_content").show();
+  }
 }
 
 function remove_answer(q,answer)
@@ -446,8 +465,13 @@ function answer_title_check(q,answer)
 //show image upload form
 function show_question_image_popup(q)
 {
-  var selector="#question_"+q+"_image_popup"; 
-  jQuery(selector).show();
+  FrdDialog.close();
+
+  FrdDialog.create();
+  FrdDialog.setOption('type','ajax');
+  FrdDialog.setOption('template','template/question_image.phtml');
+  FrdDialog.setOption('q',q);
+  FrdDialog.open();
 }
 
 function question_show_image_upload(q)
@@ -541,8 +565,17 @@ function question_remove_image(q)
 
 function show_answer_image_popup(q,answer)
 {
-  var selector="#q_"+q+"_"+answer+"_image_popup"; 
-  jQuery(selector).show();
+  //var selector="#q_"+q+"_"+answer+"_image_popup"; 
+  //jQuery(selector).show();
+  FrdDialog.close();
+
+  FrdDialog.create();
+  FrdDialog.setOption('type','ajax');
+  FrdDialog.setOption('template','template/answer_image.phtml');
+  FrdDialog.setOption('q',q);
+  FrdDialog.setOption('answer',answer);
+  FrdDialog.open();
+
 }
 
 function answer_hide_image_upload(q,answer)
@@ -639,7 +672,7 @@ function toggle_outcome(index)
     jQuery("#"+id).removeClass('enable');
     jQuery("#"+id).addClass('disable');
 
-    jQuery("hide outcome_"+index+"_content").hide();
+    jQuery("#outcome_"+index+"_content").hide();
   }
   else
   {
@@ -683,4 +716,93 @@ function add_outcome()
     jQuery("#outcomes_container").append(data);
     show_remove_outcome(curlength);
   });
+}
+
+//show image 
+function outcome_show_image_upload(number)
+{
+  FrdDialog.close();
+
+  FrdDialog.create();
+  FrdDialog.setOption('type','ajax');
+  FrdDialog.setOption('template','template/outcome_image.phtml');
+  FrdDialog.setOption('number',number);
+  FrdDialog.open();
+
+  //var selector="#quiz_image_popup"; 
+  //jQuery(selector).show();
+}
+
+//save the image in form
+function outcome_save_image(number)
+{
+  var selector="#outcome_"+number+"_thumbnails";
+
+  var image=jQuery("#outcome_"+number+"_success_image").parent().html();
+  var src=jQuery("#outcome_"+number+"_success_image").attr('src');
+
+
+  jQuery(selector).attr('src',src);
+  jQuery(selector).html(image);
+
+  //save value in  hidden input 
+  jQuery("input[name=outcome_image]").val(src);
+  FrdDialog.close();
+
+  jQuery("#outcome_"+number+"_remove_img").show();
+  //jQuery("#outcome_"+number+"_upload").hide();
+}
+function outcome_remove_image(number)
+{
+  var selector="#outcome_"+number+"_thumbnails";
+
+  var src="http://d1bye8fl443jlj.cloudfront.net/prod/images/quiz_create_part2-img.gif";
+
+  jQuery(selector).attr('src',src);
+
+  jQuery("input[name=outcome_"+number+"_image]").val('');
+
+  jQuery("#outcome_"+number+"_remove_img").hide();
+  //jQuery("#question_"+q+"_upload").show();
+}
+
+// quiz's image upload
+function outcome_upload_image(number)
+{
+  var selector="#outcome_"+number+"_image_form";
+  var note_selector="#outcome_"+number+"_image_form_note";
+
+  if(jQuery(selector+" [name=image]").val() == false)
+  {
+    sethtml(note_selector,"please choose an image");
+    return false;
+  }
+
+  //submit
+  var options={
+    url:"upload.php",
+    method:"POST",
+    dataType:'json',
+    success:function(data){
+      if(data.error==1)
+      {
+        sethtml(note_selector,"please choose an image");
+      }
+      else
+      {
+        jQuery("#outcome_"+number+"_result").show();
+        jQuery("#outcome_"+number+"_success_image").attr('src',data.path);
+      }
+        
+    },
+    error: function(data)
+    {
+      alert(data);
+    }
+
+  }; 
+
+  jQuery(selector).ajaxSubmit(options);
+  return false;
+
 }

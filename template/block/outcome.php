@@ -40,8 +40,8 @@
       <div class="snap_up">
         
           <div class="snap"><img  src="http://d1bye8fl443jlj.cloudfront.net/prod/images/incongnit.jpg" id="outcome_<?php echo $number; ?>_thumbnails"></div>
-          <div  id="outcome_<?php echo $number;?>_upload" class="upload"><a >Upload your image</a></div>
-          <div  id="outcome_<?php echo $number; ?>_remove_img" style="display: none;" class="c_remove"><a >Remove this</a></div>
+          <div  onclick="outcome_show_image_upload(<?php echo $number; ?>);" id="outcome_<?php echo $number;?>_upload" class="upload"><a >Upload your image</a></div>
+          <div  onclick="outcome_remove_image(<?php echo $number; ?>);return false;" id="outcome_<?php echo $number; ?>_remove_img" style="display: none;" class="c_remove"><a >Remove this</a></div>
           <input type="hidden"  value="" name="outcome_<?php echo $number; ?>_img" id="outcome_<?php echo $number; ?>_img">
         
       </div>

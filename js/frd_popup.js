@@ -114,17 +114,20 @@ FrdPopup.render=function(id){
 
   var matches=html.match(pattern);
 
-  //alert(matches.length);
-  for(var i=0; i<matches.length; i++)
+  if(exists(matches) == true)
   {
-    var match=matches[i];
-
-    match=match.replace('{','');
-    var key=match.replace('}','');
-
-    if(exists(FrdPopup._options[id][key]) == true)
+    //alert(matches.length);
+    for(var i=0; i<matches.length; i++)
     {
-      html=html.replace(matches[i],FrdPopup._options[id][key]);
+      var match=matches[i];
+
+      match=match.replace('{','');
+        var key=match.replace('}','');
+
+        if(exists(FrdPopup._options[id][key]) == true)
+        {
+          html=html.replace(matches[i],FrdPopup._options[id][key]);
+        }
     }
   }
 
@@ -170,6 +173,11 @@ FrdPopup.render=function(id){
 
   FrdPopup.close=function(id){
     id=FrdPopup.getId(id); 
+
+    if(exists(FrdPopup._options[id]) == false)
+    {
+      return false; 
+    }
 
     var selector=FrdPopup._options[id]['selector'];
 

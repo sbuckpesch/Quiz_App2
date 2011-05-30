@@ -2455,6 +2455,10 @@ a.link_orange:hover {
   background: url("http://d1bye8fl443jlj.cloudfront.net/prod/images/quiz_create_part2_arrow.gif") no-repeat scroll left center transparent;
   float: left;
 }
+.quiz_create .part3 .p_body .question .question-line a.enable {
+  background: url("http://d1bye8fl443jlj.cloudfront.net/prod/images/quiz_create_part2_arrow.gif") no-repeat scroll left center transparent;
+  float: left;
+}
 .quiz_create .part2 .p_body .question .q_content .q_name {
   clear: both;
   padding: 0 0 0 10px;
@@ -2718,6 +2722,246 @@ a.link_orange:hover {
 .quiz_create .part3 .question_list .question .answers li a.active {
   background: url("http://d1bye8fl443jlj.cloudfront.net/prod/images/quiz_create_publish-check.gif") no-repeat scroll right center transparent;
   color: #006600;
+}
+
+.quiz_create .part3 {
+  background: url("http://d1bye8fl443jlj.cloudfront.net/prod/images/quiz_large-box-bg.gif") repeat-x scroll 0 0 transparent;
+  border-top: 1px solid #CCCCCC;
+  float: left;
+  margin: 0 0 10px;
+  overflow: hidden;
+  width: 758px;
+}
+.quiz_create .part3 .p_header {
+  border-left: 1px solid #CCCCCC;
+  border-right: 1px solid #CCCCCC;
+}
+.quiz_create .part3 .p_header .title {
+  color: #333333;
+  font-size: 15px;
+  font-weight: bold;
+  margin: 0 10px;
+}
+.quiz_create .part3 .p_header .note {
+  border-top: 1px solid #FFFFFF;
+  font-size: 11px;
+  margin: 0 10px;
+  padding: 5px 0 10px;
+}
+.quiz_create .part3 .p_body {
+  border-color: #FFFFFF #CCCCCC #CCCCCC;
+  border-style: none solid solid;
+  border-width: 0 1px 1px;
+  width: 758px;
+}
+.quiz_create .part3 .p_body .question {
+}
+.quiz_create .part3 .p_body .question .question-line {
+  background: none repeat scroll 0 0 #DEDEDE;
+  clear: both;
+  height: 22px;
+  margin: 5px 0;
+  padding: 3px 0 0 10px;
+}
+.quiz_create .part3 .p_body .question .question-line a {
+  color: #000000;
+  font-size: 13px;
+  font-weight: bold;
+  padding: 0 0 0 20px;
+}
+.quiz_create .part3 .p_body .question .question-line a.remove {
+  color: #3B5998;
+  float: right;
+  font-size: 10px;
+  margin-right: 10px;
+  margin-top: 3px;
+}
+.quiz_create .part3 .p_body .question .question-line a.disable {
+  background: url("http://d1bye8fl443jlj.cloudfront.net/prod/images/quiz_create_part2_arrow_2.png") no-repeat scroll left center transparent;
+  float: left;
+}
+.quiz_create .part3 .p_body .question .question-line a.enable {
+  background: url("http://d1bye8fl443jlj.cloudfront.net/prod/images/quiz_create_part2_arrow.gif") no-repeat scroll left center transparent;
+  float: left;
+}
+.quiz_create .part3 .p_body .question .q_content .q_name {
+  clear: both;
+  padding: 0 0 0 10px;
+  text-align: left;
+}
+.quiz_create .part3 .p_body .question .q_content .q_name .a_title {
+  clear: both;
+  font-size: 13px;
+  font-weight: bold;
+  padding: 0 82px 3px 0;
+  text-align: right;
+}
+.quiz_create .part3 .p_body .question .q_content .q_name .a_title span {
+  font-size: 11px;
+  font-weight: normal;
+}
+.quiz_create .part3 .p_body .question .q_content .q_name .input_name {
+  float: left;
+  padding-right: 10px;
+}
+.quiz_create .part3 .p_body .question .q_content .q_name .input_name .input input {
+  border: 1px solid #CCCCCC;
+  color: #999999;
+  height: 22px;
+  padding: 3px 0 0 10px;
+  width: 552px;
+}
+.quiz_create .part3 .p_body .question .q_content .q_name .input_name .cnote {
+  color: #999999;
+}
+.quiz_create .part3 .p_body .question .q_content .q_name .input_name .cnote .n_error {
+  color: #FF0000;
+  padding-left: 10px;
+}
+.quiz_create .part3 .p_body .question .q_content .q_name .up_image {
+  float: left;
+}
+.quiz_create .part3 .p_body .question .q_content .q_name .up_image .option_img {
+  float: left;
+  width: 50px;
+}
+.quiz_create .part3 .p_body .question .q_content .q_name .up_image .option_img img {
+  max-height: 40px;
+  max-width: 40px;
+}
+.quiz_create .part3 .p_body .question .q_content .q_name .up_image .s_upload2 {
+  float: left;
+  width: 100px;
+}
+.quiz_create .part3 .p_body .question .q_content .q_name .up_image .s_upload2 a img {
+  margin-top: 5px;
+}
+.quiz_create .part3 .p_body .question .q_content .q_name .up_image .s_upload2 .i_up {
+  background: url("http://d1bye8fl443jlj.cloudfront.net/prod/images/upload_image.png") no-repeat scroll 0 0 transparent;
+  color: #000000;
+  cursor: pointer;
+  font-size: 10px;
+  height: 35px;
+  margin-top: 2px;
+  padding-top: 3px;
+  text-align: center;
+  width: 78px;
+}
+.quiz_create .part3 .p_body .question .q_content .q_name .up_image .s_upload2 .c_remove {
+  background: url("http://d1bye8fl443jlj.cloudfront.net/prod/images/error.png") no-repeat scroll left center transparent;
+  color: #CC0000;
+  font-size: 11px;
+  margin-top: 20px;
+  padding: 2px 0 2px 20px;
+}
+.quiz_create .part3 .p_body .question .q_content .q_answer {
+  color: #555555;
+  font-size: 13px;
+  font-weight: bold;
+  padding: 10px 0 0 10px;
+}
+.quiz_create .part3 .p_body .question .q_content .answer {
+  clear: both;
+  padding: 0 0 5px 10px;
+}
+.quiz_create .part3 .p_body .question .q_content .answer .a_title {
+  font-size: 13px;
+  font-weight: bold;
+  padding: 0 85px 3px 0;
+  text-align: right;
+}
+.quiz_create .part3 .p_body .question .q_content .answer .a_title span {
+  font-size: 11px;
+  font-weight: normal;
+}
+.quiz_create .part3 .p_body .question .q_content .answer .content {
+}
+.quiz_create .part3 .p_body .question .q_content .answer .content .left {
+  display: inline;
+  float: left;
+  margin: 0;
+  width: 570px;
+}
+.quiz_create .part3 .p_body .question .q_content .answer .content .left .input {
+  color: #333333;
+  font-size: 13px;
+  font-weight: bold;
+}
+.quiz_create .part3 .p_body .question .q_content .answer .content .left .input input {
+  background: none repeat scroll 0 0 #FFFFFF;
+  border: 1px solid #CCCCCC;
+  height: 22px;
+  padding: 3px 0 0 10px;
+  width: 530px;
+}
+.quiz_create .part3 .p_body .question .q_content .answer .content .left .oper {
+  padding: 3px 0 0 14px;
+}
+.quiz_create .part3 .p_body .question .q_content .answer .content .left .oper .text {
+  color: #999999;
+  float: left;
+  font-family: Myriad Pro;
+  font-size: 12px;
+  font-weight: normal;
+  width: 130px;
+}
+.quiz_create .part3 .p_body .question .q_content .answer .content .left .oper .remove {
+  float: left;
+  font-weight: bold;
+  padding-top: 1px;
+}
+.quiz_create .part3 .p_body .question .q_content .answer .content .left .oper .option {
+  color: #999999;
+  float: right;
+  font-family: Myriad Pro;
+  font-size: 12px;
+  font-weight: normal;
+  width: 130px;
+}
+.quiz_create .part3 .p_body .question .q_content .answer .content .right {
+  float: left;
+  width: 160px;
+}
+.quiz_create .part3 .p_body .question .q_content .answer .content .right .option_img {
+  float: left;
+  width: 50px;
+}
+.quiz_create .part3 .p_body .question .q_content .answer .content .right .option_img img {
+  max-height: 40px;
+  max-width: 40px;
+}
+.quiz_create .part3 .p_body .question .q_content .answer .content .right .s_upload2 {
+  float: left;
+  width: 100px;
+}
+.quiz_create .part3 .p_body .question .q_content .answer .content .right .s_upload2 a img {
+  margin-top: 5px;
+}
+.quiz_create .part3 .p_body .question .q_content .answer .content .right .s_upload2 .i_up {
+  background: url("http://d1bye8fl443jlj.cloudfront.net/prod/images/upload_image.png") no-repeat scroll 0 0 transparent;
+  color: #000000;
+  cursor: pointer;
+  font-size: 10px;
+  height: 35px;
+  margin-top: 2px;
+  padding-top: 3px;
+  text-align: center;
+  width: 78px;
+}
+.quiz_create .part3 .p_body .question .q_content .q_name .up_image .s_upload2 .c_remove {
+  background: url("http://d1bye8fl443jlj.cloudfront.net/prod/images/error.png") no-repeat scroll left center transparent;
+  color: #CC0000;
+  font-size: 11px;
+  margin-top: 20px;
+  padding: 2px 0 2px 20px;
+}
+.quiz_create .part3 .p_body .question .q_content .add_answer {
+  padding: 10px 10px 10px 25px;
+}
+.quiz_create .part3 .p_body .add_question {
+  border-top: 1px dotted #CCCCCC;
+  clear: both;
+  padding: 10px 0 10px 25px;
 }
 .quizz-dropdown {
   background: none repeat scroll 0 0 white;

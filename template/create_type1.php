@@ -21,7 +21,7 @@
     <?php include(dirname(__FILE__)."/answer.php"); ?>
   </div>
   <div id="part4" class="part4">
-    <?php //include(dirname(__FILE__)."/preview.php"); ?>
+    <?php include(dirname(__FILE__)."/preview.php"); ?>
   </div>
 </div>
 

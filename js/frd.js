@@ -10,8 +10,14 @@
 function exists(obj)
 {
   if(typeof(obj) == 'undefined')
-  return false;
-  else
+    return false;
+
+  if(obj == null)
+    return false;
+
+  if(obj == false)
+    return false;
+
   return true;
 }
 
@@ -21,16 +27,16 @@ function exists(obj)
 function isObject(obj)
 {
   if(typeof(obj) == 'undefined')
-  return false;
+    return false;
 
   if(typeof(obj) != 'object')
-  return false;
+    return false;
 
   if(obj == null)
-  return false;
+    return false;
 
   if(obj == false)
-  return false;
+    return false;
 
   return true;
 }

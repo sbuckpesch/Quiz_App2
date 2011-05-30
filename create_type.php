@@ -55,16 +55,6 @@ include('header.php');
   {
     var val=jQuery("input[name=quiz_type]:checked").val();
     load_page('create_type'+val+'.php');
-    /*
-    if(val == 1)
-    {
-      location.href='index.php?page=create_type1.php'; 
-    }
-    if(val == 2)
-    {
-      location.href='index.php?page=create_type2.php'; 
-    }
-     */
   }
 </script>
 <?php 

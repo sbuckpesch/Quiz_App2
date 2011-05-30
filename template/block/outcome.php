@@ -3,13 +3,13 @@
 <div  style="display: block;" id="outcome_<?php echo $number; ?>" class="outcome">
   <div class="outcome-line">
     <div class="clear"></div>
-    <a  onclick="toggle_outcome(1)" title="Outcome <?php echo $number; ?>" id="outcome_<?php echo $number; ?>_nav"  href="#" class="enable">Outcome <?php echo $number; ?></a>
+    <a  onclick="toggle_outcome(<?php echo $number; ?>)" title="Outcome <?php echo $number; ?>" id="outcome_<?php echo $number; ?>_nav"  href="#" class="enable">Outcome <?php echo $number; ?></a>
     
-      <a  style="display: none;" id="outcome_<?php echo $number; ?>_remove"  class="remove">Remove Outcome</a>
+      <a  style="display: none;" id="outcome_<?php echo $number; ?>_remove"  class="outcome_remove">Remove Outcome</a>
     
     <div class="clear"></div>
   </div>
-  <div  style="display: block;" id="outcome_<?php echo $numer; ?>_content" class="q_content">
+  <div  style="display: block;" id="outcome_<?php echo $number; ?>_content" class="q_content">
     <div class="text_con">
       <div class="name_des">Name:
         <span class="special">REQUIRED</span>
@@ -41,7 +41,7 @@
         
           <div class="snap"><img  src="http://d1bye8fl443jlj.cloudfront.net/prod/images/incongnit.jpg" id="outcome_<?php echo $number; ?>_thumbnails"></div>
           <div  id="outcome_<?php echo $number;?>_upload" class="upload"><a >Upload your image</a></div>
-          <div  id="outcome_1_remove_img" style="display: none;" class="c_remove"><a >Remove this</a></div>
+          <div  id="outcome_<?php echo $number; ?>_remove_img" style="display: none;" class="c_remove"><a >Remove this</a></div>
           <input type="hidden"  value="" name="outcome_<?php echo $number; ?>_img" id="outcome_<?php echo $number; ?>_img">
         
       </div>

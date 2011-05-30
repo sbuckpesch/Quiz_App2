@@ -638,11 +638,15 @@ function toggle_outcome(index)
   {
     jQuery("#"+id).removeClass('enable');
     jQuery("#"+id).addClass('disable');
+
+    jQuery("#outcome_"+id+"_content").hide();
   }
   else
   {
     jQuery("#"+id).removeClass('disable');
     jQuery("#"+id).addClass('enable');
+
+    jQuery("#outcome_"+id+"_content").show();
   }
 }
 
@@ -652,6 +656,16 @@ function count_outcome_number()
   var length=jQuery("input.outcome_field").length;
   return length;
 }
+
+function show_remove_outcome(number)
+{
+  jQuery(".outcome_remove").hide();
+  if(number > 1)
+  {
+    jQuery("#outcome_"+number+"_remove").show();
+  }
+}
+
 //add outcome 
 function add_outcome()
 {
@@ -666,6 +680,6 @@ function add_outcome()
 
   jQuery.post(url,params,function(data){
     jQuery("#outcomes_container").append(data);
-    //show_remove_question(curlength);
+    show_remove_outcome(curlength);
   });
 }

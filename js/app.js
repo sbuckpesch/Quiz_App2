@@ -639,7 +639,7 @@ function toggle_outcome(index)
     jQuery("#"+id).removeClass('enable');
     jQuery("#"+id).addClass('disable');
 
-    jQuery("hide outcome_"+id+"_content").hide();
+    jQuery("hide outcome_"+index+"_content").hide();
   }
   else
   {

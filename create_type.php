@@ -37,12 +37,13 @@
                                                                                                                                                                                                                                       </div>
                                                                                                                                                                                                                                         </div>
                                                                                                                                                                                                                                           <div class="col3">
-              <a >
-<div>
+            <div>
+                <a >
+<?php ecoh baseurl(); ?>
               <img onclick="to_create_page();" src="<?php echo baseurl(); ?>/images/begin_creating_quiz_button.png">
-</a>
-</div>
-</div>
+                </a>
+            </div>
+      </div>
 </div>
 
 <script type="text/javascript">

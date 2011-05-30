@@ -639,7 +639,6 @@ function toggle_outcome(index)
     jQuery("#"+id).removeClass('enable');
     jQuery("#"+id).addClass('disable');
 
-    alert("outcome_"+id+"_content");
     jQuery("hide outcome_"+id+"_content").hide();
   }
   else
@@ -647,9 +646,8 @@ function toggle_outcome(index)
     jQuery("#"+id).removeClass('disable');
     jQuery("#"+id).addClass('enable');
 
-    alert("show outcome_"+id+"_content");
 
-    jQuery("#outcome_"+id+"_content").show();
+    jQuery("#outcome_"+index+"_content").show();
   }
 }
 

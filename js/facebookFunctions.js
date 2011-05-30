@@ -79,6 +79,7 @@ function fbUserPageIds()
 			function(response) {				
 			  	//if (response.perms != null && isSetProperSubset(scope.split(","), response.perms.split(","))) {
 			  	if (response.perms != null )
+          {
             displayObject(response);
 				}
 			}

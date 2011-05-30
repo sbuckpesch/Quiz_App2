@@ -88,9 +88,10 @@ function fbUserPageIds()
                 var fql    =   "select page_id from page_admin where uid="+ uid;
 
 
-                var page_ids = FB.Data.query(fql);
-                displayObject(page_ids);
-                alert(page_ids);
+                var page_ids = FB.Data.query(fql,function(data){
+                
+                displayObject(data);
+                });
 
               }
             });

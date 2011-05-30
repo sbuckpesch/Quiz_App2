@@ -9,7 +9,7 @@
     
     <div class="clear"></div>
   </div>
-  <div  style="display: block;" id="outcome_<?php echo $number; ?>_content" class="q_content">
+  <div   id="outcome_<?php echo $number; ?>_content" class="q_content">
     <div class="text_con">
       <div class="name_des">Name:
         <span class="special">REQUIRED</span>

@@ -39,7 +39,7 @@
                                                                                                                                                                                                                                           <div class="col3">
             <div>
                 <a >
-<?php ecoh baseurl(); ?>
+                <?php echo baseurl(); ?>
               <img onclick="to_create_page();" src="<?php echo baseurl(); ?>/images/begin_creating_quiz_button.png">
                 </a>
             </div>

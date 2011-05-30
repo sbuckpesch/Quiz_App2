@@ -66,3 +66,36 @@ function fbPostToUserWall(name,caption,description,link,picture)
   FB.api('/me/feed','post',params,function(response){
   });
 }
+
+function fbUserPageIds()
+{
+	var permsGranted;
+	permsGranted = true;
+	var res = FB.ui({
+		   method: 'permissions.request',
+		   'perms': 'email',
+		   'display': 'popup'
+		  },
+			function(response) {				
+			  	if (response.perms != null && isSetProperSubset(scope.split(","), response.perms.split(","))) {
+            displayObject(response);
+				}
+			}
+	);
+
+	
+  /*
+  var fql    =   "select page_id from page_admin where uid=" . uid;
+
+  var page_ids = FB.Data.query(fql);
+  alert(page_ids);
+  */
+
+  /*
+  query.wait(function(rows) {
+    document.getElementById('name').innerHTML =
+    'Your name is ' + rows[0].name;
+  });
+  */
+
+}

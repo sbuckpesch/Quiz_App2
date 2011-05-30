@@ -3,13 +3,14 @@
 <head>
 
 <link rel="stylesheet" type="text/css" href="css/style.css" ></link>
-<!--
 <script src="http://connect.facebook.net/de_DE/all.js"></script>
+<!--
 <script type="text/javascript" src="langs/langs.js"></script>
 -->
 <?php 
 addJs('jquery'); 
 addJs('jquery.form'); 
+addJs('facebookFunctions'); 
 
 addJs('frd'); 
 addJs('frd_global'); 

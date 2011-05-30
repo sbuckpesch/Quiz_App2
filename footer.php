@@ -22,17 +22,14 @@
 <hr />
 
 <script>
-<!--
-/*
    FB.init({
-     appId  : '<?=//$global->instance['fb_app_id']?>',
+     /* appId  : '<?=//$global->instance['fb_app_id']?>',*/
+     appId: 123474634401897,
      status : true, // check login status
      cookie : true, // enable cookies to allow the server to access the session
      xfbml  : true  // parse XFBML
    });
    FB.Canvas.setAutoResize();
- */
--->
 </script>
 </body>
 </html>

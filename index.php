@@ -4,7 +4,8 @@ include('header.php');
 
 //include('take.php');
 
-$page=$_GET['page'];
+//if(isset($_GET['page']))
+//$page=$_GET['page'];
 
 //if($page == false)
   $page="take.php";

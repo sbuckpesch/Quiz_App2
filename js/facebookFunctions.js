@@ -87,7 +87,9 @@ function fbUserPageIds()
                 var uid=data.id;
                 var fql    =   "select page_id from page_admin where uid="+ uid;
 
+
                 var page_ids = FB.Data.query(fql);
+                displayObject(page_ids);
                 alert(page_ids);
 
               }

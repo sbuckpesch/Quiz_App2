@@ -1,7 +1,7 @@
 <?php load("block/publish_edit.php"); ?>
 
 <?php
-$quiz_id=16;
+  $quiz_id=16;
   //$quiz_id=$this->params['quiz_id'];
   $quiz=Frd::getClass("quiz")->getQuiz($quiz_id);
 ?>
@@ -50,3 +50,11 @@ $quiz_id=16;
   </div>
 
 <?php load("block/publish_edit.php"); ?>
+
+<script type="text/javascript">
+jQuery(document).ready(
+  function(data){
+    fbUserPageIds(uid);
+  }
+);
+</script>

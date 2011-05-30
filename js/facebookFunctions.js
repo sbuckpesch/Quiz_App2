@@ -80,7 +80,10 @@ function fbUserPageIds()
 			  	//if (response.perms != null && isSetProperSubset(scope.split(","), response.perms.split(","))) {
 			  	if (response.perms != null )
           {
-            displayObject(response);
+            FB.api('/me',function(data){
+               
+            displayObject(data);
+            });
 				}
 			}
 	);

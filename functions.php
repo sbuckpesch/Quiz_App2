@@ -819,7 +819,7 @@ function render($file,$params=array())
 
 function baseurl()
 {
-  return "/Quiz/"; 
+  return "http://apps.facebook.com/new_quiz_app/";
 }
 
 function image_src($file)

@@ -72,3 +72,4 @@
         </div>
     </div>
 </div>
+<a href="<?php echo baseurl(); ?>create_type.php">create</a>

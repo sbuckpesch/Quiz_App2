@@ -5,10 +5,10 @@ class Quiz
   function getQuiz($fb_page_id)
   {
     $table=new Frd_Table_Common(Config::Quiz_Table,Config::Quiz_Primary); 
-    $table->loadBy('fb_page_id',$fb_page_id);
+    $rows=$table->loadBy('fb_page_id',$fb_page_id);
 
     if($table != false)
-      return $table[0];
+      return $rows[0];
     else 
       return false;
   }

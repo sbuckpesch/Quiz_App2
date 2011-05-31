@@ -6,7 +6,8 @@ $question_count=0;
 $question_correct=0;
 
 //var_dump($_POST);
-$quiz_id=16; 
+
+$quiz_id=$_POST['quiz_id'];
 $quiz=Frd::getClass("quiz")->getQuiz($quiz_id);
 
 $_POST['quiz_name']=$quiz->name;

@@ -32,8 +32,8 @@ require_once ROOT_PATH.'/lib/iCon/FacebookUserData.php';
 //require_once ROOT_PATH.'/lib/phpflickr/phpFlickr.php';
 
 init_db();
-init_fluttery();
-init_global();
+//init_fluttery();
+//init_global();
 
 
 //$registry->set("GLOBAL",$global);

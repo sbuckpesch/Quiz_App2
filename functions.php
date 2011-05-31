@@ -715,6 +715,10 @@ function init_fluttery()
   global $global;
   global $ic_app_id;
 
+  $global->baseurl='http://dev.iconsultants.eu/git/Quiz-App/';
+  $global->appurl='http://apps.facebook.com/new_quiz_app/';
+
+  return ;
   if(isset($_GET['instid']))
   {
     $instid=$_GET['instid'];
@@ -750,9 +754,11 @@ function init_fluttery()
 
   $global->instid=$fluttery->getInstanceId();
 
+  /*
   var_dump($global->instid);
   var_dump($global->baseurl);
   var_dump($global->appurl);
+   */
 }
 
 function init_global()

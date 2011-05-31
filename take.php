@@ -95,7 +95,7 @@
   <!--
   <a onclick="load_page('create_type.php',{id:1});return false;">
   -->
-  <a target="_top" href="<?php echo baseurl(); ?>create_type.php">
+  <a target="_top" href="<?php echo $global->appurl; ?>create_type.php">
     <?php addImage('button_create_new_quizz.png'); ?>
   </a>
 </div>

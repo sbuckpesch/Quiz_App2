@@ -4,12 +4,10 @@
     $fb_page_id=get_page_id();
 
     $quiz=Frd::getClass("quiz")->getQuiz($fb_page_id);
-
-    $quiz=(object) $quiz;
-
   ?>
   
   <?php if($quiz != false): ?>
+  <?php $quiz=(object) $quiz; ?>
   <div class="quiz_name">
     <div class="name">Quiz: <?php echo $quiz->name; ?></div>
     <input type="text" name="quiz_id" value="<?php echo $quiz->id; ?>" />

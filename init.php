@@ -25,7 +25,7 @@ require_once ROOT_PATH.'/functions.php';
 $registry = Zend_Registry::getInstance();
 
 //require_once ROOT_PATH.'/lib/iCon/FacebookAuth.php';
-require_once ROOT_PATH.'/lib/iCon/FacebookUserData.php';
+//require_once ROOT_PATH.'/lib/iCon/FacebookUserData.php';
 //require_once ROOT_PATH.'/lib/iCon/Helper.php';
 //require_once ROOT_PATH.'/lib/iCon/Link.php';
 //require_once ROOT_PATH.'/lib/iCon/Translate.php';

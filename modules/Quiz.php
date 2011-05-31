@@ -2,12 +2,15 @@
 class Quiz
 {
   //get a quiz record
-  function getQuiz($quiz_id)
+  function getQuiz($fb_page_id)
   {
     $table=new Frd_Table_Common(Config::Quiz_Table,Config::Quiz_Primary); 
-    $table->load($quiz_id);
+    $table->loadBy('fb_page_id',$fb_page_id);
 
-    return $table;
+    if($table != false)
+      return $table[0];
+    else 
+      return false;
   }
 
   function getQuizType($quiz_id)

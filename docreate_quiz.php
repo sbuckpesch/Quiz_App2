@@ -37,17 +37,21 @@ foreach($questions as $question)
   $image=$question['image'];  
 
   $q=new Question();
-  $question_id=$q->add($quiz_id,$correct,$name,$image);
+  $question_id=$q->add($quiz_id,$name,$image);
 
   //3, add answer
   $answers=$question['answers'];
-  foreach($answers as $answer)
+  foreach($answers as $k=>$answer)
   {
     $name=$answer['name'];  
     $image=$answer['image'];  
 
     $answer=new Answer();
     $answer_id=$answer->add($question_id,$name,$image);
+
+    if($k == $correct)
+      $q->updateCorrect($question_id,$answer_id);
+
   }
 }
 

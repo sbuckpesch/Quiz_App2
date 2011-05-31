@@ -1,6 +1,7 @@
 <form action="dotake.php" method="post">
 <div class="quiz_take">
   <?php 
+var_dump(get_page_id());
     $quiz_id=16; 
     $quiz=Frd::getClass("quiz")->getQuiz($quiz_id);
   ?>

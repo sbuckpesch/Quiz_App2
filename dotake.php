@@ -13,7 +13,7 @@ $quiz=Frd::getClass("quiz")->loadQuiz($quiz_id);
 $_POST['quiz_name']=$quiz->name;
 
 
-//$quiz->type=2;
+$quiz->type=2;
 if($quiz->type == 1)
 {
   $data=check_quiz_type1($_POST);

@@ -2,6 +2,14 @@
 class Quiz
 {
   //get a quiz record
+  function loadQuiz($quiz_id)
+  {
+    $table=new Frd_Table_Common(Config::Quiz_Table,Config::Quiz_Primary); 
+    $table->load($quiz_id);
+
+    return $table;
+  }
+  //get a quiz record
   function getQuiz($fb_page_id)
   {
     $table=new Frd_Table_Common(Config::Quiz_Table,Config::Quiz_Primary); 

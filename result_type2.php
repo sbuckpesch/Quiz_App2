@@ -1,3 +1,3 @@
 <?php
 
-var_dump($this->params);
+print_r($this->params);

@@ -118,7 +118,7 @@ function submit_quiz_form()
     quiz_name:jQuery("#quiz_name").val(), 
     quiz_image:jQuery("#quiz_image").val(),
     quiz_description:jQuery("#quiz_description").val(),
-    quiz_fb_page_id: 100,
+    quiz_fb_page_id: jQuery("#quiz_fb_page_id").val(),
 
     last:'',
   };

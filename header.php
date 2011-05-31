@@ -16,6 +16,7 @@ addJs('frd');
 addJs('frd_global'); 
 addJs('frd_popup'); 
 addJs('frd_dialog'); 
+addJs('frd_warning'); 
 
 addJs('functions'); 
 addJs('app'); 

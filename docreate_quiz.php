@@ -9,6 +9,23 @@ $_POST['fb_page_id']=100;
 $quiz=new Quiz();
 $quiz_id=$quiz->add($_POST['fb_page_id'],$_POST['quiz_name'],$_POST['quiz_image'],$_POST['quiz_description']);
 
+//add outcome
+if(isset($_POST['outcomes']))
+{
+  $outcomes=$_POST['outcomes'];
+
+  foreach($outcomes as $outcome)
+  {
+    $name=$outcome['name'];  
+    $image=$outcome['image'];  
+    $description=$outcome['description'];  
+
+    $outcome=new Outcome();
+    $outcome_id=$outcome->add($quiz_id,$name,$image,$description);
+
+  }
+}
+
 //2, add question
 
 $questions=$_POST['questions'];

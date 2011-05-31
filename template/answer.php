@@ -17,6 +17,6 @@
    </div>
 <script type="text/javascript">
   jQuery(document).ready(function(){
-      //add_question();
+      add_question();
   });
 </script>

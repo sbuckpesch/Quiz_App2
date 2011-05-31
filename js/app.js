@@ -1,7 +1,7 @@
 /**
  * load page
  */
-function load_page(page,params)
+function load_page(page,params,target)
 {
   var url='render.php';
   if(exists(params) == false)
@@ -13,12 +13,32 @@ function load_page(page,params)
 
   var html=getajaxhtml(url,params);
 
-  jQuery("#wrapper").html(html);
+  if(exists(target) == false)
+  {
+    jQuery("#wrapper").html(html);
+  }
+  else
+  {
+    jQuery(target).html(html);
+  }
 }
 
 // show part 1,2,3 or 4
 function show_part(index,max)
 {
+  if(index == max)
+  {
+    var ret=quiz_check_form(max);
+    if(ret == false)
+    {
+      return false; 
+    }
+    else
+    {
+      render_preview();  
+    }
+  }
+
   for(var i=0; i<= max; i++)
   {
     jQuery("#part"+i).hide();
@@ -32,6 +52,36 @@ function show_part(index,max)
   jQuery("#quiz_part_nav_"+index).removeClass("step"+index);
 }
 
+function quiz_check_form(max)
+{
+  if(max == 4)
+  {
+    if(check_quiz() == false)
+      return false;
+
+    if(check_outcome() == false)
+      return false;
+
+    if(check_question() == false)
+      return false;
+  }
+  else if(max == 3)
+  {
+    if(check_quiz() == false)
+      return false;
+
+    if(check_question() == false)
+      return false;
+  }
+
+  return true;
+}
+function render_preview()
+{
+  //alert('render_preview');
+  submit_quiz_form();
+}
+
 function submit_quiz_form()
 {
   //submit
@@ -40,23 +90,26 @@ function submit_quiz_form()
     method:"POST",
     //dataType:'json',
     success:function(data){
-        alert(data);
-        return false;
+        //alert(data);
+        //return false;
       if(data.error==1)
       {
         show_warning(data.error_msg);
       }
       else
       {
-        alert(data);
-        //jQuery("#quiz_result").show();
-        //jQuery("#quiz_success_image").attr('src','/Quiz'+data.path);
+        //alert(data.quiz_id);
+
+        //load_page('block/preview.php', {quiz_id:data.quiz_id}, "#quiz_preivew");
+        //load_page('block/preview.php', {quiz_id:data.quiz_id}, "#quiz_createWOAY");
+        load_page('block/preview.php', {quiz_id:data.quiz_id});
       }
         
     },
     error: function(data)
     {
-      alert(data);
+      show_warning('create quiz failed');
+      //alert(data);
     }
 
   }; 
@@ -70,7 +123,23 @@ function submit_quiz_form()
     last:'',
   };
 
+   var outcomes=new Object();
 
+   var number=count_outcome_number();
+   for(var i=1; i<=number;i++)
+   {
+    var name=jQuery("#outcome_"+i+"_name").val();
+    var image=jQuery("#outcome_"+i+"_img").val();
+    var description=jQuery("#outcome_"+i+"_description").val();
+
+    outcomes[i]=new Object();
+    outcomes[i].name=name;
+    outcomes[i].image=image;
+    outcomes[i].description=description;
+   }
+
+  if(number > 0)
+    params.outcomes=outcomes;
    /*
     * array( question[1]=array(
     *  name:
@@ -110,11 +179,13 @@ function submit_quiz_form()
 
 
   params.questions=questions;
+
+
   jQuery.post(url,params,function(data){
-    if(data.error=0)
+    if(data.error==0)
     {
-      //alert('success');  
-      alert(data.quiz_id);
+      //alert(data.quiz_id);
+      load_page('block/preview.php', {quiz_id:data.quiz_id}, "#quiz_preview");
     }
     else
     {
@@ -126,7 +197,56 @@ function submit_quiz_form()
   return false;
 }
 
-function check_part2()
+function check_quiz()
+{
+  var field_selector='#quiz_name';
+  if(jQuery(field_selector).val() == false)
+  {
+    showWarning('no quiz name');
+    return false;
+  }
+
+  return true;
+}
+
+function check_outcome()
+{
+ var number=count_outcome_number();
+ if(number <= 0)
+ {
+   show_warning("invalid outcome name");
+    return false
+ }
+
+ for(var i=1; i<=number; i++)
+ {
+    var name=jQuery("#outcome_"+i+"_name").val();
+    var image=jQuery("#outcome_"+i+"_image").val();
+    var description=jQuery("#outcome_"+i+"_description").val();
+
+    if(name == false )
+    {
+      show_warning("invalid outcome "+i+" name");
+      return false;
+    }
+
+    if(image == false )
+    {
+      show_warning("invalid outcome "+i+" image");
+      return false;
+    } 
+
+    if(description == false )
+    {
+      show_warning("invalid outcome "+i+" description");
+      return false;
+    }
+ }
+
+ return true;
+}
+
+function check_question()
 {
 
  var q_number=count_question_number();
@@ -168,13 +288,19 @@ function check_part2()
     return false;
   }
  }
+ return true;
 }
 
 //show waring dialog
 function show_warning(msg)
 {
-  jQuery("#warning_msg").html(msg);
-  jQuery("#warning_dialog").show();
+  FrdWarning.close();
+
+  FrdWarning.create();
+  FrdWarning.setOption('type','ajax');
+  FrdWarning.setOption('template','template/frd/warning.phtml');
+  FrdWarning.setOption('content',msg);
+  FrdWarning.open();
 
 }
 //number check
@@ -743,10 +869,10 @@ function outcome_save_image(number)
 
 
   jQuery(selector).attr('src',src);
-  jQuery(selector).html(image);
+  //jQuery(selector).html(image);
 
   //save value in  hidden input 
-  jQuery("input[name=outcome_image]").val(src);
+  jQuery("#outcome_"+number+"_img").val(src);
   FrdDialog.close();
 
   jQuery("#outcome_"+number+"_remove_img").show();
@@ -760,7 +886,7 @@ function outcome_remove_image(number)
 
   jQuery(selector).attr('src',src);
 
-  jQuery("input[name=outcome_"+number+"_image]").val('');
+  jQuery("#outcome_"+number+"_img").val('');
 
   jQuery("#outcome_"+number+"_remove_img").hide();
   //jQuery("#question_"+q+"_upload").show();
@@ -791,6 +917,8 @@ function outcome_upload_image(number)
       else
       {
         jQuery("#outcome_"+number+"_result").show();
+
+        //alert(jQuery("#outcome_"+number+"_success_image").html());
         jQuery("#outcome_"+number+"_success_image").attr('src',data.path);
       }
         
@@ -805,4 +933,46 @@ function outcome_upload_image(number)
   jQuery(selector).ajaxSubmit(options);
   return false;
 
+}
+
+function remove_outcome(number)
+{
+  var selector="#outcome_"+number;
+
+  jQuery(selector).remove();
+
+  show_remove_outcome(number-1);
+}
+
+/* talk page */
+ 
+function next_question()
+{
+  var next= curquestion+1;
+
+  if(jQuery("#question_"+next).html() == null)
+  {
+    return false; 
+  }
+
+  jQuery("#question_"+curquestion).hide();
+  curquestion=curquestion+1;
+
+  jQuery("#question_"+curquestion).show();
+
+  if(curquestion > 0)
+    jQuery("#show_previous").show();
+}
+function previous_question()
+{
+  var next= curquestion-1;
+
+  if(jQuery("#question_"+next).html() == null)
+  {
+    return false; 
+  }
+
+  jQuery("#question_"+curquestion).hide();
+  curquestion=curquestion-1;
+  jQuery("#question_"+curquestion).show();
 }

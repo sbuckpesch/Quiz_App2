@@ -1,50 +1,60 @@
+<form action="dotake.php" method="post">
 <div class="quiz_take">
+  <?php 
+    $quiz_id=16; 
+    $quiz=Frd::getClass("quiz")->getQuiz($quiz_id);
+  ?>
+  
   <div class="quiz_name">
-    <div class="name">Quiz: feawefw</div>
+    <div class="name">Quiz: <?php echo $quiz->name; ?></div>
+    <input type="text" name="quiz_id" value="<?php echo $quiz->id; ?>" />
   </div>
 
       <div class="q_take">
         <div class="left_column" id="left_column" >
-          <div class="previous" id="show_previouse" style="display: none;" >
-            <a>Previous</a>
-          </div>
 
-          <!--
-          <div class="ts_share">
-            <a>Report Abuse</a>
-          </div>
-          -->
-          <div class="question" id="question_0"> 
-            <div class="top_c" style="width: 740px;">
-              <div class="name">Question 1: faw</div>
-                <div class="space10"></div>
-              </div>
-              <div class="clear"></div>
-              <div class="left_c"><div class="ans">Choices :</div>
-
-              <div class="choice" >
-                <div class="clear"></div>
-                <div class="option">
-                  <input id="q_36689_answer_126122" name="q_36689_answer" value="126122"  type="radio">
-                </div>
-                 
-                <div class="c_name" style="max-width: 350px;">a</div>
-                <div class="clear"></div>
-              </div>
-
-             <div class="next_button" style="margin: 10px auto;">
-                 <a>
-                  <img src="http://d1bye8fl443jlj.cloudfront.net/prod/images/next_btn.jpg" height="28px" width="87px">
-                </a>
+          <?php $questions=Frd::getClass("quiz")->getQuestions($quiz_id); ?>
+          <?php foreach($questions as $k=>$question): ?>
+          <?php
+            if($k != 0)
+              $display='display:none';
+            else
+              $display='';
+              $display='';
+          ?>
+            <div class="question" id="question_<?php echo $k; ?>" style="<?php echo $display; ?>" > 
+             <h3> Question : 
+                  <?php echo $k+1; ?>. <?php echo $question['name']; ?>
+            </h3>
+            <div>
+              <h2>Choices :</h2>
             </div>
+            <ul>
+            <?php $answers= Frd::getClass("quiz")->getAnswers($question['id']); ?>
+              <?php foreach($answers as $kk=>$answer): ?>
+              <li>
+              <input type="radio" name="question[<?php echo $question['id']; ?>]" value="<?php echo $answer['id']; ?>"/>
+                  <?php echo $answer['name']; ?>
+              </li>
+              <?php endforeach; ?>
+            </ul>
+          </div>
+        <?php endforeach; ?>
+
+
+          <div  >
+            <a onclick="previous_question()" id="show_previous" style="display:none">Previous</a>
+            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+            <a onclick="next_question()" id="show_next" style="display:noen">Next</a>
           </div>
 
           <!-- right column -->
+          <!--
           <div class="right_column">
 
             <div class="c_create">
               <a onclick="load_page('create_type.php',{id:1});return false;">
-                <?php addImage('button_create_new_quizz.png'); ?>
+                <?php //addImage('button_create_new_quizz.png'); ?>
               </a>
             </div>
               
@@ -68,8 +78,24 @@
              </div>
            </div>
          </div>
+        -->
 
         </div>
     </div>
 </div>
-<a target="_top" href="<?php echo baseurl(); ?>create_type.php">create</a>
+<input type="submit" value="finish" />
+</form>
+      
+
+<div class="c_create">
+  <!--
+  <a onclick="load_page('create_type.php',{id:1});return false;">
+  -->
+  <a target="_top" href="<?php echo baseurl(); ?>create_type.php">
+    <?php addImage('button_create_new_quizz.png'); ?>
+  </a>
+</div>
+
+<script type="text/javascript">
+  var curquestion=0;
+</script>

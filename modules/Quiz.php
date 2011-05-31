@@ -10,6 +10,14 @@ class Quiz
     return $table;
   }
 
+  function getQuizType($quiz_id)
+  {
+    $table=new Frd_Table_Common(Config::Quiz_Table,Config::Quiz_Primary); 
+    $table->load($quiz_id);
+
+    return $table->type;
+  }
+
   //get questions
   function getQuestions($quiz_id)
   {

@@ -130,7 +130,6 @@ class Frd
 
     return $registry->get($db);
   }
-
   /**
    * get $global
    *
@@ -157,10 +156,4 @@ class Frd
     $global->$key=$value;
   }
 
-  //其它辅助函数
-  public static function getLoginUserId()
-  {
-    $id=intval($_COOKIE['id']); 
-    return $id;
-  }
 }

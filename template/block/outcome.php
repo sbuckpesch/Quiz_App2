@@ -5,7 +5,7 @@
     <div class="clear"></div>
     <a  onclick="toggle_outcome(<?php echo $number; ?>)" title="Outcome <?php echo $number; ?>" id="outcome_<?php echo $number; ?>_nav"  href="#" class="enable">Outcome <?php echo $number; ?></a>
     
-      <a  style="display: none;" id="outcome_<?php echo $number; ?>_remove"  class="outcome_remove">Remove Outcome</a>
+      <a  onclick="remove_outcome(<?php echo $number; ?>)" style="display: none;" id="outcome_<?php echo $number; ?>_remove"  class="outcome_remove">Remove Outcome</a>
     
     <div class="clear"></div>
   </div>
@@ -15,7 +15,7 @@
         <span class="special">REQUIRED</span>
       </div>
       <div class="name_input">
-          <input class="outcome_field" type="text" name="">
+          <input id="outcome_<?php echo $number; ?>_name" class="outcome_field" type="text" name="">
       </div>
       <div class="cnote">
         <span  id="outcome_1_note">100 characters left.</span>
@@ -26,7 +26,7 @@
         <span class="special">REQUIRED</span>
       </div>
       <div class="des_input">
-        <textarea name="" id="outcome_<?php echo $number; ?>_description_name"></textarea>
+        <textarea name="" id="outcome_<?php echo $number; ?>_description"></textarea>
       </div>
       <div class="cnote">
         <span  id="outcome_<?php echo $number; ?>_description_note">255 characters left.</span>

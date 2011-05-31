@@ -32,7 +32,7 @@ class Question
     $table->delete($$question_id);
   }
 
-  function updateCorrect($question,$correct_answer_id)
+  function updateCorrect($question_id,$correct_answer_id)
   {
     $table=new Frd_Table_Common(Config::Question_Table,Config::Question_Primary); 
     $table->load($question_id);

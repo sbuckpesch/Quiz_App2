@@ -17,18 +17,10 @@
   </div>
 
       <div class="q_take">
-        <div class="left_column" id="left_column" >
 
           <?php $questions=Frd::getClass("quiz")->getQuestions($quiz_id); ?>
           <?php foreach($questions as $k=>$question): ?>
-          <?php
-            if($k != 0)
-              $display='display:none';
-            else
-              $display='';
-              $display='';
-          ?>
-            <div class="question" id="question_<?php echo $k; ?>" style="<?php echo $display; ?>" > 
+            <div>
              <h3> Question : 
                   <?php echo $k+1; ?>. <?php echo $question['name']; ?>
             </h3>
@@ -50,7 +42,6 @@
 
 
 
-        </div>
     </div>
 </div>
 <input type="submit" value="finish" />

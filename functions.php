@@ -765,7 +765,7 @@ function init_global()
 {
   global $global;
   // classes
-  $global->link=new Link();
+  //$global->link=new Link();
 
   if(isset($_REQUEST['signed_request']))
   {

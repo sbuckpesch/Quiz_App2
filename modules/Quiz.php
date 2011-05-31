@@ -7,7 +7,7 @@ class Quiz
     $table=new Frd_Table_Common(Config::Quiz_Table,Config::Quiz_Primary); 
     $rows=$table->loadBy('fb_page_id',$fb_page_id);
 
-    if($table != false)
+    if($rows != false)
       return $rows[0];
     else 
       return false;

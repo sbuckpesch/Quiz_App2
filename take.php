@@ -6,8 +6,11 @@
     $quiz=Frd::getClass("quiz")->getQuiz($fb_page_id);
 
     var_dump($quiz);
+
+
   ?>
   
+  <?php if($quiz != false): ?>
   <div class="quiz_name">
     <div class="name">Quiz: <?php echo $quiz->name; ?></div>
     <input type="text" name="quiz_id" value="<?php echo $quiz->id; ?>" />
@@ -89,6 +92,7 @@
 <input type="submit" value="finish" />
 </form>
       
+<?php endif; ?>
 
 <div class="c_create">
   <!--

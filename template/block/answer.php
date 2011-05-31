@@ -36,7 +36,6 @@
           <div  id="q_<?php echo $q; ?>_answer_<?php echo $answer; ?>_upload" style="display: block;">
 
           <div onclick="show_answer_image_popup(<?php echo $q; ?>,<?php echo $answer; ?>)" class="i_up">Upload your own image</div>
-            <div class="i_up">Add video from<img src="http://d1bye8fl443jlj.cloudfront.net/prod/images/hulu_font.png"></div>
           </div>
         </div>
         <div id="<?php echo $remove_id; ?>" style="display: none;" class="q_<?php echo $q; ?>_remove">

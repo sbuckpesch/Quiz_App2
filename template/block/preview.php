@@ -1,11 +1,10 @@
 <?php
   $quiz_id=$this->params['quiz_id']; 
-  $quiz=Frd::getClass("quiz")->getQuiz($quiz_id);
+  $quiz=Frd::getClass("quiz")->loadQuiz($quiz_id);
 ?>
 
 <div class="quiz_name">
   <div class="thumb">
-    <img alt="" src="http://d1bye8fl443jlj.cloudfront.net/prod/images/quiz_create_image1.gif">
   </div>
   <div id="quiz_preview_name" class="name"><?php echo $quiz->name; ?></div>
 </div>
@@ -21,11 +20,6 @@
       <div class="t_name">
         <?php echo $k+1; ?>. <?php echo $question['name']; ?>
       </div>
-      <!--
-      <div class="t_oper">
-        <a title="for_event_0" href="#">Edit</a>
-      </div>
-      -->
     </div>
     <?php $answers= Frd::getClass("quiz")->getAnswers($question['id']); ?>
     <ul class="answers">

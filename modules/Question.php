@@ -36,9 +36,10 @@ class Question
   {
     $table=new Frd_Table_Common(Config::Question_Table,Config::Question_Primary); 
     $table->load($question_id);
-    $table->correct=$correct;
+    $table->correct=$correct_answer_id;
     $table->save();
   }
+
   function isCorrect($question_id,$answer_id)
   {
     $table=new Frd_Table_Common(Config::Question_Table,Config::Question_Primary); 
@@ -48,5 +49,6 @@ class Question
       return true;
     else
       return false;
+
   }
 }

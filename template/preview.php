@@ -1,10 +1,5 @@
 <?php //load("block/publish_edit.php"); ?>
 
-  <p>
-    <select>
-      <option value="1">Page 1</option> 
-    </select>
-  </p>
   <div id="quiz_preview">
   </div>
 

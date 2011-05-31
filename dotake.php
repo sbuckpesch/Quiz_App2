@@ -39,13 +39,10 @@ function  check_quiz_type2($params)
   {
     if($model->isCorrect($question_id,$answer_id))
     {
-      $question_correct+=1;
       $params['question'][$question_id]=array(
         'answer_id'=>$answer_id,
-       'correct'=>false,
+       'correct'=>1,
       );
-
-
     }
     else
     {
@@ -53,7 +50,7 @@ function  check_quiz_type2($params)
 
       $params['question'][$question_id]=array(
         'answer_id'=>$answer_id,
-       'correct'=>true,
+       'correct'=>0,
       );
     }
   }

@@ -749,6 +749,10 @@ function init_fluttery()
   $global->appurl='http://apps.facebook.com/'.$global->instance['fb_app_url'].'/';
 
   $global->instid=$fluttery->getInstanceId();
+
+  var_dump($global->instid);
+  var_dump($global->baseurl);
+  var_dump($global->appurl);
 }
 
 function init_global()

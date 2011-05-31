@@ -5,8 +5,7 @@
 
     $quiz=Frd::getClass("quiz")->getQuiz($fb_page_id);
 
-    var_dump($quiz);
-
+    $quiz=(object) $quiz;
 
   ?>
   

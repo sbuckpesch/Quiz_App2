@@ -717,6 +717,11 @@ function init_fluttery()
 
   $global->baseurl='http://dev.iconsultants.eu/git/Quiz-App/';
   $global->appurl='http://apps.facebook.com/new_quiz_app/';
+  $global->instance=array(
+    'app_id'=>123474634401897,
+    'app_key'=>'3d5d541d21fd51b71e49dc039bed8e0a',
+    'app_secret'=>'926edad9a6cb9ab217388876f13aeac6',
+  );
 
   return ;
   if(isset($_GET['instid']))

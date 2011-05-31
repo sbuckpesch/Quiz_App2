@@ -7,10 +7,13 @@
   ?>
   
   <?php if($quiz != false): ?>
-  <?php $quiz=(object) $quiz; ?>
+  <?php 
+    $quiz=(object) $quiz; 
+    $quiz_id=$quiz->id;
+  ?>
   <div class="quiz_name">
     <div class="name">Quiz: <?php echo $quiz->name; ?></div>
-    <input type="text" name="quiz_id" value="<?php echo $quiz->id; ?>" />
+    <input type="hidden" name="quiz_id" value="<?php echo $quiz->id; ?>" />
   </div>
 
       <div class="q_take">

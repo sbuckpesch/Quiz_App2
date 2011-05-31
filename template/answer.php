@@ -1,6 +1,7 @@
     <div class="p_header">
       <div class="title">Add Questions</div>
-      <div class="note">You must have 5 questions. You must have 2 choices. You can have up to 10 questions and 5 choices per question.</div>
+      <div class="note">
+      </div>
     </div>
 
     <div class="p_body">

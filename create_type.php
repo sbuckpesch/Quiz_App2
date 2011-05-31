@@ -44,7 +44,7 @@ include('header.php');
             <div>
                 <a >
                 <?php echo baseurl(); ?>
-              <img onclick="to_create_page();" src="<?php echo baseurl(); ?>/images/begin_creating_quiz_button.png">
+              <img onclick="to_create_page();" src="<?php echo baseurl(); ?>images/begin_creating_quiz_button.png">
                 </a>
             </div>
       </div>

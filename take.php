@@ -6,7 +6,9 @@
   #question1_answer{
     color:gray;
     /*border:solid red thin;*/
-    margin-left:40px;padding-top:15px; }
+    margin-left:40px;
+    padding-top:5px; 
+  }
   #question1_answer .answer{
     padding-left:10px;
   }

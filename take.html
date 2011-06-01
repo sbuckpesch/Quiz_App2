@@ -5,17 +5,57 @@
 <title>Take Quiz</title>
 </head>
 <body>
+<style>
+  #question1{
+    /*border:solid thin red ;*/
+    color:gray;margin-left: 70px; padding-top: 20px;
+  }
+  #question1_answer{
+    color:gray;
+    /*border:solid red thin;*/
+    margin-left:40px;padding-top:10px;
+  }
+  #question1_answer .answer{
+    padding-left:10px;
+  }
+
+  #question2{
+    /*border:solid thin red ;*/
+    color:gray;margin-left: 70px; padding-top: 20px;
+  }
+  #question2_answer{
+    color:gray;
+    /*border:solid red thin;*/
+    margin-left:40px;padding-top:10px;
+  }
+  #question2_answer .answer{
+    padding-left:10px;
+  }
+
+</style>
 <!-- Header -->
-<div style="background-image: url(/facebook/iventus/bg1.jpg); width: 492px; height: 502px;">
+<div style="background-image: url(images/iventus/bg1.jpg); width: 492px; height: 502px;">
 
 </div>
 <!-- Quiz Part -->
-<div style="background-image: url(/facebook/iventus/bg2.jpg); width: 492px; height: 229px;">
-
+<div style="background-image: url(images/iventus/bg2.jpg); width: 492px; height: 110px;">
+  <div id="question1" >What's your name;</div>
+  <div id="question1_answer">
+    <div><input type="radio"><span class="answer">10</span></div>
+    <div><input type="radio"><span class="answer">30</span></div>
+  </div>
 </div>
+<div style="background-image: url(images/iventus/bg2.jpg); width: 492px; height: 110px;">
+  <!-- question 2 -->
+  <div id="question2" >What's your name;</div>
+  <div id="question2_answer">
+    <div><input type="radio"><span class="answer">10</span></div>
+    <div><input type="radio"><span class="answer">20</span></div>
+    <div><input type="radio"><span class="answer">30</span></div>
+  </div>
+</div>
+
 <!-- Footer -->
-<div style="background-image: url(/facebook/iventus/bg3.jpg); width: 492px; height: 100px;">
-
-</div>
+<div style="background-image: url(images/iventus/bg3.jpg); width: 492px; height: 100px;">
 </body>
 </html>

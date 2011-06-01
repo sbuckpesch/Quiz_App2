@@ -37,6 +37,6 @@ else
 <a href="index.php?page=create_type.php">create quiz</a>
 -->
 <?php 
-include('footer.php'); 
+//include('footer.php'); 
 ?>
 

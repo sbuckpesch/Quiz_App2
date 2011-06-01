@@ -1,4 +1,30 @@
-<form action="dotake.php" method="post">
+<style>
+  #question1{
+    /*border:solid thin red ;*/
+    color:gray;margin-left: 70px; padding-top: 20px;
+  }
+  #question1_answer{
+    color:gray;
+    /*border:solid red thin;*/
+    margin-left:40px;padding-top:15px; }
+  #question1_answer .answer{
+    padding-left:10px;
+  }
+
+  #question2{
+    /*border:solid thin red ;*/
+    color:gray;margin-left: 70px; padding-top: 20px;
+  }
+  #question2_answer{
+    color:gray;
+    /*border:solid red thin;*/
+    margin-left:40px;padding-top:15px; 
+  }
+  #question2_answer .answer{
+    padding-left:10px;
+  }
+
+</style>
 <div class="quiz_take">
   <?php 
     /////////$fb_page_id=get_page_id();
@@ -12,40 +38,8 @@
     $quiz=(object) $quiz; 
     $quiz_id=$quiz->id;
   ?>
-  <div class="quiz_name">
-    <div class="name">Quiz: <?php echo $quiz->name; ?></div>
-    <input type="hidden" name="quiz_id" value="<?php echo $quiz->id; ?>" />
-  </div>
-
-      <div class="q_take">
-
-          <?php $questions=Frd::getClass("quiz")->getQuestions($quiz_id); ?>
-          <?php foreach($questions as $k=>$question): ?>
-            <div>
-             <h3> Question : 
-                  <?php echo $k+1; ?>. <?php echo $question['name']; ?>
-            </h3>
-            <div>
-              <h2>Choices :</h2>
-            </div>
-            <ul>
-            <?php $answers= Frd::getClass("quiz")->getAnswers($question['id']); ?>
-              <?php foreach($answers as $kk=>$answer): ?>
-              <li>
-              <input type="radio" name="question[<?php echo $question['id']; ?>]" value="<?php echo $answer['id']; ?>"/>
-                  <?php echo $answer['name']; ?>
-              </li>
-              <?php endforeach; ?>
-            </ul>
-          </div>
-        <?php endforeach; ?>
 
 
-
-
-    </div>
-</div>
-<input type="submit" value="finish" />
 </form>
       
 <?php endif; ?>
@@ -61,3 +55,43 @@
 </div>
   -->
 
+<!-- Header -->
+<div style="background-image: url(images/iventus/bg1.jpg); width: 492px; height: 502px;">
+
+</div>
+<!-- Quiz Part -->
+
+<form action="dotake.php" method="post">
+<?php $questions=Frd::getClass("quiz")->getQuestions($quiz_id); ?>
+<?php foreach($questions as $k=>$question): ?>
+
+<div style="background-image: url(images/iventus/bg2.jpg); width: 492px; height: 110px;">
+  <div id="question<?php echo ($k+1); ?>" >
+    <?php echo $question['name']; ?>
+  </div>
+  <div id="question<?php echo ($k+1); ?>_answer">
+  <?php $answers= Frd::getClass("quiz")->getAnswers($question['id']); ?>
+    <?php foreach($answers as $kk=>$answer): ?>
+    <div>
+      <input type="radio" name="question[<?php echo $question['id']; ?>]" value="<?php echo $answer['id']; ?>"/>
+      <span class="answer">
+        <?php echo $answer['name']; ?>
+      </span>
+    </div>
+    <?php endforeach; ?>
+  </div>
+</div>
+<?php endforeach; ?>
+</form>
+
+<a href="#" onclick="take_quiz();return false;"> Teilnehmen</a>
+<!-- Footer -->
+<div style="background-image: url(images/iventus/bg3.jpg); width: 492px; height: 100px;">
+</div>
+
+<script type="text/javascript">
+  function take_quiz()
+  {
+      alert('take');
+  }
+</script>

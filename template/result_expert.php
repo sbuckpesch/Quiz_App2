@@ -32,23 +32,14 @@
             'validationOptions' => array('required'),
             'middleInitialHidden' => true
         )),    
-        new JFormComponentSingleLineText('firma', 'Firma:', array(
-            'width' => 'long',
-            'validationOptions' => array('required'),
-        )),
+        new JFormComponentAddress('billing', 'Adresse:', array(
+                'validationOptions' => array('required'),
+            )),
+        
         new JFormComponentSingleLineText('email', 'E-mail address:', array(
             'width' => 'long',
             'validationOptions' => array('required', 'email'),
-        )),
-        new JFormComponentSingleLineText('telefon', 'Telefon:', array(
-            'width' => 'longest',
-            'validationOptions' => array('required'),
-        )),
-        new JFormComponentTextArea('message', 'Deine Nachricht:', array(
-            'width' => 'long',
-            'height' => 'medium',
-            'validationOptions' => array('required'),
-        )),
+        )),   
     ));
 
     // Add the section to the page

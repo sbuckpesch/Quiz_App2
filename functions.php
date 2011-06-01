@@ -743,7 +743,10 @@ function init_fluttery()
   if($instid == false && $page_id == false)
     return false;
 
-  $fluttery = new Fluttery($instid,$ic_app_id,$page_id);
+  $app_key='fred';
+  $fluttery = new Client($app_key);
+  $fluttery->setInstanceId($ic_app_id,0,$page_id);
+
   $data=$fluttery->getData();
 
   print_r($data);exit();

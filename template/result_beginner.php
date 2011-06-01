@@ -12,6 +12,6 @@
 </div>
 
 <!-- Footer -->
-<div style="background-image: url(../images/iventus/7.jpg); width: 497px; height: 311px;">
+<div style="background-image: url(images/iventus/7.jpg); width: 497px; height: 311px;">
 
 </div>

@@ -27,8 +27,8 @@
 </style>
 <div class="quiz_take">
   <?php 
-    /////////$fb_page_id=get_page_id();
-    $fb_page_id=100;
+    $fb_page_id=get_page_id();
+    //$fb_page_id=100;
 
     $quiz=Frd::getClass("quiz")->getQuiz($fb_page_id);
   ?>

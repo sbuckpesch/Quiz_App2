@@ -12,10 +12,7 @@
 </div>
 <!-- Form Part -->
 <div style="background-image: url(../images/iventus/6.jpg); width: 497px; height: 121px;">
-<a name="form";></a>
 <?php 
-
-
     // Create the form
     $contact = new JFormer('contactForm', array(
         'submitButtonText' => 'Send',

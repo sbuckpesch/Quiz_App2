@@ -64,7 +64,7 @@
 
     <form id="take_form" action="dotake.php" method="post">
     <input type="hidden" name="quiz_id" value="<?php echo $quiz_id; ?>" />
-    <input type="text" name="fb_user_id" id="fb_user_id" value="<?php echo $user_id; ?>"/>
+    <input type="hidden" name="fb_user_id" id="fb_user_id" value="<?php echo $user_id; ?>"/>
     <?php $questions=Frd::getClass("quiz")->getQuestions($quiz_id); ?>
     <?php foreach($questions as $k=>$question): ?>
 

@@ -31,15 +31,15 @@
     	new JFormComponentSingleLineText('vorname', 'Vorname', array(
     	'tip' => '<p>This is a tooltip on a single line text component.</p>',
 		)),	
+		new JFormComponentSingleLineText('adress', 'Adresse', array(
+    	'tip' => '<p>This is a tooltip on a single line text component.</p>',
+		)),	    				
+		new JFormComponentSingleLineText('singleLineTextValidation-email', 'Email', array(
+        'validationOptions' => array('email'),
+    	)),	
     	new JFormComponentSingleLineText('name', 'Name', array(
     	'tip' => '<p>This is a tooltip on a single line text component.</p>',
 		)),	
-		new JFormComponentSingleLineText('adress', 'Adresse', array(
-    	'tip' => '<p>This is a tooltip on a single line text component.</p>',
-		)),	
-		new JFormComponentSingleLineText('singleLineTextValidation-email', 'Email', array(
-        'validationOptions' => array('email'),
-    	)),		
 		new JFormComponentSingleLineText('plz', 'PLZ', array(
 		'maxLength' => 5,
 		'width' => 'short',
@@ -85,7 +85,7 @@ function onSubmit($formValues) {
     $email_msg .= "Telefon: " . $formValues->telefon . "<br>";
     $email_msg .= "Nachricht: " . $formValues->message . "<br>";
     // Send the message
-    $email="info@iconsultants.de";
+    $email="v.klein@iconsultants.de";
 
     if (mail($email, $subject, $email_msg, $headers)) {
       $message['successPageHtml'] = "Vielen Dank f&uuml;r ihre Anfrage. Wir werden uns umgehend mit Ihnen in </br> Verbindung setzen.";

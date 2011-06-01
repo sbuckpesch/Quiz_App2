@@ -73,7 +73,7 @@ function save_result($params)
   $value=$params['question'];
 
   $result=new Result();
-  $result->add($quiz_id,$fb_user_id,$is_all_right,$value=array());
+  $result->save($quiz_id,$fb_user_id,$is_all_right,$value=array());
 
 }
 

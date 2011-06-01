@@ -13,6 +13,14 @@
   {
     $answer_name='';
   }
+  if(isset($this->params['answer_image']))
+  {
+    $answer_image=$this->params['answer_image'];
+  }
+  else
+  {
+    $answer_image='';
+  }
 
   if(isset($this->params['correct']))
   {
@@ -55,7 +63,14 @@
     <?php //render("block/answer_popup.php",array('q'=>$q,'answer'=>$answer)); ?>
     <div class="right">
         <div class="option_img">
-          <img id="q_<?php echo $q; ?>_answer_<?php echo $answer; ?>_thumbnails" src="http://d1bye8fl443jlj.cloudfront.net/prod/images/quiz_create_part2-img.gif"></div>
+<?php
+  if($answer_image == false) 
+        $image= 'http://d1bye8fl443jlj.cloudfront.net/prod/images/quiz_create_part2-img.gif'; 
+  else
+      $image=$answer_image;
+?>
+  <img id="q_<?php echo $q; ?>_answer_<?php echo $answer; ?>_thumbnails" src="<?php echo $image; ?>">
+      </div>
         <div class="s_upload2">
           <div  id="q_<?php echo $q; ?>_answer_<?php echo $answer; ?>_upload" style="display: block;">
 
@@ -65,7 +80,7 @@
         <div id="<?php echo $remove_id; ?>" style="display: none;" class="q_<?php echo $q; ?>_remove">
         <a onclick="answer_remove_image(<?php echo $q;?>,<?php echo $answer; ?>);" >Remove this</a>
         </div>
-        <input type="hidden"  value="" name="q_<?php echo $q; ?>_answer_<?php echo $answer; ?>_img" id="q_<?php echo $q; ?>_answer_<?php echo $answer; ?>_img">
+        <input type="hidden"  value="<?php echo $answer_image; ?>" name="q_<?php echo $q; ?>_answer_<?php echo $answer; ?>_img" id="q_<?php echo $q; ?>_answer_<?php echo $answer; ?>_img">
       
     </div>
     <div class="clear"></div>

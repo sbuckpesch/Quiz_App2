@@ -3,7 +3,10 @@ require('init.php');
 
 //var_dump($_POST);
 
-$quiz_id=$_POST['quiz_id'];
+if(isset($_POST['quiz_id']))
+  $quiz_id=$_POST['quiz_id'];
+else
+  $quiz_id=false;
 
 $_POST['fb_page_id']=100;
 //1, add quiz

@@ -535,6 +535,7 @@ function part1_remove_image()
 function part2_toggle_answers(obj)
 {
    jQuery(obj).parent().find(".q_content").toggle();
+   return false;
   var id='outcome_'+index+'_nav';
 
   if(jQuery("#"+id).hasClass('enable'))
@@ -736,7 +737,7 @@ function answer_upload_image(q,answer)
       else
       {
         jQuery("#q_"+q+"_"+answer+"_result").show();
-        jQuery("#q_"+q+"_"+answer+"_success_image").attr('src','data.path);
+        jQuery("#q_"+q+"_"+answer+"_success_image").attr('src',data.path);
       }
         
     },
@@ -771,6 +772,11 @@ function answer_save_image(q,answer)
   jQuery("#q_"+q+"_answer_"+answer+"_remove_image").show();
 
   jQuery("#q_"+q+"_answer_"+answer+"_upload").hide();
+  
+
+  FrdDialog.close();
+
+
 }
 
 function answer_remove_image(q,answer)

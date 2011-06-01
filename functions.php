@@ -715,6 +715,7 @@ function init_fluttery()
   global $global;
   global $ic_app_id;
 
+  /*
   $global->baseurl='http://dev.iconsultants.eu/git/Quiz-App/';
   $global->appurl='http://apps.facebook.com/new_quiz_app/';
   $global->instance=array(
@@ -724,6 +725,7 @@ function init_fluttery()
   );
 
   return ;
+   */
   if(isset($_GET['instid']))
   {
     $instid=$_GET['instid'];
@@ -741,11 +743,13 @@ function init_fluttery()
   if($instid == false && $page_id == false)
     return false;
 
-  $fluttery = new Fluttery_Fluttery($instid,$ic_app_id,$page_id);
+  $fluttery = new Fluttery($instid,$ic_app_id,$page_id);
+  $data=$fluttery->getData();
 
-  $config = $fluttery->config;
-  $content = $fluttery->content;
-  $instance = $fluttery->instance;
+  print_r($data);exit();
+  $config = $data['config'];
+  $content = $data['content'];
+  $instance = $data['instance'];
 
   $global->config = $config;
   $global->content = $content;
@@ -758,6 +762,7 @@ function init_fluttery()
   $global->appurl='http://apps.facebook.com/'.$global->instance['fb_app_url'].'/';
 
   $global->instid=$fluttery->getInstanceId();
+
 
   /*
   var_dump($global->instid);

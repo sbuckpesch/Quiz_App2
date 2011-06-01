@@ -27,16 +27,6 @@
 </style>
 <div class="quiz_take">
 
-  <!--
-<div class="c_create">
-  <a onclick="load_page('create_type.php',{id:1});return false;">
-  -->
-  <!--
-  <a target="_top" href="<?php //echo $global->appurl; ?>create_type.php">
-    <?php //addImage('button_create_new_quizz.png'); ?>
-  </a>
-</div>
-  -->
 
 <!-- Header -->
 <div style="background-image: url(images/iventus/bg1.jpg); width: 492px; height: 502px;">
@@ -88,6 +78,14 @@
     </form>
     <a href="#" onclick="take_quiz();return false;"> Teilnehmen</a>
 <?php else: ?>
+  <!-- create link -->
+  <hr/>
+  <div>
+    <a onclick="load_page('create_type.php',{id:1});return false;">
+    <a target="_top" href="<?php echo $global->appurl; ?>create_type.php">
+    </a>
+  </div>
+  
 <?php endif; ?>
 <!-- Footer -->
 <div style="background-image: url(images/iventus/bg3.jpg); width: 492px; height: 100px;">
@@ -106,7 +104,7 @@
       {
         if(data.error==0)
         {
-          alert(data.is_all_right);
+          //alert(data.is_all_right);
           if(data.is_all_right == 'n')
           {
             load_page('result_beginner.php'); 

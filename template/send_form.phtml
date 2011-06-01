@@ -42,8 +42,8 @@
 
   </style>
   <div id="contact_form">
-    <div id="send_success" style="display:none">
-      Danke Du
+    <div id="send_success" style="display:none;text-align:center">
+      Besten Dank
     </div>
     <!--
     <table border=0>
@@ -118,6 +118,7 @@
 
           jQuery("#send_form").hide();
           jQuery("#send_success").show();
+          jQuery("#form_part").css('height','50');
         /*
         if(FrdForm.dataType == 'json')
         {

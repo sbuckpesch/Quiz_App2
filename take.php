@@ -7,20 +7,22 @@
     color:gray;
     /*border:solid red thin;*/
     margin-left:40px;
-    padding-top:5px; 
+    padding-top:10px; 
   }
   #question1_answer .answer{
-    padding-left:10px;
+    padding-left:12px;
   }
 
   #question2{
     /*border:solid thin red ;*/
-    color:gray;margin-left: 70px; padding-top: 20px;
+    color:gray;margin-left: 70px; 
+    padding-top: 20px;
   }
   #question2_answer{
     color:gray;
     /*border:solid red thin;*/
-    margin-left:40px;padding-top:15px; 
+    margin-left:40px;
+    padding-top:5px; 
   }
   #question2_answer .answer{
     padding-left:10px;
@@ -95,7 +97,7 @@
   <?php if($quiz == false): ?>
   <!-- create link -->
   <div>
-    <a target="_top" href="<?php echo $global->appurl; ?>create_type.php">
+  <a target="_top" href="<?php echo $global->appurl; ?>create_type.php?fb_page_id=<?php echo $page_id;  ?>">
       Create
     </a>
   </div>
@@ -106,7 +108,7 @@
     $quiz_id=$quiz->id;
   ?>
   <div>
-  <a target="_top" href="<?php echo $global->appurl; ?>create_type.php?quiz_id=<?php echo $quiz_id ?>&page_id=<?php echo $page_id; ?>">
+  <a target="_top" href="<?php echo $global->appurl; ?>create_type.php?quiz_id=<?php echo $quiz_id ?>&fb_page_id=<?php echo $page_id; ?>">
       Edit
     </a>
   </div>

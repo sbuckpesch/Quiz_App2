@@ -15,13 +15,16 @@
     $quiz_id=$this->params['quiz_id'];
 
     $quiz=Frd::getClass("quiz")->loadQuiz($quiz_id);
+    $fb_page_id=$quiz->fb_page_id;
 
     $edit=true; 
   }
   else
   {
     $edit=false; 
+    $fb_page_id=$this->params['fb_page_id'];
   }
+
 ?>
 
 <div class="quiz_createWOAY">

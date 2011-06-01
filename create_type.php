@@ -13,5 +13,5 @@ include('header.php');
 </script>
 <?php 
   render("create_type2.php",$_GET);
-include('footer.php'); 
+  include('footer.php'); 
 ?>

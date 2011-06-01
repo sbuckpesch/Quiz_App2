@@ -11,6 +11,7 @@ FB.Canvas.setSize();
 }
 </script>
 <head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>Take Quiz</title>
 <link rel="stylesheet" type="text/css" href="css/style.css" ></link>
 <script src="http://connect.facebook.net/de_DE/all.js"></script>

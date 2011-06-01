@@ -7,7 +7,7 @@
 
 </div>
 <!-- Form Part -->
-<div style="background-image: url(images/iventus/6.jpg); width: 497px; height: 121px;">
+<div id="form_part" style="background-image: url(images/iventus/6.jpg); width: 497px; height: 121px;">
 <?php render('send_form.phtml') ; ?>
 </div>
 

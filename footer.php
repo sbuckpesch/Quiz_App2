@@ -3,7 +3,7 @@
 <div id="footer">
 <script>
    FB.init({
-     appId: 123474634401897,
+     appId: '123474634401897',
      status : true, // check login status
      cookie : true, // enable cookies to allow the server to access the session
      xfbml  : true  // parse XFBML

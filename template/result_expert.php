@@ -32,10 +32,6 @@
             'validationOptions' => array('required'),
             'middleInitialHidden' => true
         )),    
-        new JFormComponentSingleLineText('name', 'Name:', array(
-            'width' => 'long',
-            'validationOptions' => array('required'),
-        )),
         new JFormComponentSingleLineText('firma', 'Firma:', array(
             'width' => 'long',
             'validationOptions' => array('required'),

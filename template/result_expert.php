@@ -16,7 +16,7 @@
     // Create the form
     $contact = new JFormer('contactForm', array(
         'submitButtonText' => 'Send',
-     'action' => 'result_expert.php',
+     'action' => 'template/result_expert.php',
         'style' => 'width: 490px;',
     ));
 

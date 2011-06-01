@@ -26,23 +26,6 @@
 
 </style>
 <div class="quiz_take">
-  <?php 
-    $fb_page_id=get_page_id();
-    //$fb_page_id=100;
-
-    $quiz=Frd::getClass("quiz")->getQuiz($fb_page_id);
-  ?>
-  
-  <?php if($quiz != false): ?>
-  <?php 
-    $quiz=(object) $quiz; 
-    $quiz_id=$quiz->id;
-  ?>
-
-
-</form>
-      
-<?php endif; ?>
 
   <!--
 <div class="c_create">
@@ -60,31 +43,45 @@
 
 </div>
 <!-- Quiz Part -->
+  <?php 
+    $fb_page_id=get_page_id();
+    $fb_page_id=100;
+    $quiz=Frd::getClass("quiz")->getQuiz($fb_page_id);
 
-<form action="dotake.php" method="post">
-<?php $questions=Frd::getClass("quiz")->getQuestions($quiz_id); ?>
-<?php foreach($questions as $k=>$question): ?>
+  ?>
+  
+  <?php if($quiz != false): ?>
+  <?php 
+    $quiz=(object) $quiz; 
+    $quiz_id=$quiz->id;
+  ?>
 
-<div style="background-image: url(images/iventus/bg2.jpg); width: 492px; height: 110px;">
-  <div id="question<?php echo ($k+1); ?>" >
-    <?php echo $question['name']; ?>
-  </div>
-  <div id="question<?php echo ($k+1); ?>_answer">
-  <?php $answers= Frd::getClass("quiz")->getAnswers($question['id']); ?>
-    <?php foreach($answers as $kk=>$answer): ?>
-    <div>
-      <input type="radio" name="question[<?php echo $question['id']; ?>]" value="<?php echo $answer['id']; ?>"/>
-      <span class="answer">
-        <?php echo $answer['name']; ?>
-      </span>
+    <form id="take_form" action="dotake.php" method="post">
+    <input type="hidden" name="quiz_id" value="<?php echo $quiz_id; ?>" />
+    <?php $questions=Frd::getClass("quiz")->getQuestions($quiz_id); ?>
+    <?php foreach($questions as $k=>$question): ?>
+
+    <div style="background-image: url(images/iventus/bg2.jpg); width: 492px; height: 110px;">
+      <div id="question<?php echo ($k+1); ?>" >
+        <?php echo $question['name']; ?>
+      </div>
+      <div id="question<?php echo ($k+1); ?>_answer">
+      <?php $answers= Frd::getClass("quiz")->getAnswers($question['id']); ?>
+        <?php foreach($answers as $kk=>$answer): ?>
+        <div>
+          <input type="radio" name="question[<?php echo $question['id']; ?>]" value="<?php echo $answer['id']; ?>"/>
+          <span class="answer">
+            <?php echo $answer['name']; ?>
+          </span>
+        </div>
+        <?php endforeach; ?>
+      </div>
     </div>
     <?php endforeach; ?>
-  </div>
-</div>
-<?php endforeach; ?>
-</form>
-
-<a href="#" onclick="take_quiz();return false;"> Teilnehmen</a>
+    </form>
+    <a href="#" onclick="take_quiz();return false;"> Teilnehmen</a>
+<?php else: ?>
+<?php endif; ?>
 <!-- Footer -->
 <div style="background-image: url(images/iventus/bg3.jpg); width: 492px; height: 100px;">
 </div>
@@ -92,6 +89,34 @@
 <script type="text/javascript">
   function take_quiz()
   {
-      alert('take');
+      //jQuery("#take_form").submit();
+    //alert('take');
+    FrdForm.selector="#take_form";
+    FrdForm.dataType='json';
+    FrdForm.success=function(data){
+
+      if(FrdForm.dataType == 'json')
+      {
+        if(data.error==0)
+        {
+          alert(data.is_all_right);
+          if(data.is_all_right == 'n')
+          {
+            load_page('result_beginner.php'); 
+          }
+          else if(data.is_all_right == 'y')
+          {
+            load_page('result_expert.php'); 
+          }
+
+        }
+        else
+        {
+          showError(data.error_msg);
+        }
+      }
+
+    };
+    FrdForm.ajaxSubmit();
   }
 </script>

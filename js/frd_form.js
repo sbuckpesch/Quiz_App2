@@ -7,14 +7,14 @@ FrdForm.selector=null;
 
 FrdForm.url=null;
 FrdForm.method='POST';
-FrdForm.dataType='text';
+FrdForm.dataType='json';
 FrdForm.target=null;
 FrdForm.success=null;
 FrdForm.error=null;
 
 FrdForm.success=function(data){
 
-  alert(data);
+  //alert(data);
   if(FrdForm.dataType == 'json')
   {
     if(data.error==1)
@@ -47,13 +47,15 @@ FrdForm.ajaxSubmit=function(callback){
     options.target=FrdForm.target;
 
   options.method=FrdForm.method;
-  options.dataType=FrdForm.datatType;
+
+  options.dataType=FrdForm.dataType;
 
   options.success=FrdForm.success;
 
-  alert(options.success);
+  //alert(options.success);
   options.error=FrdForm.error;
 
+  //displayObject(options);
   //alert('submit');
 
 

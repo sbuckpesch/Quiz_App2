@@ -1,11 +1,10 @@
 <?php
 require('init.php');
-require('header.php');
+//require('header.php');
 
 $question_count=0;
 $question_correct=0;
 
-//var_dump($_POST);
 
 $quiz_id=$_POST['quiz_id'];
 $quiz=Frd::getClass("quiz")->loadQuiz($quiz_id);
@@ -22,7 +21,15 @@ if($quiz->type == 1)
 else if($quiz->type == 2)
 {
   $data=check_quiz_type2($_POST);
-  render('result_type2.php',$data);
+
+  $result=array(
+    'error'=>0,
+    'is_all_right'=>$data['is_all_right'], 
+  );
+
+  echo json_encode($result);
+  exit();
+  //render('result_type2.php',$data);
 }
 
 

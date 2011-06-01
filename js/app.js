@@ -3,8 +3,8 @@
  */
 function load_page(page,params,target)
 {
-  FrdLoading.create();
-  FrdLoading.open();
+  //FrdLoading.create();
+  //FrdLoading.open();
 
   var url='render.php';
   if(exists(params) == false)

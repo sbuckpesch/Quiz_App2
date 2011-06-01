@@ -6,7 +6,6 @@ function load_page(page,params,target)
   FrdLoading.create();
   FrdLoading.open();
 
-return ;
   var url='render.php';
   if(exists(params) == false)
   {

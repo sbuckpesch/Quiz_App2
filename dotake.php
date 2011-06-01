@@ -75,7 +75,7 @@ function  check_quiz_type2($params)
 function save_result($params)
 {
   $quiz_id=$params['quiz_id'];
-  $fb_user_id=100;
+  $fb_user_id=$params['fb_user_id'];
   $is_all_right=$params['is_all_right'];
   $value=$params['question'];
 

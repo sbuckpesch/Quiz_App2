@@ -49,8 +49,8 @@
     $user_id=get_user_id();
     $admin=get_is_admin();
 
-    var_dump($user_id);
-    var_dump($admin);
+    //var_dump($user_id);
+    //var_dump($admin);
     //$fb_page_id=100;
     $quiz=Frd::getClass("quiz")->getQuiz($fb_page_id);
 

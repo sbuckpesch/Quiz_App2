@@ -80,7 +80,7 @@
        
 <?php endif; ?>
 <!-- Footer -->
-<div style="background-image: url(images/iventus/bg3.jpg); width: 492px; height: 100px;">
+<div style="background-image: url(images/iventus/bg3.jpg); width: 492px; height: 45px;">
 </div>
 
 

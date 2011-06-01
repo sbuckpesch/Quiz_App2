@@ -10,14 +10,14 @@
 
 
     $message=<<<HTML
-     From Quiz
-    ----------------
-    Vorname: $firstname
-    Name: $name
-    Adresse: $address
-    Ort: $city
-    PLZ:$postcode
-    Email: $email
+     From Quiz   \n
+    ---------------- \n
+    Vorname: $firstname \n
+    Name: $name  \n
+    Adresse: $address  \n
+    Ort: $city \n
+    PLZ:$postcode  \n
+    Email: $email \n
 HTML;
 
     $to="iamlosing02@gmail.com";

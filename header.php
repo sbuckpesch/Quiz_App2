@@ -1,5 +1,15 @@
 <!DOCTYPE div PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
-<html>
+<html xmlns="http://www.w3.org/1999/xhtml" style="overflow: hidden">
+
+<script type="text/javascript">
+window.fbAsyncInit = function() {
+FB.Canvas.setSize();
+}
+// Do things that will sometimes call sizeChangeCallback()
+function sizeChangeCallback() {
+FB.Canvas.setSize();
+}
+</script>
 <head>
 <title>Take Quiz</title>
 <link rel="stylesheet" type="text/css" href="css/style.css" ></link>

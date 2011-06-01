@@ -1,13 +1,5 @@
 <?php
-error_reporting(E_ALL|E_STRICT);
-ini_set('display_errors', 1);
-#date_default_timezone_set('Asia/shanghai');
-
-define("ROOT_PATH",realpath(dirname(__FILE__)));
-set_include_path(ROOT_PATH.'/lib/' . PATH_SEPARATOR );
-
-
-class Soap
+class Fluttery
 {
   protected $_server_url='http://www.app-arena.com/manager/server/soap.php';
   protected $_app_key;

@@ -15,13 +15,6 @@ function get_page_id()
     list($encoded_sig, $payload) = explode('.', $signed_request, 2); 
     $data = json_decode(base64_decode(strtr($payload, '-_', '+/')), true);
 
-    var_dump($data);
-    /*
-    $this->user_id = $this->request_data['user_id'];
-		$this->isFan = $this->request_data['page']['liked'];
-		$this->isAdmin = $this->request_data['page']['admin'];
-     */
-
     if(isset($data['page']))
       $page_id=$data['page']['id'];
     else
@@ -33,6 +26,54 @@ function get_page_id()
   }
 
   return $page_id;
+}
+
+function get_user_id()
+{
+  if(isset($_REQUEST['signed_request']))
+  {
+    $signed_request = $_REQUEST["signed_request"];
+    list($encoded_sig, $payload) = explode('.', $signed_request, 2); 
+    $data = json_decode(base64_decode(strtr($payload, '-_', '+/')), true);
+
+    /*
+    $this->user_id = $this->request_data['user_id'];
+		$this->isFan = $this->request_data['page']['liked'];
+		$this->isAdmin = $this->request_data['page']['admin'];
+     */
+
+    if(isset($data['user_id']))
+      $user_id=$data['user_id'];
+    else
+      $user_id=false;
+  }
+  else
+  {
+    $user_id=false;
+  }
+
+  return $user_id;
+}
+
+function get_is_admin()
+{
+  if(isset($_REQUEST['signed_request']))
+  {
+    $signed_request = $_REQUEST["signed_request"];
+    list($encoded_sig, $payload) = explode('.', $signed_request, 2); 
+    $data = json_decode(base64_decode(strtr($payload, '-_', '+/')), true);
+
+    if(isset($data['page']['admin']))
+      $is_admin=$data['page']['admin'];
+    else
+      $is_admin=false;
+  }
+  else
+  {
+    $is_admin=false;
+  }
+
+  return $is_admin;
 }
 /* useful functions only for this app 
  *

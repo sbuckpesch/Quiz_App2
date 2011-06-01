@@ -3,19 +3,16 @@
 <link rel="stylesheet" type="text/css" href="../lib/jFormer/jformer.css" ></link>
 
 <!-- Header -->
-<div style="background-image: url(../images/iventus/4.jpg); width: 497px; height: 224px;">
+<div style="background-image: url(images/iventus/4.jpg); width: 497px; height: 224px;">
 
 </div>
 <!-- Result Part -->
-<div style="background-image: url(../images/iventus/8.jpg); width: 497px; height: 283px;">
+<div style="background-image: url(images/iventus/8.jpg); width: 497px; height: 283px;">
 
 </div>
 <!-- Form Part -->
-<div style="background-image: url(../images/iventus/6.jpg); width: 497px; height: 121px;">
-<a name="form";></a>
+<div style="background-image: url(images/iventus/6.jpg); width: 497px; height: 121px;">
 <?php 
-
-
     // Create the form
     $contact = new JFormer('contactForm', array(
         'submitButtonText' => 'Send',

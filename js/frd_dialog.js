@@ -24,7 +24,7 @@ FrdDialog.create=function(id){
   FrdDialog.init({},id);
   FrdDialog.setOption('showoverlay',false);
   FrdDialog.setOption('type','ajax');
-  FrdDialog.setOption('template','/template/frd/dialog.phtml');
+  FrdDialog.setOption('template','template/frd/dialog.phtml');
 
   FrdDialog.setOption('id','frd_popup'); //default id
   FrdDialog.setOption('selector','#frd_popup');

@@ -110,7 +110,7 @@
 <script type="text/javascript">
   function take_quiz()
   {
-    //jQuery("#take_form").submit();
+
     //alert('take');
     FrdForm.selector="#take_form";
     FrdForm.dataType='json';

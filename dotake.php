@@ -7,6 +7,17 @@ $question_correct=0;
 
 
 $quiz_id=$_POST['quiz_id'];
+
+if(!isset($_POST['question']))
+{
+  $result=array(
+  'error'=>1,
+  'error_msg'=>'please choose the answer', 
+  );
+
+  echo json_encode($result);
+  exit();
+}
 $quiz=Frd::getClass("quiz")->loadQuiz($quiz_id);
 
 $_POST['quiz_name']=$quiz->name;

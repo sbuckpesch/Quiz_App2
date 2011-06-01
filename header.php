@@ -27,13 +27,14 @@ addJs('frd_global');
 addJs('frd_popup'); 
 addJs('frd_dialog'); 
 addJs('frd_warning'); 
+addJs('frd_loading'); 
 addJs('frd_form'); 
 
 addJs('functions'); 
 addJs('app'); 
 
-addJs('jformer'); 
-addCss('jformer'); 
+//addJs('jformer'); 
+//addCss('jformer'); 
 
 
 ?>

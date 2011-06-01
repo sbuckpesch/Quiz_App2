@@ -3,6 +3,10 @@
  */
 function load_page(page,params,target)
 {
+  FrdLoading.create();
+  FrdLoading.open();
+
+return ;
   var url='render.php';
   if(exists(params) == false)
   {
@@ -12,6 +16,7 @@ function load_page(page,params,target)
   params['page']=page;
 
   var html=getajaxhtml(url,params);
+  FrdLoading.close();
 
   if(exists(target) == false)
   {

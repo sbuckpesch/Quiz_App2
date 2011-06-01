@@ -28,10 +28,10 @@
 
     // Add components to the section
     $section->addJFormComponentArray(array(
-        new JFormComponentSingleLineText('name', 'Name:', array(
-            'width' => 'long',
+    	new JFormComponentName('name', 'Name:', array(
             'validationOptions' => array('required'),
-        )),
+            'middleInitialHidden' => true
+        )),    
         new JFormComponentSingleLineText('firma', 'Firma:', array(
             'width' => 'long',
             'validationOptions' => array('required'),

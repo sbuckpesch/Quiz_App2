@@ -76,8 +76,16 @@
     </div>
     <?php endforeach; ?>
     </form>
-    <a href="#" onclick="take_quiz();return false;"> Teilnehmen</a>
+    <a href="#" onclick="take_quiz();return false;">
+       <!-- Teilnehmen -->
+      <img src="images/iventus/teilnehmen.jpg" />
+    </a>
 <?php endif; ?>
+  
+<!-- Footer -->
+<div style="background-image: url(images/iventus/bg3.jpg); width: 492px; height: 100px;">
+</div>
+
 <?php if($is_admin == true): ?>
   <!-- create link -->
   <hr/>
@@ -102,11 +110,6 @@
   </div>
   <?php endif; ?>
 <?php endif; ?>
-  
-<!-- Footer -->
-<div style="background-image: url(images/iventus/bg3.jpg); width: 492px; height: 100px;">
-</div>
-
 <script type="text/javascript">
   function take_quiz()
   {

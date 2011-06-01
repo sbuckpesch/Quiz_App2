@@ -1,3 +1,4 @@
+<!--
 <div class="quiz_precreate">
   <div class="col2">
       <div class="box1"><h5>What type of quiz do you want to create?</h5></div>
@@ -39,11 +40,12 @@
                                                                                                                                                                                                                                           <div class="col3">
               <a >
 <div>
-              <img onclick="to_create_page();" src="<?php echo baseurl(); ?>/images/begin_creating_quiz_button.png">
+              <img onclick="to_create_page();" src="<?php //echo baseurl(); ?>/images/begin_creating_quiz_button.png">
 </a>
 </div>
 </div>
 </div>
+-->
 
 <script type="text/javascript">
   function to_create_page()

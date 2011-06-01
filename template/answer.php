@@ -6,18 +6,21 @@
 
     <div class="p_body">
       <div id="questions_container">
-        <?php //render("block/question.php",array('q'=>1)); ?>
+          
+          <?php if($edit == true): ?>
+            <?php $questions=Frd::getClass("quiz")->getQuestions($quiz_id); ?>
+            <?php foreach($questions as $k=>$question): ?>
+              <?php render("block/question.php",array('q'=>($k+1),'question_id'=>$question['id'] ,'question_name'=>$question['name'],'correct'=>$question['correct'],'question_image'=>$question['image']) ); ?>
+            <?php endforeach; ?>
+          <?php endif; ?>
       </div>
       <?php render("block/add_question.php"); ?>
     </div>
 
-    <div class="g_continue">
-      <a onclick="show_part(4,4)">
-          <img src="http://d1bye8fl443jlj.cloudfront.net/prod/images/quiz_create-continue.gif">
-      </a>
-   </div>
 <script type="text/javascript">
   jQuery(document).ready(function(){
+      <?php if($edit == false): ?>
       add_question();
+      <?php endif; ?>
   });
 </script>

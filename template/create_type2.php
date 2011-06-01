@@ -9,6 +9,20 @@
   <div class="top-nav"> 
     <?php include_once(dirname(__FILE__)."/block/create_nav2.php"); ?>
   </div>
+<?php
+  if(isset($this->params['quiz_id']))
+  {
+    $quiz_id=$this->params['quiz_id'];
+
+    $quiz=Frd::getClass("quiz")->loadQuiz($quiz_id);
+
+    $edit=true; 
+  }
+  else
+  {
+    $edit=false; 
+  }
+?>
 
 <div class="quiz_createWOAY">
   <div id="part1" class="part1">

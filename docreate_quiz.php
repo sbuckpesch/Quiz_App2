@@ -3,13 +3,25 @@ require('init.php');
 
 //var_dump($_POST);
 
+$quiz_id=$_POST['quiz_id'];
 
 $_POST['fb_page_id']=100;
 //1, add quiz
 $quiz=new Quiz();
-$quiz_id=$quiz->add($_POST['fb_page_id'],$_POST['quiz_name'],$_POST['quiz_image'],$_POST['quiz_description']);
+if($quiz_id > 0)
+{
+  $quiz->edit($quiz_id,$_POST['quiz_name'],$_POST['quiz_image'],$_POST['quiz_description']);
+  $quiz->clear($quiz_id);
+}
+else
+{
+  $quiz_id=$quiz->add($_POST['fb_page_id'],$_POST['quiz_name'],$_POST['quiz_image'],$_POST['quiz_description']);
+
+}
+
 
 //add outcome
+/*
 if(isset($_POST['outcomes']))
 {
   $outcomes=$_POST['outcomes'];
@@ -25,10 +37,12 @@ if(isset($_POST['outcomes']))
 
   }
 }
+*/
 
 //2, add question
 
 $questions=$_POST['questions'];
+
 
 foreach($questions as $question)
 {
@@ -50,7 +64,9 @@ foreach($questions as $question)
     $answer_id=$answer->add($question_id,$name,$image);
 
     if($k == $correct)
+    {
       $q->updateCorrect($question_id,$answer_id);
+    }
 
   }
 }

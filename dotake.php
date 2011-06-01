@@ -35,6 +35,7 @@ function  check_quiz_type2($params)
 
   $model=new Question();
   $question_count=count($questions);
+  $is_all_right='y';
   foreach($questions as $question_id=>$answer_id)
   {
     if($model->isCorrect($question_id,$answer_id))
@@ -52,9 +53,27 @@ function  check_quiz_type2($params)
         'answer_id'=>$answer_id,
        'correct'=>0,
       );
+
+      $is_all_right='n';
     }
   }
 
+  $params['is_all_right']=$is_all_right;
 
+
+  save_result($params);
   return $params;
 }
+
+function save_result($params)
+{
+  $quiz_id=$params['quiz_id'];
+  $fb_user_id=100;
+  $is_all_right=$params['is_all_right'];
+  $value=$params['question'];
+
+  $result=new Result();
+  $result->add($quiz_id,$fb_user_id,$is_all_right,$value=array());
+
+}
+

@@ -10,9 +10,7 @@ $database_user='ic_aa_quiz';
 $database_pass='WaMSsYtMwbhX3Z7XfEvN';
 
 
-/*
 $database_user='root';
 $database_pass='123';
 $database_name='quiz';
- */
 ?>

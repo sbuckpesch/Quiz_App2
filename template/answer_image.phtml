@@ -191,19 +191,19 @@ label {
           <div class="dialog_body">
             <div class="fb_protected_wrapper" >
               <div>
-                    <form id="q_{$q}_{$answer}_image_form" enctype="multipart/form-data">
+                    <form id="q_{q}_{answer}_image_form" enctype="multipart/form-data">
 
                     <div id="add_image" class="add_image">
                       <div class="title">
-                        <span id="q_{$q}_{$answer}_image_form_note" style="color:red">    </span>
+                        <span id="q_{q}_{answer}_image_form_note" style="color:red">    </span>
                       </div>
 
-                      <div class="result" id="q_{$q}_{$answer}_result" style="display:none">
+                      <div class="result" id="q_{q}_{answer}_result" style="display:none">
                           <div class="line"> 
                           </div>
                           <div class="line"> 
                               <div class="img">
-                                <img id="q_{$q}_{$answer}_success_image">
+                                <img id="q_{q}_{answer}_success_image">
                               </div>
                           </div>
                       </div>
@@ -213,7 +213,7 @@ label {
                         </div>
 
                         <div class="button">
-                        <a onclick="answer_upload_image({$q},{$answer});return false;">
+                        <a onclick="answer_upload_image({q},{answer});return false;">
                             <img src="http://d1bye8fl443jlj.cloudfront.net/prod/images/ctp_upload.png">
                           </a>
                         </div>

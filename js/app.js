@@ -115,6 +115,7 @@ function submit_quiz_form()
   }; 
   var url="docreate_quiz.php";
   var params={
+    quiz_id:jQuery("#quiz_id").val(), 
     quiz_name:jQuery("#quiz_name").val(), 
     quiz_image:jQuery("#quiz_image").val(),
     quiz_description:jQuery("#quiz_description").val(),
@@ -161,7 +162,7 @@ function submit_quiz_form()
       var correct=".q_"+i+"_correct";
       questions[i].correct=jQuery("input."+correct+":checked").val();
       
-      questions[i].image='q_image';
+      questions[i].image=jQuery("#question_"+i+"_img").val();
 
       questions[i].answers=new Object(); 
       var a_number=count_answer_number(i);
@@ -172,8 +173,7 @@ function submit_quiz_form()
 
           questions[i].answers[j]=new Object();
           questions[i].answers[j].name=val;
-
-          questions[i].answers[j].image='a_image';
+          questions[i].answers[j].image=jQuery("#q_"+i+"_answer_"+j+"_img").val();
        }
    }
 
@@ -517,7 +517,7 @@ function part1_save_image()
   //outcome_hide_image_upload();
 
   //save value in  hidden input 
-  //jQuery("input[name=quiz_image]").val(src);
+  jQuery("input[name=quiz_image]").val(src);
   FrdDialog.close();
 }
 
@@ -636,7 +636,7 @@ function question_upload_image(q)
       else
       {
         jQuery("#question_"+q+"_result").show();
-        jQuery("#question_"+q+"_success_image").attr('src','/Quiz'+data.path);
+        jQuery("#question_"+q+"_success_image").attr('src',data.path);
       }
         
     },
@@ -665,11 +665,13 @@ function question_save_image(q)
   question_hide_image_upload(q);
 
   //save value in  hidden input 
-  jQuery("input[name=question_"+q+"_image]").val(src);
+  jQuery("input[name=question_"+q+"_img]").val(src);
 
   //show delete 
   jQuery("#question_"+q+"_remove_img").show();
   jQuery("#question_"+q+"_upload").hide();
+
+  FrdDialog.close();
 }
 
 function question_remove_image(q)
@@ -734,7 +736,7 @@ function answer_upload_image(q,answer)
       else
       {
         jQuery("#q_"+q+"_"+answer+"_result").show();
-        jQuery("#q_"+q+"_"+answer+"_success_image").attr('src','/Quiz'+data.path);
+        jQuery("#q_"+q+"_"+answer+"_success_image").attr('src','data.path);
       }
         
     },

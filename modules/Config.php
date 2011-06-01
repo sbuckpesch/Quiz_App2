@@ -10,6 +10,9 @@ class Config
   const Answer_Table="answer";
   const Answer_Primary="id";
 
+  const Result_Table="result";
+  const Result_Primary="id";
+
   const Type1=1;
   const Type2=2;
 }

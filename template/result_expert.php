@@ -29,24 +29,24 @@
     // Add components to the section
     $section->addJFormComponentArray(array(
     	new JFormComponentSingleLineText('vorname', 'Vorname', array(
-    	'tip' => '<p>This is a tooltip on a single line text component.</p>',
+    	'width' => 'long',    	
 		)),	
 		new JFormComponentSingleLineText('address', 'Adresse', array(
-    	'tip' => '<p>This is a tooltip on a single line text component.</p>',
+		'width' => 'long',    	
 		)),	    				
 		new JFormComponentSingleLineText('singleLineTextValidation-email', 'Email', array(
         'validationOptions' => array('email'),
+		'width' => 'longest',
     	)),	
     	new JFormComponentSingleLineText('name', 'Name', array(
-    	'tip' => '<p>This is a tooltip on a single line text component.</p>',
+    	'width' => 'long',
 		)),	
 		new JFormComponentSingleLineText('plz', 'PLZ', array(
 		'maxLength' => 5,
 		'width' => 'short',
-    	'tip' => '<p>This is a tooltip on a single line text component.</p>',
 		)),	
 		new JFormComponentSingleLineText('city', 'Ort', array(
-    	'tip' => '<p>This is a tooltip on a single line text component.</p>',
+    	'width' => 'long',
 		)),	
     ));
 

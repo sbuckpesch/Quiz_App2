@@ -57,6 +57,9 @@ class Fluttery
     {
       try
       {
+        var_dump($this->_app_key);
+        var_dump($app_id);
+        var_dump($page_id);
         $instance_id = $this->_client->getInstanceId($this->_app_key,$app_id,null,$page_id);
 
         var_dump($instance_id);

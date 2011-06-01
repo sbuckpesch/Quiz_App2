@@ -35,7 +35,7 @@ require_once ROOT_PATH.'/lib/jformer.php';
 
 init_db();
 init_fluttery();
-//init_global();
+init_global();
 
 
 //$registry->set("GLOBAL",$global);

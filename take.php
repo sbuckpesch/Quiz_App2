@@ -96,7 +96,7 @@
     $quiz_id=$quiz->id;
   ?>
   <div>
-  <a target="_top" href="<?php echo $global->appurl; ?>create_type.php?quiz_id=<?php echo $quiz_id ?>">
+  <a target="_top" href="<?php echo $global->appurl; ?>create_type.php?quiz_id=<?php echo $quiz_id ?>&page_id=<?php echo $page_id; ?>">
       Edit
     </a>
   </div>

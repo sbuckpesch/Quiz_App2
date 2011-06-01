@@ -16,7 +16,7 @@
     // Create the form
     $contact = new JFormer('contactForm', array(
         'submitButtonText' => 'Send',
-     'action' => 'result_expert.php',
+     'action' => 'template/result_beginner.php',
         'style' => 'width: 490px;',
     ));
 
@@ -29,24 +29,24 @@
     // Add components to the section
     $section->addJFormComponentArray(array(
     	new JFormComponentSingleLineText('vorname', 'Vorname', array(
-    	'tip' => '<p>This is a tooltip on a single line text component.</p>',
+    	'width' => 'long',    	
 		)),	
-		new JFormComponentSingleLineText('adress', 'Adresse', array(
-    	'tip' => '<p>This is a tooltip on a single line text component.</p>',
+		new JFormComponentSingleLineText('address', 'Adresse', array(
+		'width' => 'long',    	
 		)),	    				
 		new JFormComponentSingleLineText('singleLineTextValidation-email', 'Email', array(
         'validationOptions' => array('email'),
+		'width' => 'longest',
     	)),	
     	new JFormComponentSingleLineText('name', 'Name', array(
-    	'tip' => '<p>This is a tooltip on a single line text component.</p>',
+    	'width' => 'long',
 		)),	
 		new JFormComponentSingleLineText('plz', 'PLZ', array(
 		'maxLength' => 5,
 		'width' => 'short',
-    	'tip' => '<p>This is a tooltip on a single line text component.</p>',
 		)),	
 		new JFormComponentSingleLineText('city', 'Ort', array(
-    	'tip' => '<p>This is a tooltip on a single line text component.</p>',
+    	'width' => 'long',
 		)),	
     ));
 
@@ -77,13 +77,14 @@ function onSubmit($formValues) {
  $headers .= "X-Mailer: php" . phpversion(); 
  // Set the subject
 //   $subject = $global->content['emailRegistrationSubject'];
-	$subject = "Facebook Marketing"; 
+	$subject = "Hotel"; 
     // Set the e-mail and replace [formUrl] with the real form URL
+    $email_msg = "Vorname: " . $formValues->vorname . "<br>";
     $email_msg = "Name: " . $formValues->name . "<br>";
-    $email_msg .= "Firma: " . $formValues->firma . "<br>";
+    $email_msg .= "Adresse: " . $formValues->address . "<br>";    
+    $email_msg .= "PLZ: " . $formValues->plz . "<br>";
+    $email_msg .= "Ort: " . $formValues->city . "<br>";
     $email_msg .= "Email: " . $formValues->email . "<br>";
-    $email_msg .= "Telefon: " . $formValues->telefon . "<br>";
-    $email_msg .= "Nachricht: " . $formValues->message . "<br>";
     // Send the message
     $email="v.klein@iconsultants.de";
 

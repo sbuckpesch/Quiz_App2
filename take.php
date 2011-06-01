@@ -75,8 +75,9 @@
       </div>
     </div>
     <?php endforeach; ?>
-    </form>
-    <a href="#" onclick="take_quiz();return false;">Teilnehmen</a>
+    </form>   
+    <a href="#" onclick="take_quiz();return false;"><img alt="Teilnehmen" src="images/iventus/teilnehmen.jpg"></a>
+       
 <?php endif; ?>
 <!-- Footer -->
 <div style="background-image: url(images/iventus/bg3.jpg); width: 492px; height: 100px;">

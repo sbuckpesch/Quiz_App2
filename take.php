@@ -37,7 +37,7 @@
     $fb_page_id=get_page_id();
 
     $user_id=get_user_id();
-    $admin=get_is_admin();
+    $is_admin=get_is_admin();
 
     //var_dump($user_id);
     //var_dump($admin);
@@ -77,16 +77,32 @@
     <?php endforeach; ?>
     </form>
     <a href="#" onclick="take_quiz();return false;"> Teilnehmen</a>
-<?php else: ?>
+<?php endif; ?>
+<?php if($is_admin == true): ?>
   <!-- create link -->
   <hr/>
+   
+  <?php if($quiz == false): ?>
+  <!-- create link -->
   <div>
-    <a onclick="load_page('create_type.php',{id:1});return false;">
     <a target="_top" href="<?php echo $global->appurl; ?>create_type.php">
+      Create
     </a>
   </div>
-  
+  <?php else: ?>
+  <!-- edit link -->
+  <?php 
+    $quiz=(object) $quiz; 
+    $quiz_id=$quiz->id;
+  ?>
+  <div>
+  <a target="_top" href="<?php echo $global->appurl; ?>create_type.php?quiz_id=<?php echo $quiz_id ?>">
+      Edit
+    </a>
+  </div>
+  <?php endif; ?>
 <?php endif; ?>
+  
 <!-- Footer -->
 <div style="background-image: url(images/iventus/bg3.jpg); width: 492px; height: 100px;">
 </div>

@@ -28,18 +28,26 @@
 
     // Add components to the section
     $section->addJFormComponentArray(array(
-    	new JFormComponentName('name', 'Name:', array(
-            'validationOptions' => array('required'),
-            'middleInitialHidden' => true
-        )),    
-        new JFormComponentAddress('billing', 'Adresse:', array(
-                'validationOptions' => array('required'),
-            )),
-        
-        new JFormComponentSingleLineText('email', 'E-mail address:', array(
-            'width' => 'long',
-            'validationOptions' => array('required', 'email'),
-        )),   
+    	new JFormComponentSingleLineText('vorname', 'Vorname', array(
+    	'tip' => '<p>This is a tooltip on a single line text component.</p>',
+		)),	
+    	new JFormComponentSingleLineText('name', 'Name', array(
+    	'tip' => '<p>This is a tooltip on a single line text component.</p>',
+		)),	
+		new JFormComponentSingleLineText('adress', 'Adresse', array(
+    	'tip' => '<p>This is a tooltip on a single line text component.</p>',
+		)),	
+		new JFormComponentSingleLineText('singleLineTextValidation-email', 'Email', array(
+        'validationOptions' => array('email'),
+    	)),		
+		new JFormComponentSingleLineText('plz', 'PLZ', array(
+		'maxLength' => 5,
+		'width' => 'short',
+    	'tip' => '<p>This is a tooltip on a single line text component.</p>',
+		)),	
+		new JFormComponentSingleLineText('city', 'Ort', array(
+    	'tip' => '<p>This is a tooltip on a single line text component.</p>',
+		)),	
     ));
 
     // Add the section to the page

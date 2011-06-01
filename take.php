@@ -76,7 +76,7 @@
     </div>
     <?php endforeach; ?>
     </form>
-    <a href="#" onclick="take_quiz();return false;"> Teilnehmen</a>
+    <a href="#" onclick="take_quiz();return false;">Teilnehmen</a>
 <?php endif; ?>
 <?php if($is_admin == true): ?>
   <!-- create link -->

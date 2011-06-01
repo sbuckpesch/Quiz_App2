@@ -78,6 +78,11 @@
     </form>
     <a href="#" onclick="take_quiz();return false;">Teilnehmen</a>
 <?php endif; ?>
+<!-- Footer -->
+<div style="background-image: url(images/iventus/bg3.jpg); width: 492px; height: 100px;">
+</div>
+
+
 <?php if($is_admin == true): ?>
   <!-- create link -->
   <hr/>
@@ -103,9 +108,7 @@
   <?php endif; ?>
 <?php endif; ?>
   
-<!-- Footer -->
-<div style="background-image: url(images/iventus/bg3.jpg); width: 492px; height: 100px;">
-</div>
+
 
 <script type="text/javascript">
   function take_quiz()

@@ -15,6 +15,12 @@ function get_page_id()
     list($encoded_sig, $payload) = explode('.', $signed_request, 2); 
     $data = json_decode(base64_decode(strtr($payload, '-_', '+/')), true);
 
+    var_dump($data);
+    /*
+    $this->user_id = $this->request_data['user_id'];
+		$this->isFan = $this->request_data['page']['liked'];
+		$this->isAdmin = $this->request_data['page']['admin'];
+     */
 
     if(isset($data['page']))
       $page_id=$data['page']['id'];

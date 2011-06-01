@@ -747,6 +747,8 @@ function init_fluttery()
   $fluttery = new Fluttery($app_key);
   $fluttery->setInstanceId($ic_app_id,0,$page_id);
 
+  exit();
+
   $data=$fluttery->getData();
 
   print_r($data);exit();

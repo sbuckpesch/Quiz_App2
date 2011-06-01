@@ -1,3 +1,7 @@
+<script src="../lib/jFormer/jquery1.4.2.js" type="text/javascript"></script>
+<script type="text/javascript" src="../lib/jFormer/jFormer.js" ></script>
+<link rel="stylesheet" type="text/css" href="../lib/jFormer/jformer.css" ></link>
+
 <!-- Header -->
 <div style="background-image: url(../images/iventus/4.jpg); width: 497px; height: 224px;">
 

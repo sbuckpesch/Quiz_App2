@@ -13,14 +13,13 @@
 <!-- Form Part -->
 <div style="background-image: url(../images/iventus/6.jpg); width: 497px; height: 121px;">
 <a name="form";></a>
-<div style="position: absolute; top: 450px;" >
 <?php 
 
 
     // Create the form
     $contact = new JFormer('contactForm', array(
         'submitButtonText' => 'Send',
-     'action' => 'Willkommen.php',
+     'action' => 'result_expert.php',
         'style' => 'width: 490px;',
     ));
 

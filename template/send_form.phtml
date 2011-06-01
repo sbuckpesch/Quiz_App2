@@ -1,0 +1,138 @@
+  <style>
+    #contact_form{
+      color:black;
+      font-weight:bold;
+      font-size:10px;
+      width:480px;
+      height:100px;
+      padding-left:20px;
+      padding-top:20px;
+
+      /*border:solid red thin;*/
+    }
+    #contact_form .validate_field{
+      border:dotted thin red; 
+    }
+
+    #contact_form input{
+      width:160px;
+    }
+
+    #contact_form .column1{
+      width:60px;
+    }
+    #contact_form .column2{
+      width:160px;
+    }
+    #contact_form .column3{
+      width:60px;
+    }
+    #contact_form .column4{
+      width:160px;
+    }
+
+    #contact_form .send{
+      font-weight:bold;
+      font-size:12px;
+      color:black;
+    }
+    #contact_form a{
+      color:black;
+    }
+
+  </style>
+  <div id="contact_form">
+    <div id="send_success" style="display:none">
+      Danke Du
+    </div>
+    <!--
+    <table border=0>
+    -->
+    <form id="send_form" action="send.php"  method="post">
+    <table>
+      <tr>
+        <td class="column1">
+            Vorname
+        </td>
+        <td class="column2">
+            <input type="text"  name="firstname"/>
+        </td>
+        <td class="column3">
+            Name
+        </td>
+        <td class="column4">
+          <input type="text"  name="name"/>
+        </td>
+      </tr>
+      <tr>
+        <td>
+            Adresse
+        </td>
+        <td>
+            <input type="text"  name="address"/>
+        </td>
+        <td>
+            PLZ
+        </td>
+        <td>
+            <input type="text"  style="width:30px;" name="postcode" />
+            Ort
+            <input type="text"  style="width:100px;" name="city"/>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          Email
+        </td>
+        <td colspan="3">
+          <input type="text"  style="width:300px" name="email" />
+            <a href="#" onclick="send_form_submit();return false;">
+              <span class="send">
+                ABSENDEN
+              </span>
+            </a>
+        </td>
+      </tr>
+    </table>
+    </form>
+  </div>
+
+  <script type="text/javascript">
+    function send_form_submit()
+    {
+      var elements=new Array('firstname','name','address','postcode','city','email');
+      for(var i in elements)
+      {
+        if(jQuery("#send_form [name="+elements[i]+"]").val() == false)
+        {
+          jQuery("#send_form [name="+elements[i]+"]").addClass('validate_field'); 
+          return false;
+        }
+      }
+
+
+      FrdForm.selector="#send_form";
+      FrdForm.dataType='html';
+      FrdForm.success=function(data){
+
+          jQuery("#send_form").hide();
+          jQuery("#send_success").show();
+        /*
+        if(FrdForm.dataType == 'json')
+        {
+          if(data.error==0)
+          {
+            alert('send success');
+          }
+          else
+          {
+            showError(data.error_msg);
+          }
+        }
+         */
+
+      };
+      FrdForm.ajaxSubmit();
+    }
+
+  </script>

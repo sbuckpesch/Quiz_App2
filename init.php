@@ -31,6 +31,8 @@ $registry = Zend_Registry::getInstance();
 //require_once ROOT_PATH.'/lib/iCon/Translate.php';
 //require_once ROOT_PATH.'/lib/phpflickr/phpFlickr.php';
 
+require_once ROOT_PATH.'/lib/jformer.php';
+
 init_db();
 init_fluttery();
 //init_global();

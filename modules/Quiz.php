@@ -42,6 +42,17 @@ class Quiz
 
     return $rows;
   }
+
+  function clearQuestions($quiz_id)
+  {
+    $db=Frd::getDb(); 
+
+    $table=Config::Question_Table;
+
+    $where=$db->quoteInto('quiz_id=?',$quiz_id);
+
+    $db->delete($table,$where);
+  }
   
   //get answers
   function getAnswers($question_id)
@@ -55,6 +66,18 @@ class Quiz
     $rows=$db->fetchAll($select);
 
     return $rows;
+  }
+
+  //get answers
+  function clearAnswers($question_id)
+  {
+    $db=Frd::getDb(); 
+
+    $table=Config::Answer_Table;
+    $where=$db->quoteInto('question_id=?',$question_id);
+
+
+    $db->delete($table,$where);
   }
 
   function add($fb_page_id,$name,$image='',$desc='',$type=1)
@@ -88,4 +111,17 @@ class Quiz
     $table=new Frd_Table_Common(Config::Quiz_Table,Config::Quiz_Primary); 
     $table->delete($quiz_id);
   }
+
+  function clear($quiz_id)
+  {
+    $questions=$this->getQuestions($quiz_id);
+    foreach($questions as $question)
+    {
+      $question_id=$question['id'] ;
+      $this->clearAnswers($question_id);
+    }
+
+    $this->clearQuestions($quiz_id);
+  }
+
 }

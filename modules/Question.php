@@ -1,6 +1,15 @@
 <?php
 class Question
 {
+  //get a quiz record
+  function loadQuestion($question_id)
+  {
+    $table=new Frd_Table_Common(Config::Question_Table,Config::Question_Primary); 
+    $table->load($question_id);
+
+    return $table;
+  }
+
   function add($quiz_id,$name,$image='')
   {
     $table=new Frd_Table_Common(Config::Question_Table,Config::Question_Primary); 
@@ -37,6 +46,7 @@ class Question
     $table=new Frd_Table_Common(Config::Question_Table,Config::Question_Primary); 
     $table->load($question_id);
     $table->correct=$correct_answer_id;
+
     $table->save();
   }
 

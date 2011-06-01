@@ -2,8 +2,40 @@
   $q=$this->params['q'];
   $answer=$this->params['answer'];
   $name="q[".$q."][answer][".$answer."][name]";
-  $correct="q_".$q."_correct";
+  $correct_class="q_".$q."_correct";
   $remove_id="q_".$q."_answer_".$answer."_remove_image";
+
+  if(isset($this->params['answer_name']))
+  {
+    $answer_name=$this->params['answer_name'];
+  }
+  else
+  {
+    $answer_name='';
+  }
+  if(isset($this->params['answer_image']))
+  {
+    $answer_image=$this->params['answer_image'];
+  }
+  else
+  {
+    $answer_image='';
+  }
+
+  if(isset($this->params['correct']))
+  {
+    $correct=$this->params['correct'];
+  }
+  else
+  {
+    $correct='';
+  }
+
+  if($correct == 'y')
+    $checked='checked="checked"';
+  else
+    $checked="";
+
 ?>
   <div id="q_<?php echo $q; ?>_answer_<?php echo $answer; ?>" class="answer">
   <div class="a_title">Image or Video: <span>(Optional)</span></div>
@@ -12,7 +44,7 @@
     <div class="left">
       <div class="input">
       <span><?php echo $answer; ?> ) </span>
-      <input onclick="answer_title_check(<?php echo $q; ?>,<?php echo $answer; ?>)" onkeyup="answer_title_check(<?php echo $q; ?>,<?php echo $answer; ?>)" id="q_<?php echo $q; ?>_answer_<?php echo $answer; ?>_name" class="answer_field" type="text"  value="" name="<?php echo $name; ?>">
+      <input onclick="answer_title_check(<?php echo $q; ?>,<?php echo $answer; ?>)" onkeyup="answer_title_check(<?php echo $q; ?>,<?php echo $answer; ?>)" id="q_<?php echo $q; ?>_answer_<?php echo $answer; ?>_name" class="answer_field" type="text"  value="<?php echo $answer_name; ?>" name="<?php echo $name; ?>">
       </div>
       <div class="oper">
         <div class="clear"></div>
@@ -21,7 +53,7 @@
             <a onclick="remove_answer(<?php echo $q;?>,<?php echo $answer; ?>);" style="display: none;" id="q_<?php echo $q;?>_answer_<?php echo $answer; ?>_remove" >Remove Answer</a>
         </div>
         <div class="option">
-        <input value="<?php echo $answer; ?>" type="radio"  class="<?php echo $correct; ?>" name="<?php echo $correct; ?>">
+        <input value="<?php echo $answer; ?>" type="radio"  class="<?php echo $correct_class; ?>" <?php echo $checked; ?> >
           Correct Answer</div>
         <div class="clear"></div>
       </div>
@@ -31,7 +63,14 @@
     <?php //render("block/answer_popup.php",array('q'=>$q,'answer'=>$answer)); ?>
     <div class="right">
         <div class="option_img">
-          <img id="q_<?php echo $q; ?>_answer_<?php echo $answer; ?>_thumbnails" src="http://d1bye8fl443jlj.cloudfront.net/prod/images/quiz_create_part2-img.gif"></div>
+<?php
+  if($answer_image == false) 
+        $image= 'http://d1bye8fl443jlj.cloudfront.net/prod/images/quiz_create_part2-img.gif'; 
+  else
+      $image=$answer_image;
+?>
+  <img id="q_<?php echo $q; ?>_answer_<?php echo $answer; ?>_thumbnails" src="<?php echo $image; ?>">
+      </div>
         <div class="s_upload2">
           <div  id="q_<?php echo $q; ?>_answer_<?php echo $answer; ?>_upload" style="display: block;">
 
@@ -41,9 +80,7 @@
         <div id="<?php echo $remove_id; ?>" style="display: none;" class="q_<?php echo $q; ?>_remove">
         <a onclick="answer_remove_image(<?php echo $q;?>,<?php echo $answer; ?>);" >Remove this</a>
         </div>
-        <input type="hidden"  value="" name="q_<?php echo $q; ?>_answer_<?php echo $answer; ?>_img" id="q_<?php echo $q; ?>_answer_<?php echo $answer; ?>_img">
-        <input type="hidden"  value="" name="q_0_answer_1_media_type" id="q_0_answer_1_media_type">
-        <input type="hidden" value="" name="q_0_answer_1_hulu" id="q_0_answer_1_hulu">
+        <input type="hidden"  value="<?php echo $answer_image; ?>" name="q_<?php echo $q; ?>_answer_<?php echo $answer; ?>_img" id="q_<?php echo $q; ?>_answer_<?php echo $answer; ?>_img">
       
     </div>
     <div class="clear"></div>

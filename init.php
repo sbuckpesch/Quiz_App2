@@ -32,7 +32,7 @@ $registry = Zend_Registry::getInstance();
 //require_once ROOT_PATH.'/lib/phpflickr/phpFlickr.php';
 
 init_db();
-init_fluttery();
+//init_fluttery();
 //init_global();
 
 

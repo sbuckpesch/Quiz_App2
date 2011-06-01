@@ -59,6 +59,7 @@ class Fluttery
       {
         $instance_id = $this->_client->getInstanceId($this->_app_key,$app_id,null,$page_id);
 
+        var_dump($instance_id);
         if($instance_id != false)
         {
           $this->_instance_id=$instance_id;

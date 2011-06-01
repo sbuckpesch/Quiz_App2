@@ -37,7 +37,7 @@
     $fb_page_id=get_page_id();
 
     $user_id=get_user_id();
-    $admin=get_is_admin();
+    $is_admin=get_is_admin();
 
     //var_dump($user_id);
     //var_dump($admin);

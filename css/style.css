@@ -71,6 +71,9 @@ a{
   padding: 0;
   width: 1px;
 }
+.participate{
+	margin:20px;
+	}
 .g_return_top:focus {
   outline-style: none;
   outline-width: medium;
@@ -5806,4 +5809,4 @@ a.link_orange:hover {
 .hulu_add .content .pagination .flip .left {
 }
 .hulu_add .content .pagination .flip .right {
-}
+}	

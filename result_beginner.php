@@ -1,6 +1,6 @@
 <?php 
 include_once('init.php');
-include_once('header.php');
+//include_once('header.php');
 
     // Create the form
     $contact = new JFormer('contactForm', array(

@@ -8,6 +8,8 @@ class Fluttery
   protected $_instance_id=null;
   protected $_page_id=null;
 
+  protected $session=null; // instance of Zend_Session_Namespace
+
   //fluttery data
   //protected $_instance=array();
   //protected $_configs=array();
@@ -19,11 +21,17 @@ class Fluttery
   /*
    * init class , need app_key to auth
    */
-  function __construct($app_key)
+  function __construct($app_key,$session)
   {
     if($app_key == false)
      throw new Exception('invalid app key');
 
+    if(!($session instanceof Zend_Session_Namespace))
+    {
+      throw new Exception("Fluttery's session parameter must be instance of Zend_Session_Namespace"); 
+    }
+
+    $this->session=$session;
     $this->_app_key=$app_key;
 
     //init soap client
@@ -35,6 +43,11 @@ class Fluttery
     $this->_client = new Zend_Soap_Client(null, $options);  
   }
 
+
+  function setInstanceId($instance_id)
+  {
+    $this->_instance_id=$instance_id;
+  }
   /*
    * set instance , each app have an app instance  in fluttery,
    * and use instance_id to identify it
@@ -47,32 +60,36 @@ class Fluttery
    * @param integer   facebook's page id   like  in fanpage, it will have page id, but canvas page  do not
    *
    */
-  function setInstanceId($app_id,$instance_id,$page_id=null)
+  function getInstanceId($app_id,$page_id)
   {
+    if(isset($this->session->instance_id))
+    {
+      $this->_instance_id=$instance_id;
+      return $this->session->instance_id;
+    }
+
     $this->_app_id=$app_id;
     $this->_page_id=$page_id;
-    $this->_instance_id=$instance_id;
 
-    if($instance_id == false)
+    try
     {
-      try
-      {
-        $instance_id = $this->_client->getInstanceId($app_id,$page_id,'');
+      $instance_id = $this->_client->getInstanceId($app_id,$page_id,'');
 
-        if($instance_id != false)
-        {
-          $this->_instance_id=$instance_id;
-        }
-        else
-        {
-          throw new Exception("sorry ,can not get instance id: [ic_app_id:$ic_app_id],[page_id:$page_id]");
-        }
-      }
-      catch(Exception $e)
+      if($instance_id != false)
       {
-        echo $e->getMessage();  
+        $this->_instance_id=$instance_id;
+      }
+      else
+      {
+        throw new Exception("sorry ,can not get instance id: [ic_app_id:$ic_app_id],[page_id:$page_id]");
       }
     }
+    catch(Exception $e)
+    {
+      echo $e->getMessage();  
+    }
+
+    $this->session->instance_id=$this->_instance_id;
 
     return $this->_instance_id;
   }
@@ -95,6 +112,12 @@ class Fluttery
    */
   function getData()
   {
+
+    if(isset($this->session->data))
+    {
+      return $this->session->data;
+    }
+
     if($this->_instance_id == false)
       throw new Exception("you have not set instance, please use the method setInstace(APP_ID,INSTANCE_ID,PAGE_ID) set it first ");
 
@@ -104,6 +127,7 @@ class Fluttery
 
       if($result != false)
       {
+        $this->session->data=$result;
         return $result;
       }
     }

@@ -33,6 +33,8 @@ $registry = Zend_Registry::getInstance();
 
 require_once ROOT_PATH.'/lib/jformer.php';
 
+$gsession=new Zend_Session_Namespace('default');
+
 init_db();
 init_fluttery();
 init_global();

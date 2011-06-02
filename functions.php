@@ -761,6 +761,7 @@ function init_fluttery()
 {
   global $global;
   global $ic_app_id;
+  global $gsession;
 
   if(isset($_GET['instid']))
   {
@@ -780,8 +781,8 @@ function init_fluttery()
     return false;
 
   $app_key='fred';
-  $fluttery = new Fluttery($app_key);
-  $fluttery->setInstanceId($ic_app_id,0,$page_id);
+  $fluttery = new Fluttery($app_key,$gsession);
+  $fluttery->setInstanceId($ic_app_id,$page_id);
   $data=$fluttery->getData();
 
   $config = $data['config'];

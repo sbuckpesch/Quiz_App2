@@ -127,7 +127,7 @@
           {
             FB.api('/me',function(response){
               jQuery.post('save_vister.php',response,function(data){
-                alert(data);
+                //alert(data);
               });
               //alert('take');
               FrdForm.selector="#take_form";

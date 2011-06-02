@@ -30,9 +30,6 @@
   <div style="display: block;" class="q_content">
     <?php //render("block/question_field.php",array('q'=>$q,'question_name'=>$question_name,'question_image'=>$question_image)); ?>
     <div >Answers: </div>
-      <div id="question_<?php echo $q; ?>_answers_container">
-
-      </div>
     </div>
     </div>
 

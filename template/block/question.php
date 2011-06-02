@@ -28,7 +28,7 @@
   </div>
 
   <div style="display: block;" class="q_content">
-    <?php render("block/question_field.php",array('q'=>$q,'question_name'=>$question_name,'question_image'=>$question_image)); ?>
+    <?php //render("block/question_field.php",array('q'=>$q,'question_name'=>$question_name,'question_image'=>$question_image)); ?>
     <div class="q_answer">Answers: </div>
       <div id="question_<?php echo $q; ?>_answers_container">
           <?php if($question_id > 0): ?>
@@ -42,7 +42,7 @@
 
 
                  ?>
-                  <?php render('block/answer.php',array('q'=>$q,'answer'=>($kk+1),'answer_name'=>$answer['name'],'correct'=>$correct,'answer_image'=>$answer['image'])); ?>
+                  <?php //render('block/answer.php',array('q'=>$q,'answer'=>($kk+1),'answer_name'=>$answer['name'],'correct'=>$correct,'answer_image'=>$answer['image'])); ?>
               <?php endforeach; ?>
          <?php endif; ?>
 

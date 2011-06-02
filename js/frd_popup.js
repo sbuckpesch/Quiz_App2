@@ -141,9 +141,10 @@ FrdPopup.render=function(id){
 
     var top=FrdPopup.getPageScroll()[1] + (FrdPopup.getPageHeight() / 10);
     //var left=jQuery(window).width() / 2 - 205;
-    alert(FrdPopup.getPageScroll()[1]);
-    alert(FrdPopup.getPageHeight());
-    alert(top);
+    //alert(FrdPopup.getPageScroll()[1]);
+    //alert(FrdPopup.getPageHeight());
+    //alert(top);
+    alert(jQuery(window.parent.document).scrollTop());
 
     jQuery(selector).css('margin','auto'); //make it in center
 

@@ -16,6 +16,8 @@ else if(isset($_GET['page']) )
 
 unset($params['page']);
 
+
+$params['global']=$global;
 render($page,$params);
   /*
 else

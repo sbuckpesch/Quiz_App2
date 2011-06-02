@@ -48,11 +48,12 @@
 
       </div>
     </div>
+    </div>
 
     <div class="add_answer">
     <a onclick="add_answer(<?php echo $q; ?>);">
         <img src="images/quiz_create_part2-add.gif">
       </a> 
     </div>
-  </div>
+
 </div>

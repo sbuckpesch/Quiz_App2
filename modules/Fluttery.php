@@ -64,7 +64,7 @@ class Fluttery
   {
     if(isset($this->session->instance_id))
     {
-      $this->_instance_id=$instance_id;
+      $this->_instance_id=$this->session->instance_id;
       return $this->session->instance_id;
     }
 

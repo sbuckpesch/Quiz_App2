@@ -29,7 +29,7 @@
         <h3>Upload an image <span>(Optional)</span> </h3>
         <div id="quiz_uploaded_image" class="upload_img">
           <?php if($edit == true): ?> 
-              <?php if($quiz->image != false): ?>
+              <?php if(trim($quiz->image) != false): ?>
                 <img src="<?php echo $quiz->image; ?>" />
               <?php endif; ?>
           <?php endif; ?>
@@ -81,11 +81,4 @@
         <div id="quiz_description_note" class="chars">600 characters left.</div>
       </div>
       
-    <!--
-      <div class="g_continue">
-        <a onclick="show_part(2,4)">
-        <img src="http://d1bye8fl443jlj.cloudfront.net/prod/images/quiz_create-continue.gif">
-       </a>
-     </div>
-    -->
   

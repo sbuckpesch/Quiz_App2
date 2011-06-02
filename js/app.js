@@ -206,7 +206,7 @@ function check_quiz()
   var field_selector='#quiz_name';
   if(jQuery(field_selector).val() == false)
   {
-    showWarning('no quiz name');
+    show_warning('no quiz name');
     return false;
   }
 

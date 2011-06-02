@@ -53,7 +53,8 @@
             <a onclick="remove_answer(<?php echo $q;?>,<?php echo $answer; ?>);" style="display: none;" id="q_<?php echo $q;?>_answer_<?php echo $answer; ?>_remove" >Remove Answer</a>
         </div>
         <div class="option">
-        <input value="<?php echo $answer; ?>" type="radio"  class="<?php echo $correct_class; ?>" <?php echo $checked; ?> >
+        <input value="<?php echo $answer; ?>" type="radio"  name="<?php echo $correct_class; ?>" class="<?php echo $correct_class; ?>"
+ <?php echo $checked; ?> >
           Correct Answer
         </div>
         <div class="clear"></div>

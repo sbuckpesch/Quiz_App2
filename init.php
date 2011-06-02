@@ -37,10 +37,10 @@ init_db();
 init_fluttery();
 init_global();
 
-$next='http://www.facebook.com/apps/application.php?id='.$global->instance['fb_page_id'].'&sk=app_'.$global->instance['fb_app_id'];
-$cancel_url='http://www.facebook.com/apps/application.php?id='.$global->instance['fb_page_id'].'&sk=app_'.$global->instance['fb_app_id'];
+//$next='http://www.facebook.com/apps/application.php?id='.$global->instance['fb_page_id'].'&sk=app_'.$global->instance['fb_app_id'];
+//$cancel_url='http://www.facebook.com/apps/application.php?id='.$global->instance['fb_page_id'].'&sk=app_'.$global->instance['fb_app_id'];
 
-init_facebook(array('next'=>$next,'cancel_url'=>$cancel_url));
+//init_facebook(array('next'=>$next,'cancel_url'=>$cancel_url));
 //$userdata=new FacebookUserData();
 
 //$registry->set("GLOBAL",$global);

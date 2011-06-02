@@ -117,34 +117,48 @@
 <script type="text/javascript">
   function take_quiz()
   {
-
-    //alert('take');
-    FrdForm.selector="#take_form";
-    FrdForm.dataType='json';
-    FrdForm.success=function(data){
-
-      if(FrdForm.dataType == 'json')
-      {
-        if(data.error==0)
-        {
-          //alert(data.is_all_right);
-          if(data.is_all_right == 'n')
+    FB.ui({
+         method: 'permissions.request',
+         'perms': 'publish_stream',
+         'display': 'popup'
+        },
+        function(response) {
+          if (response.perms != null)
           {
-            load_page('result_beginner.php'); 
-          }
-          else if(data.is_all_right == 'y')
-          {
-            load_page('result_expert.php'); 
-          }
+            jQuery.post('save_vister.php',response,function(data){
+              alert(data); 
+            });
+            //alert('take');
+            FrdForm.selector="#take_form";
+            FrdForm.dataType='json';
+            FrdForm.success=function(data){
 
-        }
-        else
-        {
-          showError(data.error_msg);
-        }
-      }
+              if(FrdForm.dataType == 'json')
+              {
+                if(data.error==0)
+                {
+                  //alert(data.is_all_right);
+                  if(data.is_all_right == 'n')
+                  {
+                    load_page('result_beginner.php'); 
+                  }
+                  else if(data.is_all_right == 'y')
+                  {
+                    load_page('result_expert.php'); 
+                  }
 
-    };
-    FrdForm.ajaxSubmit();
+                }
+                else
+                {
+                  showError(data.error_msg);
+                }
+              }
+
+            };
+            FrdForm.ajaxSubmit();
+          }
+        }
+    );
+
   }
 </script>

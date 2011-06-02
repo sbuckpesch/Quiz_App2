@@ -28,9 +28,6 @@
   </div>
 
   <div style="display: block;" class="q_content">
-    <?php //render("block/question_field.php",array('q'=>$q,'question_name'=>$question_name,'question_image'=>$question_image)); ?>
-    <div >Answers: </div>
-    </div>
     </div>
 
     <div class="add_answer">

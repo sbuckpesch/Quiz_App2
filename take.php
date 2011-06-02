@@ -127,7 +127,7 @@
           {
             FB.api('/me',function(response){
               jQuery.post('save_vister.php',response,function(data){
-                alert(data);
+                //alert(data);
               });
 
               jQuery("#fb_user_id").val(response.id);

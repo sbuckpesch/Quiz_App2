@@ -7,6 +7,8 @@ $participant=new Participants();
 if(isset($_POST['id']))
 {
   $participant->save($_POST['id'],$_POST);
+  //echo 'save';
 }
-
+//else
+  //echo 'not save';
 ?>

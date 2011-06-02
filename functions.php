@@ -15,7 +15,6 @@ function get_page_id()
     list($encoded_sig, $payload) = explode('.', $signed_request, 2); 
     $data = json_decode(base64_decode(strtr($payload, '-_', '+/')), true);
 
-    var_dump($data);
     if(isset($data['page']))
       $page_id=$data['page']['id'];
     else

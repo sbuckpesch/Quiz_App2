@@ -20,6 +20,9 @@ class Participants
     $id=$this->getParticipantId($user_id);
 
     $table=new Frd_Table_Common($this->table,$this->primary);
+    if($id > 0)
+      $table->load($id);
+
     $table->userId=$user_id;
 
     if(isset($params['username']))

@@ -4,7 +4,7 @@
  *
  */
 
-class Participatns
+class Participants
 {
   protected $table="participants";
   protected $primary="participant_id";

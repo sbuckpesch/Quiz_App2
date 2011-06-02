@@ -12,15 +12,15 @@ class Participants
   /**
    * save user information
    */
-  function save($userid,$params)
+  function save($user_id,$params)
   {
-    if($userid == false)
+    if($user_id == false)
       return false;
 
     $id=$this->getParticipantId($user_id);
 
     $table=new Frd_Table_Common($this->table,$this->primary);
-    $table->userId=$userid;
+    $table->userId=$user_id;
 
     if(isset($params['first_name']))
       $table->first_name=$params['first_name'];

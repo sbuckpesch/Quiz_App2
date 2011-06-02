@@ -1,6 +1,6 @@
 <style>
   <?php echo $global->design['css']; ?>
-<style>
+</style>
 <div class="quiz_take">
 
 

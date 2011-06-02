@@ -10,6 +10,7 @@
         <input type="hidden" value="<?php echo $quiz->id; ?>" name="quiz_id" id="quiz_id">
           <input type="text" value="<?php echo $quiz->name; ?>" name="quiz_name" id="quiz_name" class="large" onkeyup="part1_title_check()" onclick="part1_title_check()">
         <?php else: ?>
+        <input type="hidden" value="" name="quiz_id" id="quiz_id">
           <input type="text" value="" name="quiz_name" id="quiz_name" class="large" onkeyup="part1_title_check()" onclick="part1_title_check()">
         <?php endif; ?>
 

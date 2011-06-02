@@ -37,10 +37,9 @@ init_db();
 init_fluttery();
 init_global();
 
-$canvas_url='http://www.facebook.com/apps/application.php?id='.$global->instance['fb_page_id'].'&sk=app_'.$global->instance['app_id'];
+$cancel_url='http://www.facebook.com/apps/application.php?id='.$global->instance['fb_page_id'].'&sk=app_'.$global->instance['fb_app_id'];
 
-echo $canvas_url;exit();
-init_facebook();
+init_facebook(array('cancel_url'=>$cancel_url));
 //$userdata=new FacebookUserData();
 
 //$registry->set("GLOBAL",$global);

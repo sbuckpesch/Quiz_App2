@@ -75,8 +75,7 @@
         <?php if($edit == true): ?> 
           <textarea name="quiz_description" id="quiz_description" class="short_textarea" rows="1" cols="1" onclick="part1_description_check();" onkeyup="part1_description_check();"><?php echo $quiz->description; ?></textarea>
         <?php else: ?>
-          <textarea name="quiz_description" id="quiz_description" class="short_textarea" rows="1" cols="1" onclick="part1_description_check();" onkeyup="part1_description_check();">
-          </textarea>
+          <textarea name="quiz_description" id="quiz_description" class="short_textarea" rows="1" cols="1" onclick="part1_description_check();" onkeyup="part1_description_check();"></textarea>
         <?php endif; ?>
         </p>
         <div id="quiz_description_note" class="chars">600 characters left.</div>

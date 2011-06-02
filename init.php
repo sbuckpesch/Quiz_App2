@@ -46,3 +46,5 @@ init_global();
 //$userdata=new FacebookUserData();
 
 //$registry->set("GLOBAL",$global);
+//
+var_dump($_SESSION);

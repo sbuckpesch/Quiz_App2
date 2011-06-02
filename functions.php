@@ -817,11 +817,11 @@ function init_global()
   if(isset($_REQUEST['signed_request']))
   {
     //$global->fb_user_data= new FacebookUserData($_REQUEST['signed_request']);
-    $global->isAdmin=$global->fb_user_data->isAdmin;
+    //$global->isAdmin=$global->fb_user_data->isAdmin;
   }
   else
   {
-    $global->isAdmin=false;
+    //$global->isAdmin=false;
   }
 
   $global->page_id=get_page_id();

@@ -37,6 +37,7 @@ class Quiz
 
     $select->from(Config::Question_Table,"*");
     $select->where('quiz_id=?',$quiz_id);
+    $select->order('id desc');
 
     $rows=$db->fetchAll($select);
 

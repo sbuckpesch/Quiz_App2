@@ -16,8 +16,13 @@ else if(isset($_GET['page']) )
 
 unset($params['page']);
 
+if(isset($_POST['page_id']))
+{
+  $_GET['page_id']=$_POST['page_id'];
+  init_fluttery();
+  $params['global']=$global;
+}
 
-$params['global']=$global;
 render($page,$params);
   /*
 else

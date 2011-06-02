@@ -799,6 +799,7 @@ function init_fluttery()
 
   $global->baseurl=$global->instance['fb_canvas_url'];
   $global->appurl='http://apps.facebook.com/'.$global->instance['fb_app_url'].'/';
+  $global->pageurl="http://www.facebook.com/apps/application.php?id=".$global->instance['fb_page_id']."&sk=app_".$global->app_id;
 
   $global->instid=$fluttery->getInstanceId();
 

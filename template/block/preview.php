@@ -42,6 +42,8 @@
              </li>
         </ul>
         <?php endforeach; ?>
+
+  <a  href="<?php echo $this->params['global']->pageurl; ?>" class="view_quiz">View Quiz</a>
   </div>
 
 

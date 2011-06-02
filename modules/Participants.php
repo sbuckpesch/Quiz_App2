@@ -67,7 +67,7 @@ class Participants
 
 
     $id= $db->fetchOne($select);
-    if($id = false)
+    if($id == false)
       $id=0;
 
     return $id;

@@ -22,6 +22,10 @@ class Participants
     $table=new Frd_Table_Common($this->table,$this->primary);
     $table->userId=$user_id;
 
+    if(isset($params['username']))
+      $table->username=$params['username'];
+    if(isset($params['name']))
+      $table->name=$params['name'];
     if(isset($params['first_name']))
       $table->first_name=$params['first_name'];
     if(isset($params['middle_name']))

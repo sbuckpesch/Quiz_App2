@@ -48,11 +48,13 @@
 
       </div>
     </div>
+
     <div class="add_answer">
     <a onclick="add_answer(<?php echo $q; ?>);">
-        <img src="http://d1bye8fl443jlj.cloudfront.net/prod/images/quiz_create_part2-add.gif">
+        <img src="images/quiz_create_part2-add.gif">
       </a> 
     </div>
   </div>
 
+</div>
 </div>

@@ -1,7 +1,5 @@
     <div class="p_header">
       <div class="title">Add Questions</div>
-      <div class="note">
-      </div>
     </div>
 
     <div class="p_body">

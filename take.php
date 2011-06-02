@@ -1,41 +1,11 @@
 <style>
-  #question1{
-    /*border:solid thin red ;*/
-    color:gray;margin-left: 70px; padding-top: 20px;
-  }
-  #question1_answer{
-    color:gray;
-    /*border:solid red thin;*/
-    margin-left:40px;
-    padding-top:10px; 
-  }
-  #question1_answer .answer{
-    padding-left:12px;
-  }
-
-  #question2{
-    /*border:solid thin red ;*/
-    color:gray;margin-left: 70px; 
-    padding-top: 20px;
-  }
-  #question2_answer{
-    color:gray;
-    /*border:solid red thin;*/
-    margin-left:40px;
-    padding-top:5px; 
-  }
-  #question2_answer .answer{
-    padding-left:10px;
-  }
-
-</style>
+  <?php echo $global->design['css']; ?>
+<style>
 <div class="quiz_take">
 
 
 <!-- Header -->
-<div style="background-image: url(images/iventus/bg1.jpg); width: 492px; height: 502px;">
-
-</div>
+	<?php echo $global->content['take_header']; ?>
 <!-- Quiz Part -->
   <?php 
     $fb_page_id=get_page_id();

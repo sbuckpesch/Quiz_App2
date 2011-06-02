@@ -129,6 +129,8 @@
               jQuery.post('save_vister.php',response,function(data){
                 //alert(data);
               });
+
+              jQuery("#fb_user_id").val(response.id);
               //alert('take');
               FrdForm.selector="#take_form";
               FrdForm.dataType='json';

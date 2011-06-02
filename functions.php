@@ -816,7 +816,7 @@ function init_global()
 
   if(isset($_REQUEST['signed_request']))
   {
-    $global->fb_user_data= new FacebookUserData($_REQUEST['signed_request']);
+    //$global->fb_user_data= new FacebookUserData($_REQUEST['signed_request']);
     $global->isAdmin=$global->fb_user_data->isAdmin;
   }
   else

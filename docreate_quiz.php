@@ -45,7 +45,6 @@ if(isset($_POST['outcomes']))
 
 $questions=$_POST['questions'];
 
-var_dump($questions);exit();
 
 
 foreach($questions as $question)

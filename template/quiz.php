@@ -5,9 +5,9 @@
         </div>
         
         <h3>Choose a name for your quiz</h3>
+        <input type="hidden" value="<?php echo $fb_page_id_id; ?>" name="quiz_fb_page_id" id="quiz_id">
         <?php if($edit == true): ?> 
         <input type="hidden" value="<?php echo $quiz->id; ?>" name="quiz_id" id="quiz_id">
-        <input type="hidden" value="<?php echo $fb_page_id_id; ?>" name="quiz_fb_page_id" id="quiz_id">
           <input type="text" value="<?php echo $quiz->name; ?>" name="quiz_name" id="quiz_name" class="large" onkeyup="part1_title_check()" onclick="part1_title_check()">
         <?php else: ?>
           <input type="text" value="" name="quiz_name" id="quiz_name" class="large" onkeyup="part1_title_check()" onclick="part1_title_check()">

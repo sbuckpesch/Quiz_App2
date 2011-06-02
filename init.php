@@ -37,6 +37,9 @@ init_db();
 init_fluttery();
 init_global();
 
+$canvas_url='http://www.facebook.com/apps/application.php?id='.$global->instance['fb_page_id'].'&sk=app_'.$global->instance['app_id'];
+
+echo $canvas_url;exit();
 init_facebook();
 //$userdata=new FacebookUserData();
 

@@ -787,11 +787,12 @@ function init_fluttery()
   $config = $data['config'];
   $content = $data['content'];
   $instance = $data['instance'];
+  $design = $data['design'];
 
   $global->config = $config;
   $global->content = $content;
   $global->instance = $instance;
-  var_dump($global->content);
+  $global->design = $design;
 
   $global->app_id= $global->instance['fb_app_id'];
   $global->app_secret= $global->instance['fb_app_secret'];

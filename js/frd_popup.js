@@ -224,8 +224,8 @@ FrdPopup.render=function(id){
   {
     var xScroll, yScroll;
 
-    xScroll=jQuery(document).scrollLeft();
-    yScroll=jQuery(document).scrollTop();
+    xScroll=jQuery("body").scrollLeft();
+    yScroll=jQuery("body").scrollTop();
     return new Array(xScroll,yScroll)
 
     if (self.pageYOffset) {

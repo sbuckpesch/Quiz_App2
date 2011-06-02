@@ -54,8 +54,10 @@
         </div>
         <div class="option">
         <input value="<?php echo $answer; ?>" type="radio"  class="<?php echo $correct_class; ?>" <?php echo $checked; ?> >
-          Correct Answer</div>
+          Correct Answer
+        </div>
         <div class="clear"></div>
+      </div>
       </div>
     </div>
     <!-- left end -->

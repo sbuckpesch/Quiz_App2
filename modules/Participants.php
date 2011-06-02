@@ -54,7 +54,7 @@ class Participants
     $db=Frd::getDb(); 
     $select=$db->select();
 
-    $select($this->table,$this->primary);
+    $select->from($this->table,$this->primary);
     $select->where('userId=?',$user_id);
     $select->limit(1);
 

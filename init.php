@@ -37,6 +37,7 @@ init_db();
 init_fluttery();
 init_global();
 
-$userdata=new FacebookUserData();
+init_facebook();
+//$userdata=new FacebookUserData();
 
 //$registry->set("GLOBAL",$global);

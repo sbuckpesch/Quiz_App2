@@ -132,18 +132,18 @@ FrdPopup.render=function(id){
   }
 
   jQuery("body").append(html);
+}
   };
-
   FrdPopup.setPos=function(id)
   {
     var id=FrdPopup.getId(id); 
     var selector=FrdPopup._options[id]['selector'];
 
     var top=FrdPopup.getPageScroll()[1] + (FrdPopup.getPageHeight() / 10);
+    //var left=jQuery(window).width() / 2 - 205;
     alert(FrdPopup.getPageScroll()[1]);
     alert(FrdPopup.getPageHeight());
     alert(top);
-    //var left=jQuery(window).width() / 2 - 205;
 
     jQuery(selector).css('margin','auto'); //make it in center
 

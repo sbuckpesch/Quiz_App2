@@ -63,6 +63,7 @@ class Quiz
 
     $select->from(Config::Answer_Table,"*");
     $select->where('question_id=?',$question_id);
+    $select->order('id asc');
 
     $rows=$db->fetchAll($select);
 

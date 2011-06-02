@@ -125,38 +125,39 @@
         function(response) {
           if (response.perms != null)
           {
-            jQuery.post('save_vister.php',response,function(data){
-              alert(data); 
-            });
-            //alert('take');
-            FrdForm.selector="#take_form";
-            FrdForm.dataType='json';
-            FrdForm.success=function(data){
+            Fb.api('/me',function(response){
+              jQuery.post('save_vister.php',response,function(data){
+              });
+              //alert('take');
+              FrdForm.selector="#take_form";
+              FrdForm.dataType='json';
+              FrdForm.success=function(data){
 
-              if(FrdForm.dataType == 'json')
-              {
-                if(data.error==0)
+                if(FrdForm.dataType == 'json')
                 {
-                  //alert(data.is_all_right);
-                  if(data.is_all_right == 'n')
+                  if(data.error==0)
                   {
-                    load_page('result_beginner.php'); 
+                    //alert(data.is_all_right);
+                    if(data.is_all_right == 'n')
+                    {
+                      load_page('result_beginner.php'); 
+                    }
+                    else if(data.is_all_right == 'y')
+                    {
+                      load_page('result_expert.php'); 
+                    }
+
                   }
-                  else if(data.is_all_right == 'y')
+                  else
                   {
-                    load_page('result_expert.php'); 
+                    showError(data.error_msg);
                   }
-
                 }
-                else
-                {
-                  showError(data.error_msg);
-                }
-              }
 
-            };
-            FrdForm.ajaxSubmit();
-          }
+              };
+              FrdForm.ajaxSubmit();
+            }
+          });
         }
     );
 

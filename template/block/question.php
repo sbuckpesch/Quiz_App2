@@ -42,7 +42,7 @@
 
 
                  ?>
-                  <?php //render('block/answer.php',array('q'=>$q,'answer'=>($kk+1),'answer_name'=>$answer['name'],'correct'=>$correct,'answer_image'=>$answer['image'])); ?>
+                  <?php render('block/answer.php',array('q'=>$q,'answer'=>($kk+1),'answer_name'=>$answer['name'],'correct'=>$correct,'answer_image'=>$answer['image'])); ?>
               <?php endforeach; ?>
          <?php endif; ?>
 

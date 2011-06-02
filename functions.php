@@ -788,6 +788,7 @@ function init_fluttery()
   $content = $data['content'];
   $instance = $data['instance'];
 
+  var_dump($global->content);
   $global->config = $config;
   $global->content = $content;
   $global->instance = $instance;

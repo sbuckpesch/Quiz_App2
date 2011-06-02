@@ -782,7 +782,7 @@ function init_fluttery()
 
   $app_key='fred';
   $fluttery = new Fluttery($app_key,$gsession);
-  $fluttery->setInstanceId($ic_app_id,$page_id);
+  $fluttery->setInstanceIdByPageId($ic_app_id,$page_id);
   $data=$fluttery->getData();
 
   $config = $data['config'];

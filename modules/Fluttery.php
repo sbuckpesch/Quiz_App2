@@ -60,7 +60,7 @@ class Fluttery
    * @param integer   facebook's page id   like  in fanpage, it will have page id, but canvas page  do not
    *
    */
-  function getInstanceId($app_id,$page_id)
+  function setInstanceIdByPageId($app_id,$page_id)
   {
     if(isset($this->session->instance_id))
     {

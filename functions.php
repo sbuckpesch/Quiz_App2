@@ -345,7 +345,7 @@ function init_facebook($params=array())
 {
   global $global;
 
-  require_once dirname(__FILE__).'/fbapi/facebook.php';
+  require_once dirname(__FILE__).'/lib/facebook.php';
 
   //$facebook=new Facebook($api_key,$secret);
   $facebook = new Facebook(array(

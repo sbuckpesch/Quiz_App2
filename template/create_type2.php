@@ -22,7 +22,7 @@
   else
   {
     $edit=false; 
-    $fb_page_id=$this->params['fb_page_id'];
+    $fb_page_id=$this->params['page_id'];
   }
 
 ?>

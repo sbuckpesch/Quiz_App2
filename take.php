@@ -97,7 +97,7 @@
   <?php if($quiz == false): ?>
   <!-- create link -->
   <div>
-  <a target="_top" href="<?php echo $global->appurl; ?>create_type.php?fb_page_id=<?php echo $fb_page_id;  ?>">
+  <a target="_top" href="<?php echo $global->appurl; ?>create_type.php?page_id=<?php echo $fb_page_id;  ?>">
       Create
     </a>
   </div>
@@ -108,7 +108,7 @@
     $quiz_id=$quiz->id;
   ?>
   <div>
-  <a target="_top" href="<?php echo $global->appurl; ?>create_type.php?quiz_id=<?php echo $quiz_id ?>&fb_page_id=<?php echo $fb_page_id; ?>">
+  <a target="_top" href="<?php echo $global->appurl; ?>create_type.php?quiz_id=<?php echo $quiz_id ?>&page_id=<?php echo $fb_page_id; ?>">
       Edit
     </a>
   </div>

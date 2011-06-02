@@ -8,7 +8,7 @@
 <div id="question_list" class="question_list">
   <div style="text-align:left;padding-left:50px;">
   <div style="padding-bottom:10px">
-  <a href="<?php echo $this->params['global']->appurl; ?>create_type.php?quiz_id=<?php echo $quiz_id; ?>">
+  <a href="create_type.php?quiz_id=<?php echo $quiz_id; ?>">
     <h1>
       <?php echo $quiz->name; ?>
     </h1>

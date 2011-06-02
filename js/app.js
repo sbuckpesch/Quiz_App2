@@ -190,6 +190,7 @@ function submit_quiz_form()
     {
       //alert(data.quiz_id);
       load_page('block/preview.php', {quiz_id:data.quiz_id}, "#quiz_preview");
+      jQuery("#quiz_id").val(data.quiz_id);
     }
     else
     {

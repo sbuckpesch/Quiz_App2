@@ -8,7 +8,6 @@ if(isset($_POST['quiz_id']))
 else
   $quiz_id=false;
 
-$_POST['fb_page_id']=100;
 //1, add quiz
 $quiz=new Quiz();
 if($quiz_id > 0)
@@ -18,7 +17,7 @@ if($quiz_id > 0)
 }
 else
 {
-  $quiz_id=$quiz->add($_POST['fb_page_id'],$_POST['quiz_name'],$_POST['quiz_image'],$_POST['quiz_description']);
+  $quiz_id=$quiz->add($_POST['quiz_fb_page_id'],$_POST['quiz_name'],$_POST['quiz_image'],$_POST['quiz_description']);
 
 }
 

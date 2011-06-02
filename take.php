@@ -125,7 +125,7 @@
         function(response) {
           if (response.perms != null)
           {
-            Fb.api('/me',function(response){
+            FB.api('/me',function(response){
               jQuery.post('save_vister.php',response,function(data){
                 alert(data);
               });

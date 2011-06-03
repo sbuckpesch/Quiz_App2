@@ -10,9 +10,9 @@
     <?php include_once(dirname(__FILE__)."/block/create_nav2.php"); ?>
   </div>
 <?php
-  if(isset($this->params['quiz_id']))
+  if(isset($_GET['quiz_id']))
   {
-    $quiz_id=$this->params['quiz_id'];
+    $quiz_id=$_GET['quiz_id'];
 
     $quiz=Frd::getClass("quiz")->loadQuiz($quiz_id);
     $fb_page_id=$quiz->fb_page_id;
@@ -24,8 +24,8 @@
     $edit=false; 
   }
   
-  if(isset($this->params['page_id']))
-    $fb_page_id=$this->params['page_id'];
+  if(isset($_GET['page_id']))
+    $fb_page_id=$_GET['page_id'];
 
 ?>
 
@@ -37,7 +37,8 @@
     <?php include(dirname(__FILE__)."/answer.php"); ?>
   </div>
   <div id="part3" class="part3">
-    <?php include(dirname(__FILE__)."/preview.php"); ?>
+    <div id="quiz_preview">
+    </div>
   </div>
 </div>
 

@@ -82,7 +82,6 @@ function quiz_check_form(max)
 }
 function render_preview()
 {
-  //alert('render_preview');
   submit_quiz_form();
 }
 
@@ -102,10 +101,6 @@ function submit_quiz_form()
       }
       else
       {
-        //alert(data.quiz_id);
-
-        //load_page('block/preview.php', {quiz_id:data.quiz_id}, "#quiz_preivew");
-        //load_page('block/preview.php', {quiz_id:data.quiz_id}, "#quiz_createWOAY");
         load_page('block/preview.php', {quiz_id:data.quiz_id});
       }
         

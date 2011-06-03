@@ -2,7 +2,7 @@
 include('init.php');
 
 $page_id=$init->initPageId();
-$init->initFluttery($page_id);
+$init->initFluttery(0,$page_id);
 
 
 

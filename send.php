@@ -25,14 +25,14 @@ if($to_email != false)
 
 
     $message=<<<HTML
-     From Quiz   \n
-    ---------------- \n
-    Vorname: $firstname \n
-    Name: $name  \n
-    Adresse: $address  \n
-    Ort: $city \n
-    PLZ:$postcode  \n
-    Email: $email \n
+     From Quiz   \n <br/>
+    ---------------- \n <br/>
+    Vorname: $firstname \n <br/>
+    Name: $name  \n <br/>
+    Adresse: $address  \n <br/>
+    Ort: $city \n <br/>
+    PLZ:$postcode  \n <br/>
+    Email: $email \n <br/>
 HTML;
 
 

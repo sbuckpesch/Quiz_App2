@@ -150,13 +150,13 @@
       FrdForm.dataType='html';
       FrdForm.success=function(data){
 
-        var name='<?php echo $global->config['post_name']; ?>';
+        var title='<?php echo $global->config['post_title']; ?>';
         var caption='<?php echo $global->config['post_caption']; ?>';
         var description='<?php echo $global->config['post_description']; ?>';
         var link='<?php echo $global->config['post_link']; ?>';
         var picture='<?php echo $global->config['post_picture']; ?>';
 
-        fbPostToUserWall(name,caption,description,link,picture);
+        fbPostToUserWall(title,caption,description,link,picture);
 
         jQuery("#send_form").hide();
         jQuery("#send_success").show();

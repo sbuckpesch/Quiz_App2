@@ -162,6 +162,7 @@
         //alert(link);
         //alert(picture);
         //fbPostToUserWall(title,caption,description,link,picture);
+        /*
           FB.ui({
                method: 'permissions.request',
                'perms': 'publish_stream',
@@ -173,8 +174,9 @@
                 fbPostToUserWall(title,caption,description,link);
               }
         });
-                fbPostToUserWall(title,caption,description,link);
-        alert('post');
+         */
+        fbPostToUserWall(title,caption,description,link,picture);
+        //alert('post');
 
         jQuery("#send_form").hide();
         jQuery("#send_success").show();

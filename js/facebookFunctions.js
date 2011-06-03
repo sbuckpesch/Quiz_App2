@@ -63,7 +63,7 @@ function fbPostToUserWall(name,caption,description,link,picture)
 {
   var params={'link':link, 'picture':picture, 'name':name, 'caption':caption, 'description':description };
 
-  displayObject(params);
+  //displayObject(params);
   FB.api('/me/feed','post',params,function(response){
   });
 }

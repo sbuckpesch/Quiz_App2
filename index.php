@@ -1,6 +1,9 @@
 <?php
 include('init.php');
 
+session_start();
+
+var_dump($_SESSION);
 $page_id=$init->initPageId();
 $init->initFluttery(0,$page_id);
 

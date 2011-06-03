@@ -26,7 +26,7 @@ class Result
 
     $select=$db->select();
 
-    $select->from(Config::Result_Table,'partipant_time');
+    $select->from(Config::Result_Table,'participant_time');
     $select->where('quiz_id=?',$quiz_id);
     $select->where('fb_user_id=?',$fb_user_id);
 

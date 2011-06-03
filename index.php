@@ -1,10 +1,10 @@
 <?php
 include('init.php');
 
-session_start();
+//session_start();
 //$gsession
 
-unset($_SESSION['default']);
+//unset($_SESSION['default']);
 //var_dump($_SESSION);
 
 $page_id=$init->initPageId();

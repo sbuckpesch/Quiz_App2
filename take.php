@@ -1,8 +1,4 @@
-<style>
-  <?php echo $global->design['css']; ?>
-</style>
 <div class="quiz_take">
-
 
 <?php //print_r($global->content); ?>
 <!-- Header -->

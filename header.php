@@ -12,7 +12,7 @@ FB.Canvas.setSize();
 </script>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>Take Quiz</title>
+<title><?php echo $global->config['meta_title']; ?></title>
 <link rel="stylesheet" type="text/css" href="css/style.css" ></link>
 <script src="http://connect.facebook.net/de_DE/all.js"></script>
 <!--
@@ -34,11 +34,16 @@ addJs('frd_form');
 addJs('functions'); 
 addJs('app'); 
 
-//addJs('jformer'); 
-//addCss('jformer'); 
-
-
 ?>
+<style>
+  <!-- styles -->
+  <?php 
+    foreach($global->design as $css)
+    {
+      echo $css;  
+    }
+  ?>
+</style>
 </head>
 
 <body>

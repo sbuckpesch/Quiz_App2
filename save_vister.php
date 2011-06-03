@@ -1,6 +1,10 @@
 <?php
- require("init.php");
+require("init.php");
 
+$db=Frd::getDb();
+
+echo get_class($db);
+exit();
 $participant=new Participants();
 
 //var_dump($_POST);
@@ -10,5 +14,5 @@ if(isset($_POST['id']))
   //echo 'save';
 }
 //else
-  //echo 'not save';
+//echo 'not save';
 ?>

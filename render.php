@@ -1,7 +1,9 @@
 <?php
 require('init.php');
+
 //return  rendered  template file
 
+/*
 
 if(isset($_POST['page']) )
 {
@@ -24,3 +26,4 @@ if(isset($_POST['page_id']))
 }
 
 render($page,$params);
+ */

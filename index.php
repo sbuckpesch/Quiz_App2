@@ -17,6 +17,7 @@ $is_fan=is_fan();
   </div>  
 
 <?php endif; ?>
+
 <?php include('take.php'); ?>
 
 <?php include('footer.php'); ?>

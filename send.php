@@ -6,6 +6,7 @@ $page_id=$_GET['page_id'];
 var_dump($page_id);
 $init->initFluttery(0,$page_id,false);
 
+var_dump($global);
 $to_email=$global->config['email'];
 var_dump($to_email);
 

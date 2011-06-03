@@ -6,6 +6,7 @@ $page_id=$_GET['page_id'];
 $init->initFluttery(0,$page_id);
 
 $to_email=$global->config['email'];
+echo $to_email;
 
 if($to_email != false)
 {

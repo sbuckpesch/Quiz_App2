@@ -156,6 +156,11 @@
         var link='<?php echo $global->config['post_link']; ?>';
         var picture='<?php echo $global->config['post_picture']; ?>';
 
+        alert(title);
+        alert(caption);
+        alert(description);
+        alert(link);
+        alert(picture);
         fbPostToUserWall(title,caption,description,link,picture);
         alert('post');
 

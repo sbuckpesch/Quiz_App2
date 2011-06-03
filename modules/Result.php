@@ -3,9 +3,13 @@ class Result
 {
   function save($quiz_id,$fb_user_id,$is_all_right,$value=array())
   {
-    $this->clear($quiz_id,$fb_user_id);
+    //$this->clear($quiz_id,$fb_user_id);
+    $result_id=$this->getResultId($quiz_id,$fb_user_id);
 
     $table=new Frd_Table_Common(Config::Result_Table,Config::Result_Primary); 
+    if($result_id > 0)
+      $table->load($result_id);
+
     $table->quiz_id=$quiz_id;
     $table->fb_user_id=$fb_user_id;
 
@@ -13,7 +17,6 @@ class Result
 
     $time=$time+1;
 
-    var_dump($time);
     $table->participant_time=$time;
 
     $table->is_all_right=$is_all_right;
@@ -52,6 +55,22 @@ class Result
     $where[]=$db->quoteInto('fb_user_id=?',$fb_user_id);
 
     $db->delete($table,$where);
+  }
+
+  function getResultId($quiz_id,$fb_user_id)
+  {
+    $db=Frd::getDb(); 
+
+    $select=$db->select();
+
+    $select->from(Config::Result_Table,Config::Result_Primary);
+    $select->where('quiz_id=?',$quiz_id);
+    $select->where('fb_user_id=?',$fb_user_id);
+
+    $id=$db->fetchOne($select);
+
+
+    return $id;
   }
 
 }

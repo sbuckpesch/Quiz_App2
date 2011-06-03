@@ -28,7 +28,7 @@ if(!isset($_POST['question']))
 {
   $result=array(
   'error'=>1,
-  'error_msg'=>'please choose the answer', 
+  'error_msg'=>$global->config['msg_choose_answer'],
   );
 
   echo json_encode($result);
@@ -45,7 +45,7 @@ if($participant_time >= $participant_time_limit)
 {
   $result=array(
   'error'=>1,
-  'error_msg'=>'sorry , you can only participant '.$participant_time_limit. ' time(s)',
+  'error_msg'=>str_replace("{participant_time_limit}",$participant_time_limit,$global->config['msg_participant_time_limit']),
   );
 
   echo json_encode($result);

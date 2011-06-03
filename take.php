@@ -157,6 +157,7 @@
         var picture='<?php echo $global->config['post_picture']; ?>';
 
         fbPostToUserWall(title,caption,description,link,picture);
+        alert('post');
 
         jQuery("#send_form").hide();
         jQuery("#send_success").show();

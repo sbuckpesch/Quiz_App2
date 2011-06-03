@@ -2,6 +2,8 @@
 require('init.php');
 
 $page_id=$_POST['page_id'];
+if($page_id == false)
+  $page_id=$_GET['page_id'];
 $init->initFluttery(0,$page_id);
 //return  rendered  template file
 

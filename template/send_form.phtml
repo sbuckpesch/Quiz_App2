@@ -96,9 +96,9 @@
       </tr>
     </table>
     </form>
+  </div>
+
   <script type="text/javascript">
-        var name='<?php echo $this->global->config['post_name']; ?>';
-        alert(name);
     function send_form_submit()
     {
       var elements=new Array('firstname','name','address','postcode','city','email');
@@ -116,23 +116,25 @@
       FrdForm.dataType='html';
       FrdForm.success=function(data){
 
-        //var name='<?php echo $this->global->config['post_name']; ?>';
-
-        //var caption='<?php echo $this->global->config['post_caption']; ?>';
-        //var description='<?php echo $this->global->config['post_description']; ?>';
-        //var link='<?php echo $this->global->config['post_link']; ?>';
-        //var picture='<?php echo $this->global->config['post_picture']; ?>';
-
-        //fbPostToUserWall(name,caption,description,link,picture);
-
         jQuery("#send_form").hide();
         jQuery("#send_success").show();
         jQuery("#form_part").css('height','50');
+        /*
+        if(FrdForm.dataType == 'json')
+        {
+          if(data.error==0)
+          {
+            alert('send success');
+          }
+          else
+          {
+            showError(data.error_msg);
+          }
+        }
+         */
 
       };
       FrdForm.ajaxSubmit();
     }
 
   </script>
-  </div>
-

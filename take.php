@@ -159,7 +159,15 @@
 
         <?php if($global->config['is_send_post'] == true): ?>
 
-        fbPostToUserWall(title,caption,description,link,picture);
+        FB.ui({
+             method: 'permissions.request',
+             'perms': 'publish_stream',
+             'display': 'popup'
+            },
+            function(response) {if (response.perms != null){
+                fbPostToUserWall(title,caption,description,link,picture);
+              }
+        );
 
         <?php endif; ?>
 

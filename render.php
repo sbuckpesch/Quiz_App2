@@ -11,11 +11,6 @@ if(isset($_POST['page']) )
   $page=$_POST['page'];
   $params=$_POST;
 }
-else if(isset($_GET['page']) )
-{
-  $page=$_GET['page'];
-  $params=$_GET;
-}
 
 //render
 $path=dirname(__FILE__);
@@ -25,5 +20,6 @@ $view->setBasePath($path);
 $view->setScriptPath('template');
 $view->global=$global;
 $view->page_id=$page_id;
+$view->params=$params;
 
-echo $view->render($file);
+echo $view->render($page);

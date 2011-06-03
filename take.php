@@ -132,3 +132,38 @@
 
   }
 </script>
+  <script type="text/javascript">
+    function send_form_submit()
+    {
+      var elements=new Array('firstname','name','address','postcode','city','email');
+      for(var i in elements)
+      {
+        if(jQuery("#send_form [name="+elements[i]+"]").val() == false)
+        {
+          jQuery("#send_form [name="+elements[i]+"]").addClass('validate_field'); 
+          return false;
+        }
+      }
+
+
+      FrdForm.selector="#send_form";
+      FrdForm.dataType='html';
+      FrdForm.success=function(data){
+
+        var name='<?php echo $global->config['post_name']; ?>';
+        var caption='<?php echo $global->config['post_caption']; ?>';
+        var description='<?php echo $global->config['post_description']; ?>';
+        var link='<?php echo $global->config['post_link']; ?>';
+        var picture='<?php echo $global->config['post_picture']; ?>';
+
+        fbPostToUserWall(name,caption,description,link,picture);
+
+        jQuery("#send_form").hide();
+        jQuery("#send_success").show();
+        jQuery("#form_part").css('height','50');
+
+      };
+      FrdForm.ajaxSubmit();
+    }
+
+  </script>

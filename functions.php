@@ -186,7 +186,7 @@ function redirect($url)
 /**
  * load php file
  */
-function  load($path)
+function load($path)
 {
   include(ROOT_PATH.'/'.$path);
 }

@@ -145,7 +145,7 @@
           return false;
         }
       }
-
+alert('aaa');
 
       FrdForm.selector="#send_form";
       FrdForm.dataType='html';
@@ -180,4 +180,5 @@
       FrdForm.ajaxSubmit();
     }
 
+                      load_page('result_expert.php',{page_id:'<?php echo $global->page_id;?>'}); 
   </script>

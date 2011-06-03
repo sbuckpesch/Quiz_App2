@@ -10,7 +10,7 @@ class Result
     $table->fb_user_id=$fb_user_id;
 
     $time=$this->getParticipantTime($quiz_id,$fb_user_id);
-    $table->participant_time=$time+1;
+    $table->participant_time=($time+1);
 
     $table->is_all_right=$is_all_right;
     $table->value=serialize($value);

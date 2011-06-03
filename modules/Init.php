@@ -57,6 +57,7 @@ class Init
 
     $data=$fluttery->getData();
 
+  print_r($data);
     $config = $data['config'];
     $content = $data['content'];
     $instance = $data['instance'];

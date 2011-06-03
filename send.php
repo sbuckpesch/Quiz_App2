@@ -4,7 +4,7 @@ require_once('init.php');
 $page_id=$_GET['page_id'];
 
 var_dump($page_id);
-$init->initFluttery(0,$page_id);
+$init->initFluttery(0,$page_id,false);
 
 $to_email=$global->config['email'];
 echo $to_email;

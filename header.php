@@ -40,7 +40,10 @@ addJs('app');
   <?php 
     foreach($global->design as $css)
     {
-      echo str_replace("<br />",'',$css);  
+      $css=str_replace("<br />",'',$css);  
+      $css=str_replace("&nbsp;",'',$css);  
+
+      echo $css;
     }
   ?>
 </style>

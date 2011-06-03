@@ -1,18 +1,10 @@
-<!-- Header -->
-<div style="background-image: url(images/iventus/4.jpg); width: 497px; height: 224px;">
+<?php echo $this->global->content['take_header']; ?>
+<?php echo $this->global->content['beginner_header']; ?>
 
-</div>
-<!-- Result Part -->
-<div style="background-image: url(images/iventus/5.jpg); width: 497px; height: 283px;">
-
-</div>
 <!-- Form Part -->
 <div id="form_part" style="background-image: url(images/iventus/6.jpg); width: 497px; height: 121px;">
 <?php include(dirname(__FILE__).'/send_form.phtml') ; ?>
 </div>
 <?php echo $this->global->content['thankyou']; ?>
 
-<!-- Footer -->
-<div style="background-image: url(images/iventus/7.jpg); width: 497px; height: 311px;">
-
-</div>
+<?php echo $this->global->content['take_footer']; ?>

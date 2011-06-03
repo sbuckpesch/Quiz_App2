@@ -43,7 +43,7 @@
         </ul>
         <?php endforeach; ?>
 
-  <a  target="_top" href="<?php echo $this->params['global']->pageurl; ?>" class="view_quiz">View Quiz</a>
+  <a  target="_top" href="<?php echo $this->global->pageurl; ?>" class="view_quiz">View Quiz</a>
   </div>
 
 

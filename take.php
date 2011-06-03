@@ -157,27 +157,11 @@
         var link='<?php echo $global->config['post_link']; ?>';
         var picture='<?php echo $global->config['post_picture']; ?>';
 
-        //alert(title);
-        //alert(caption);
-        //alert(description);
-        //alert(link);
-        //alert(picture);
-        //fbPostToUserWall(title,caption,description,link,picture);
-        /*
-          FB.ui({
-               method: 'permissions.request',
-               'perms': 'publish_stream',
-               'display': 'popup'
-              },
-              function(response) {
-              if (response.perms != null)
-              {
-                fbPostToUserWall(title,caption,description,link);
-              }
-        });
-         */
+        <?php if($global->config['is_send_post'] == true): ?>
+
         fbPostToUserWall(title,caption,description,link,picture);
-        //alert('post');
+
+        <?php endif; ?>
 
         jQuery("#send_form").hide();
         jQuery("#send_success").show();

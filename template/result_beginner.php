@@ -7,4 +7,4 @@
 </div>
 <?php echo $this->global->content['thankyou']; ?>
 
-<?php echo $this->global->content['take_footer']; ?>
+<?php echo $this->global->content['result_footer']; ?>

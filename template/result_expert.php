@@ -10,5 +10,5 @@
 <?php echo $this->global->content['thankyou']; ?>
 
 <!-- Footer -->
-<?php echo $this->global->content['take_footer']; ?>
+<?php echo $this->global->content['result_footer']; ?>
 

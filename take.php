@@ -4,6 +4,7 @@
 <div class="quiz_take">
 
 
+<?php print_r($global->content); ?>
 <!-- Header -->
 	<?php echo $global->content['take_header']; ?>
 <!-- Quiz Part -->

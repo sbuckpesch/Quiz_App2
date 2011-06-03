@@ -31,6 +31,7 @@ class Result
     $select->where('fb_user_id=?',$fb_user_id);
 
     $time=$db->fetchOne($select);
+    var_dump($time);
 
     return intval($time);
   }

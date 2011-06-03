@@ -28,6 +28,24 @@ function get_page_id()
   return $page_id;
 }
 
+function is_fan()
+{
+  if(isset($_REQUEST['signed_request']))
+  {
+    $signed_request = $_REQUEST["signed_request"];
+    list($encoded_sig, $payload) = explode('.', $signed_request, 2); 
+    $data = json_decode(base64_decode(strtr($payload, '-_', '+/')), true);
+
+    $is_fan=$data['page']['liked'];
+  }
+  else
+  {
+    $is_fan=false;
+  }
+
+  return $is_fan;
+}
+
 
 function get_is_admin()
 {

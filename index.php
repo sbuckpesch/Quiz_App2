@@ -1,22 +1,24 @@
 <?php
 include('init.php');
-
-//session_start();
-//$gsession
-
-//unset($_SESSION['default']);
-//var_dump($_SESSION);
-
 $page_id=$init->initPageId();
 $init->initFluttery(0,$page_id);
-
-//print_r($global->config);
-
-
 
 include('header.php'); 
 
 
-include('take.php');
-include('footer.php'); 
+$is_fan=is_fan();
 ?>
+<?php if($is_fan == false): ?>
+
+  <div class="pageLandingNonFans"> 
+   <div class="buttonNonFans">
+     <?=$global->content['no_fan_img']?>
+   </div>
+  </div>  
+
+<?php else: ?>
+  <?php include('take.php'); ?>
+<?php endif; ?>
+
+
+<?php include('footer.php'); ?>

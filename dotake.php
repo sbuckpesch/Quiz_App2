@@ -39,7 +39,7 @@ if(!isset($_POST['question']))
 $fb_user_id=$_POST['fb_user_id'];
 $result=new Result();
 
-$participant_time_limit=$result->getParticipantTime($quiz_id,$fb_user_id);
+$participant_time=$result->getParticipantTime($quiz_id,$fb_user_id);
 
 if($participant_time >= $participant_time_limit)
 {

@@ -181,5 +181,5 @@
       }
     }
 
-  load_page('result_expert.php',{page_id:'<?php echo $global->page_id;?>'}); 
+  //load_page('result_expert.php',{page_id:'<?php echo $global->page_id;?>'}); 
   </script>

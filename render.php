@@ -24,27 +24,3 @@ if(isset($_POST['page_id']))
 }
 
 render($page,$params);
-  /*
-else
-{
-$template=$_POST['template'];
-  $page=$_POST['template'];
-
-  if($template == 'question')
-  {
-    render("block/question.php",$_POST);
-  }
-  if($template == 'answer')
-  {
-    render("block/answer.php",$_POST);
-  }
-  if($template == 'warning')
-  {
-    render("block/warning.php",$_POST);
-  }
-  if($template == 'outcome')
-  {
-    render("block/outcome.php",$_POST);
-  }
-}
-   */

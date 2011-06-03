@@ -1,42 +1,14 @@
 <?php
 include('init.php');
-include('header.php'); 
 
-//include('take.php');
+$ic_app_id=48;
+$page_id="150427118343402";
+$app_key='fred';
+$fluttery = new Fluttery($app_key);
+$fluttery->setInstanceId($ic_app_id,0,$page_id);
+$data=$fluttery->getData();
 
-//$page=$_GET['page'];
-
-$page="template/create_type2.php";
-//if($page == false)
- // $page="take.php";
-/*
-$global->link->parseRequest();
-//$global->link->display();
-
-$page=$global->link->getPage('welcome.php');
-$template=$global->link->getParam('template','y');  //does this page need template
+print_r($data);
 
 
-if($template == 'n')
-{
-  include $page;
-}
-else
-{
-  include 'header.php';
-
-  echo '<div id="content">';
-  echo '</div>';
-  include 'footer.php';
-}
- */
-  include $page;
-?>
-
-<!--
-<a href="index.php?page=create_type.php">create quiz</a>
--->
-<?php 
-include('footer.php'); 
-?>
-
+echo "TSST";

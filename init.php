@@ -42,7 +42,3 @@ $registry->set("GSESSION",$gsession);
 
 //init 
 $init=new Init();
-$init->initDb();
-$init->initFluttery();
-$init->initGlobal();
-$init->authFacebook()

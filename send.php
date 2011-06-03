@@ -14,6 +14,7 @@ if($to_email != false)
 {
 
   $email=$_POST['email'];
+  $from="info@iconsultants.de";
   if($email != false)
   {
     $firstname=$_POST['firstname'];
@@ -37,7 +38,7 @@ HTML;
 
     $subject = "Hotel"; 
     $headers='';
-    $headers .= "From: " . $name . " <" . $email . ">\r\n";
+    $headers .= "From: " . $name . " <" . $from . ">\r\n";
     $headers .= "MIME-Version: 1.0\r\n";
     $headers .= "Content-type: text/html; charset=utf-8\r\n";
     $headers .= "Content-Transfer-encoding: 8bit\r\n";

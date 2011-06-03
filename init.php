@@ -42,3 +42,5 @@ $registry->set("GSESSION",$gsession);
 
 //init 
 $init=new Init();
+
+$init->initDb();

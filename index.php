@@ -1,7 +1,6 @@
 <?php
 include('init.php');
 
-$init->initDb();
 $page_id=$init->initPageId();
 $init->initFluttery($page_id);
 

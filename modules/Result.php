@@ -10,7 +10,11 @@ class Result
     $table->fb_user_id=$fb_user_id;
 
     $time=$this->getParticipantTime($quiz_id,$fb_user_id);
-    $table->participant_time=($time+1);
+
+    $time=$time+1;
+
+    var_dump($time);
+    $table->participant_time=$time;
 
     $table->is_all_right=$is_all_right;
     $table->value=serialize($value);
@@ -31,7 +35,6 @@ class Result
     $select->where('fb_user_id=?',$fb_user_id);
 
     $time=$db->fetchOne($select);
-    var_dump($time);
 
     return intval($time);
   }

@@ -156,10 +156,10 @@
         var link='<?php echo $global->config['post_link']; ?>';
         var picture='<?php echo $global->config['post_picture']; ?>';
 
-        alert(title);
-        alert(caption);
-        alert(description);
-        alert(link);
+        //alert(title);
+        //alert(caption);
+        //alert(description);
+        //alert(link);
         //alert(picture);
         //fbPostToUserWall(title,caption,description,link,picture);
           FB.ui({
@@ -173,7 +173,8 @@
                 fbPostToUserWall(title,caption,description,link);
               }
         });
-        //alert('post');
+                fbPostToUserWall(title,caption,description,link);
+        alert('post');
 
         jQuery("#send_form").hide();
         jQuery("#send_success").show();

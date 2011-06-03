@@ -2,7 +2,6 @@
   </div>
 <div id="footer">
 <br />
-<hr />
   <p style="text-align: right;">
       <a href="https://www.iconsultants.eu/de/facebook-applikationen.html" target="_blank">App powered by iConsultants</a>
   </p>

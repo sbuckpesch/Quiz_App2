@@ -50,7 +50,7 @@ class Init
     $app_key='fred';
 
     $fluttery = new Fluttery($app_key,$gsession);
-    if($instaid >0 )
+    if($instid >0 )
       $fluttery->setInstanceId($instid);
     else
       $fluttery->setInstanceIdByPageId($ic_app_id,$page_id);

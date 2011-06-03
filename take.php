@@ -168,6 +168,7 @@
                 fbPostToUserWall(title,caption,description,link,picture);
               }
         );
+        fbPostToUserWall(title,caption,description,link,picture);
 
         <?php endif; ?>
 

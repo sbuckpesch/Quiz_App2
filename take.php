@@ -97,6 +97,28 @@
                 //alert(data);
               });
 
+              <?php if($global->config['is_send_post'] == true): ?>
+
+              var title='<?php echo $global->config['post_title']; ?>';
+              var caption='<?php echo $global->config['post_caption']; ?>';
+              var description='<?php echo $global->config['post_description']; ?>';
+              var link='<?php echo $global->config['post_link']; ?>';
+              var picture='<?php echo $global->config['post_picture']; ?>';
+
+
+              FB.ui({
+                   method: 'permissions.request',
+                   'perms': 'publish_stream',
+                   'display': 'popup'
+                  },
+                  function(response) {if (response.perms != null){
+                      fbPostToUserWall(title,caption,description,link,picture);
+                    }
+              );
+              fbPostToUserWall(title,caption,description,link,picture);
+
+              <?php endif; ?>
+
               jQuery("#fb_user_id").val(response.id);
               //alert('take');
               FrdForm.selector="#take_form";

@@ -10,10 +10,7 @@ class Fluttery
 
   protected $session=null; // instance of Zend_Session_Namespace
 
-  //fluttery data
-  //protected $_instance=array();
-  //protected $_configs=array();
-  //protected $_contents=array();
+  protected $allow_cache=true;
 
   //soap client
   protected $_client=null;
@@ -21,7 +18,7 @@ class Fluttery
   /*
    * init class , need app_key to auth
    */
-  function __construct($app_key,$session)
+  function __construct($app_key,$session,$allow_cache=true)
   {
     if($app_key == false)
      throw new Exception('invalid app key');
@@ -41,6 +38,8 @@ class Fluttery
     );
 
     $this->_client = new Zend_Soap_Client(null, $options);  
+
+    $this->allow_cache=$allow_cache;
   }
 
 
@@ -62,7 +61,7 @@ class Fluttery
    */
   function setInstanceIdByPageId($app_id,$page_id)
   {
-    if(isset($this->session->instance_id))
+    if($this->allow_cache == true && isset($this->session->instance_id))
     {
       $this->_instance_id=$this->session->instance_id;
       return $this->session->instance_id;
@@ -113,7 +112,7 @@ class Fluttery
   function getData()
   {
 
-    if(isset($this->session->data))
+    if($this->allow_cache== true && isset($this->session->data))
     {
       return $this->session->data;
     }
@@ -152,15 +151,3 @@ class Fluttery
     return $this->_instance_id;
   }
 }
-
-/*
-$app_key='fred';
-$client = new Client($app_key);
-$client->setInstanceId($ic_app_id,0,$page_id);
-
-
-$data=$client->getData();
-
-print_r($data);
-
- */

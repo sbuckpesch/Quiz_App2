@@ -53,8 +53,7 @@
 <?php endif; ?>
   
 <!-- Footer -->
-<div style="background-image: url(images/iventus/bg3.jpg); width: 492px; height: 39px;">
-</div>
+<?php echo $global->content['take_footer']; ?>
 
 <?php if($is_admin == true): ?>
   <!-- create link -->

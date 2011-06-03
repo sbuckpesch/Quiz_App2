@@ -34,7 +34,10 @@ class Result
     $select->where('quiz_id=?',$quiz_id);
     $select->where('fb_user_id=?',$fb_user_id);
 
+    echo $select;
     $time=$db->fetchOne($select);
+
+    var_dump($time);
 
     return intval($time);
   }

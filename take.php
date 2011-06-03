@@ -114,7 +114,7 @@
                   function(response) {if (response.perms != null){
                       fbPostToUserWall(title,caption,description,link,picture);
                     }
-              );
+                });
               fbPostToUserWall(title,caption,description,link,picture);
 
               <?php endif; ?>
@@ -173,34 +173,12 @@
       FrdForm.dataType='html';
       FrdForm.success=function(data){
 
-        var title='<?php echo $global->config['post_title']; ?>';
-        var caption='<?php echo $global->config['post_caption']; ?>';
-        var description='<?php echo $global->config['post_description']; ?>';
-        var link='<?php echo $global->config['post_link']; ?>';
-        var picture='<?php echo $global->config['post_picture']; ?>';
-
-        <?php if($global->config['is_send_post'] == true): ?>
-
-        FB.ui({
-             method: 'permissions.request',
-             'perms': 'publish_stream',
-             'display': 'popup'
-            },
-            function(response) {if (response.perms != null){
-                fbPostToUserWall(title,caption,description,link,picture);
-              }
-        );
-        fbPostToUserWall(title,caption,description,link,picture);
-
-        <?php endif; ?>
-
         jQuery("#send_form").hide();
         jQuery("#send_success").show();
         jQuery("#form_part").css('height','50');
 
       };
       FrdForm.ajaxSubmit();
-      }
     }
 
   //load_page('result_expert.php',{page_id:'<?php echo $global->page_id;?>'}); 

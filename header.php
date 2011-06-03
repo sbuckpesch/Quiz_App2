@@ -35,8 +35,8 @@ addJs('functions');
 addJs('app'); 
 
 ?>
+<!-- styles -->
 <style>
-  <!-- styles -->
   <?php 
     foreach($global->design as $css)
     {

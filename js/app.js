@@ -39,7 +39,7 @@ function show_part(index,max)
     }
     else
     {
-      render_preview();  
+      submit_quiz_form();
     }
   }
 
@@ -80,38 +80,10 @@ function quiz_check_form(max)
 
   return true;
 }
-function render_preview()
-{
-  submit_quiz_form();
-}
 
 function submit_quiz_form()
 {
   //submit
-  var options={
-    url:"docreate_quiz.php",
-    method:"POST",
-    //dataType:'json',
-    success:function(data){
-        //alert(data);
-        //return false;
-      if(data.error==1)
-      {
-        show_warning(data.error_msg);
-      }
-      else
-      {
-        load_page('block/preview.php', {quiz_id:data.quiz_id});
-      }
-        
-    },
-    error: function(data)
-    {
-      show_warning('create quiz failed');
-      //alert(data);
-    }
-
-  }; 
   var url="docreate_quiz.php";
   var params={
     quiz_id:jQuery("#quiz_id").val(), 
@@ -183,6 +155,7 @@ function submit_quiz_form()
   jQuery.post(url,params,function(data){
     if(data.error==0)
     {
+    alert(page_id):
       //alert(data.quiz_id);
       load_page('block/preview.php', {page_id:jQuery("#quiz_fb_page_id").val(),quiz_id:data.quiz_id}, "#quiz_preview");
       jQuery("#quiz_id").val(data.quiz_id);

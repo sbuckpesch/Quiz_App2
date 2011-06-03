@@ -3,8 +3,7 @@
     <h1>Create A New Quiz</h1>
   </div>
 
-  <!-- waring -->
-  <?php //render("block/warning.php"); ?>
+
 
   <div class="top-nav"> 
     <?php include_once(dirname(__FILE__)."/block/create_nav2.php"); ?>
@@ -44,6 +43,7 @@
 
 </div>
 <script type="text/javascript">
+  var page_id='<?php echo $global->page_id; ?>';
   jQuery(document).ready(function(){
       show_part(1,3);
   });

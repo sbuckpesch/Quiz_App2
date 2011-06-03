@@ -155,7 +155,7 @@ function submit_quiz_form()
   jQuery.post(url,params,function(data){
     if(data.error==0)
     {
-    alert(page_id):
+    alert(page_id);
       //alert(data.quiz_id);
       load_page('block/preview.php', {page_id:jQuery("#quiz_fb_page_id").val(),quiz_id:data.quiz_id}, "#quiz_preview");
       jQuery("#quiz_id").val(data.quiz_id);

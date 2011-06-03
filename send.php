@@ -7,7 +7,7 @@ var_dump($page_id);
 $init->initFluttery(0,$page_id,false);
 
 $to_email=$global->config['email'];
-echo $to_email;
+var_dump($to_email);
 
 /*
 if($to_email != false)

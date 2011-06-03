@@ -1,4 +1,15 @@
 <?php
+require_once('init.php');
+
+$page_id=$_GET['page_id'];
+
+$init->initFluttery(0,$page_id);
+
+$to_email=$global->config['email'];
+
+if($to_email != false)
+{
+
   $email=$_POST['email'];
   if($email != false)
   {
@@ -20,7 +31,6 @@
     Email: $email \n
 HTML;
 
-    $to="iamlosing02@gmail.com";
 
     $subject = "Hotel"; 
     $headers='';
@@ -30,9 +40,10 @@ HTML;
     $headers .= "Content-Transfer-encoding: 8bit\r\n";
     $headers .= "X-Mailer: php" . phpversion(); 
 
-    $ret=mail($to,$subject,$message,$headers);
+    $ret=mail($to_email,$subject,$message,$headers);
 
     var_dump($ret);
   }
 
+}
 ?>

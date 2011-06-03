@@ -6,8 +6,6 @@ $page_id=$init->initPageId();
 $init->initFluttery($page_id);
 
 
-var_dump($global);
-echo '<span style="color:red">FF</span>';
 
 include('header.php'); 
 

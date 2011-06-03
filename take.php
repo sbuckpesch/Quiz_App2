@@ -92,7 +92,10 @@
           if (response.perms != null)
           {
             FB.api('/me',function(response){
-              jQuery.post('save_vister.php',response,function(data){
+              var params=new Object();
+              params.page_id="<?php echo $global->page_id; ?>";
+
+              jQuery.post('save_vister.php',param,response,function(data){
                 alert(data);
               });
               return false;

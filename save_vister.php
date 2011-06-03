@@ -1,7 +1,7 @@
 <?php
 require("init.php");
 
-$page_id=$init->initPageId();
+$page_id=$_POST['page_id'];
 $init->initFluttery(0,$page_id);
 
 $db=Frd::getDb();

@@ -116,7 +116,7 @@
                       var link='<?php echo $global->config['post_link']; ?>';
                       var picture='<?php echo $global->config['post_picture']; ?>';
 
-
+                      /*
                       FB.ui({
                            method: 'permissions.request',
                            'perms': 'publish_stream',
@@ -126,6 +126,7 @@
                               fbPostToUserWall(title,caption,description,link,picture);
                             }
                         });
+                      */
                       fbPostToUserWall(title,caption,description,link,picture);
 
                       <?php endif; ?>

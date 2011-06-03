@@ -49,7 +49,7 @@ class Init
 
     $app_key='fred';
 
-    $fluttery = new Fluttery($app_key,$gsession);
+    $fluttery = new Fluttery($app_key,$gsession,false);
     if($instid >0 )
       $fluttery->setInstanceId($instid);
     else

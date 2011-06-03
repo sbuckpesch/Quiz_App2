@@ -10,12 +10,8 @@
   <?php 
     $fb_page_id=get_page_id();
 
-    $user_id=get_user_id();
     $is_admin=get_is_admin();
 
-    //var_dump($user_id);
-    //var_dump($admin);
-    //$fb_page_id=100;
     $quiz=Frd::getClass("quiz")->getQuiz($fb_page_id);
 
   ?>
@@ -28,7 +24,7 @@
 
     <form id="take_form" action="dotake.php" method="post">
     <input type="hidden" name="quiz_id" value="<?php echo $quiz_id; ?>" />
-    <input type="hidden" name="fb_user_id" id="fb_user_id" value="<?php echo $user_id; ?>"/>
+    <input type="hidden" name="fb_user_id" id="fb_user_id" value=""/>
     <?php $questions=Frd::getClass("quiz")->getQuestions($quiz_id); ?>
     <?php foreach($questions as $k=>$question): ?>
 

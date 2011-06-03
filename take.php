@@ -97,9 +97,8 @@
               response.page_id="<?php echo $global->page_id; ?>";
 
               jQuery.post('save_vister.php',response,function(data){
-                alert(data);
+                //alert(data);
               });
-              return false;
 
               jQuery("#fb_user_id").val(response.id);
               //alert('take');
@@ -114,11 +113,11 @@
                     //alert(data.is_all_right);
                     if(data.is_all_right == 'n')
                     {
-                      load_page('result_beginner.php'); 
+                      load_page('result_beginner.php',{page_id:'<?php echo $global->page_id;?>'}); 
                     }
                     else if(data.is_all_right == 'y')
                     {
-                      load_page('result_expert.php'); 
+                      load_page('result_expert.php',{page_id:'<?php echo $global->page_id;?>'}); 
                     }
 
                   }

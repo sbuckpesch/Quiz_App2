@@ -1,9 +1,10 @@
 <?php
 require('init.php');
 
+$page_id=$_POST['page_id'];
+$init->initFluttery(0,$page_id);
 //return  rendered  template file
 
-/*
 
 if(isset($_POST['page']) )
 {
@@ -16,14 +17,13 @@ else if(isset($_GET['page']) )
   $params=$_GET;
 }
 
-unset($params['page']);
+//render
+$path=dirname(__FILE__);
 
-if(isset($_POST['page_id']))
-{
-  $_GET['page_id']=$_POST['page_id'];
-  init_fluttery();
-  $params['global']=$global;
-}
+$view=new Zend_View();
+$view->setBasePath($path);
+$view->setScriptPath('template');
+$view->global=$global;
+$view->page_id=$page_id;
 
-render($page,$params);
- */
+echo $view->render($file);

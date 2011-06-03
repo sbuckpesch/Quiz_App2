@@ -2,8 +2,8 @@
 include('init.php');
 
 $init->initDb();
-//$init->initFluttery();
-//$page_id=$init->initPageId();
+$init->initFluttery();
+$page_id=$init->initPageId();
 
 echo '<span style="color:red">FF</span>';
 

@@ -9,12 +9,30 @@ class Result
     $table->quiz_id=$quiz_id;
     $table->fb_user_id=$fb_user_id;
 
+    $time=$this->getParticipantTime($quiz_id,$fb_user_id);
+    $table->participant_time=$time+1;
+
     $table->is_all_right=$is_all_right;
     $table->value=serialize($value);
 
     $table->save();
 
     return $table->lastinsertid();
+  }
+
+  function getParticipantTime($quiz_id,$fb_user_id)
+  {
+    $db=Frd::getDb(); 
+
+    $select=$db->select();
+
+    $select->from(Config::Result_Table,'partipant_time');
+    $select->where('quiz_id=?',$quiz_id);
+    $select->where('fb_user_id=?',$fb_user_id);
+
+    $time=$db->fetchOne($select);
+
+    return intval($time);
   }
 
   function clear($quiz_id,$fb_user_id)

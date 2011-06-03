@@ -1,4 +1,4 @@
-<?php echo $this->global->content['take_header']; ?>
+<?php echo $this->global->content['result_header']; ?>
 <?php echo $this->global->content['beginner_header']; ?>
 
 <!-- Form Part -->

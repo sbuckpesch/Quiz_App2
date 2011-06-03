@@ -1,6 +1,22 @@
 <?php
 require('init.php');
-//require('header.php');
+
+if(!isset($_POST['page_id']))
+{
+  $result=array(
+  'error'=>1,
+  'error_msg'=>'page id  missed',
+  ); 
+
+  echo json_encode($result);
+  exit();
+}
+
+
+$page_id=$_POST['page_id'];
+$init->initFluttery(0,$page_id);
+$participant_time_limit=$global->config['participant_time_limit'];
+
 
 $question_count=0;
 $question_correct=0;
@@ -18,6 +34,25 @@ if(!isset($_POST['question']))
   echo json_encode($result);
   exit();
 }
+
+
+$fb_user_id=$_POST['fb_user_id'];
+$result=new Result();
+
+$participant_time_limit=$result->getParticipantTime($quiz_id,$fb_user_id);
+
+if($participant_time >= $participant_time_limit)
+{
+  $result=array(
+  'error'=>1,
+  'error_msg'=>'sorry , you can only participant '.$participant_time_limit. ' time(s)',
+  );
+
+  echo json_encode($result);
+  exit();
+}
+
+
 $quiz=Frd::getClass("quiz")->loadQuiz($quiz_id);
 
 $_POST['quiz_name']=$quiz->name;
@@ -94,4 +129,3 @@ function save_result($params)
   $result->save($quiz_id,$fb_user_id,$is_all_right,$value);
 
 }
-

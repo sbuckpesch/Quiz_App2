@@ -1,6 +1,6 @@
 
 <!-- Header -->
-<?php echo $this->global->content['take_header']; ?>
+<?php echo $this->global->content['result_header']; ?>
 <?php echo $this->global->content['expert_header']; ?>
 
 <!-- Form Part -->

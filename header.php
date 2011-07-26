@@ -14,7 +14,7 @@ FB.Canvas.setSize();
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title><?php echo $global->config['meta_title']; ?></title>
 <link rel="stylesheet" type="text/css" href="css/style.css" ></link>
-<script src="http://connect.facebook.net/de_DE/all.js"></script>
+<script src="https://connect.facebook.net/de_DE/all.js"></script>
 <!--
 <script type="text/javascript" src="langs/langs.js"></script>
 -->

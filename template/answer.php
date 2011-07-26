@@ -8,7 +8,6 @@
           <?php if($edit == true): ?>
             <?php $questions=Frd::getClass("quiz")->getQuestions($quiz_id); ?>
             <?php foreach($questions as $k=>$question): ?>
-              <?php //$this->render("block/question.php",array('q'=>($k+1),'question_id'=>$question['id'] ,'question_name'=>$question['name'],'correct'=>$question['correct'],'question_image'=>$question['image']) ); ?>
               <?php render("block/question.php",array('q'=>($k+1),'question_id'=>$question['id'] ,'question_name'=>$question['name'],'correct'=>$question['correct'],'question_image'=>$question['image']) ); ?>
             <?php endforeach; ?>
           <?php endif; ?>

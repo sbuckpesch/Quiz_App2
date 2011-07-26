@@ -40,6 +40,7 @@ class Init
   {
     global $ic_app_id;
     global $gsession;
+    global $aa_app_key;
 
     $global=Frd::getGlobal();
 
@@ -47,9 +48,8 @@ class Init
     if($instid == false && $page_id == false)
       return false;
 
-    $app_key='fred';
 
-    $fluttery = new Fluttery($app_key,$gsession,false);
+    $fluttery = new Fluttery($aa_app_key,$gsession,false);
     if($instid >0 )
       $fluttery->setInstanceId($instid);
     else

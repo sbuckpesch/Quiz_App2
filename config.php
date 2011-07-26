@@ -3,6 +3,7 @@ $ic_app_id=48;
 
 $database_host='localhost';
 
+$aa_app_key='3a73f7ca99a84d7fe2dd42b156293e77';
 
 
 $database_name='ic_aa_quiz';
